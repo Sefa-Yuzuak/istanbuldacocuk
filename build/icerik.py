@@ -19,6 +19,10 @@ DATA = KOK / "data"
 ANADOLU = {"Adalar", "Ataşehir", "Beykoz", "Çekmeköy", "Kadıköy", "Kartal", "Maltepe",
            "Pendik", "Sancaktepe", "Sultanbeyli", "Şile", "Tuzla", "Ümraniye", "Üsküdar"}
 
+# derle.py ile aynı etiketler: .title() "kent_ormani"yi "Kent Ormani" yapıyordu.
+ALT_TUR = {"park": "Park", "koru": "Koru", "mesire": "Mesire alanı",
+           "kent_ormani": "Kent ormanı", "hatira_ormani": "Hatıra ormanı"}
+
 SEHIR_TIYATROLARI = "https://sehirtiyatrolari.ibb.istanbul/tr"
 PORTAL = "https://data.ibb.gov.tr/"
 
@@ -143,9 +147,10 @@ def main() -> None:
                      "bunun tersi — kapalı, ısıtılan, sessiz ve tamamen ücretsiz bir mekân.",
                      "İBB kütüphanelerinde giriş ve üyelik için ücret alınmaz. Ödünç kitap "
                      "almak için üyelik gerekir, içeride okumak için gerekmez. Çocuk bölümü "
-                     "ve etkinlik takvimi kütüphaneden kütüphaneye değişir; gitmeden önce "
-                     "aramanız en doğrusu — bu sitedeki her kütüphane sayfasında telefon "
-                     "numarası var.",
+                     "ve etkinlik takvimi kütüphaneden kütüphaneye değişir. Hangi "
+                     "kütüphanede çocuk bölümü olduğu İBB'nin açık veri setinde yer "
+                     "almıyor; bu yüzden burada da yazmıyoruz — gitmeden önce aramanız en "
+                     "doğrusu, bu sitedeki her kütüphane sayfasında telefon numarası var.",
                  ]},
                 {"baslik": "Hangi ilçede kaç kütüphane var?",
                  "paragraflar": ["İBB'nin açık veri kaydına göre dağılım:"],
@@ -200,7 +205,7 @@ def main() -> None:
                  ],
                  "tablo": {
                      "basliklar": ["Yeşil alan", "İlçe", "Tür", "Büyüklük"],
-                     "satirlar": [[y["ad"], y["ilce"], y["tur"].replace("_", " ").title(),
+                     "satirlar": [[y["ad"], y["ilce"], ALT_TUR.get(y["tur"], "Yeşil alan"),
                                    binlik(y["alan_m2"]) + " m²"] for y in buyuk_park]}},
                 {"baslik": "Büyük park her zaman iyi park mı?",
                  "paragraflar": [

@@ -71,8 +71,12 @@ PARK_SAYFA_ESIGI = 50_000
 YESIL_TURLER = {"park", "koru", "mesire", "kent_ormani", "hatira_ormani"}
 
 # Kaynakta adlar BÜYÜK HARFten .title() ile dönüştürülmüş; kısaltmalar bozulmuş.
-KISALTMA = {"Ibb": "İBB", "Ido": "İDO", "Iett": "İETT", "Tem": "TEM", "Iski": "İSKİ",
-            "Ipa": "İPA", "Iski": "İSKİ", "Crr": "CRR", "Ii": "II", "Iii": "III"}
+# Hem ASCII I'li (eski _baslik çıktısı) hem noktalı İ'li (düzeltilmiş çıktı) biçim:
+# _tr_bas artık "IBB" -> "İbb" üretiyor, KISALTMA yalnız "Ibb" arıyordu ve kısaltma bozuk kalıyordu.
+KISALTMA = {"Ibb": "İBB", "İbb": "İBB", "Ido": "İDO", "İdo": "İDO",
+            "Iett": "İETT", "İett": "İETT", "Tem": "TEM", "Iski": "İSKİ", "İski": "İSKİ",
+            "Ipa": "İPA", "İpa": "İPA", "Crr": "CRR", "Ii": "II", "Iii": "III",
+            "Ido'": "İDO'"}
 
 
 # Ham kaynak dosyalar 52 MB; depoya girmez, eksikse portaldan indirilir.
@@ -98,6 +102,39 @@ def ham_indir() -> None:
         istek = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         with urllib.request.urlopen(istek, timeout=180) as y:
             p.write_bytes(y.read())
+
+
+# Kaynak metin onarımları -----------------------------------------------------
+# Kaynakta doğrulanmış yazım hataları. Aynı veri setinde doğrusu da geçtiği için
+# (ör. "İBB Belgradkapı Kara Surları Ziyaretçi Merkezi") düzeltme güvenli.
+AD_DUZELT = {"Berlgradkapı": "Belgradkapı"}
+
+
+def ad_onar(ad: str) -> str:
+    for yanlis, dogru in AD_DUZELT.items():
+        ad = ad.replace(yanlis, dogru)
+    return ad
+
+
+def gun_onar(gun: str) -> str:
+    """"Hergün" TDK'ya göre ayrı yazılır; 50 kayıtta bitişik geliyor."""
+    return re.sub(r"(?i)\bher\s*g[üu]n\b", "Her gün", (gun or "").strip())
+
+
+def adres_onar(adres: str) -> str:
+    """Adresi cümleye gömülebilir hale getirir.
+
+    Kaynakta adresler "…Bakırköy/İst.", "…Fatih, İstanbul," ya da "…Kadıköy / istanbul"
+    gibi bitiyor; şablon sonuna nokta ekleyince "İst.." ve "İstanbul,." çıkıyordu.
+    """
+    a = " ".join((adres or "").split())
+    if not a:
+        return ""
+    a = re.sub(r"(?i)/\s*[iİ]st\.?$", "/İstanbul", a)
+    a = re.sub(r"(?i)/\s*istanbul\b", "/İstanbul", a)
+    a = re.sub(r"\s+,", ",", a)
+    a = re.sub(r"\bPtt\b", "PTT", a)
+    return a.rstrip(" .,;/")
 
 
 def tr_alt(s: str) -> str:
@@ -256,10 +293,10 @@ def muze_kutuphane(kayitlar: list[dict], koordinat: dict) -> list[dict]:
         if c and ist_ici(c["lat"], c["lng"]):
             lat, lng, kkaynak = c["lat"], c["lng"], c["kaynak"]
         out.append({
-            "ad": temiz_ad(k["ad"]), "tur": k["tur"], "kategori": k["tur"], "ilce": ilce,
-            "adres": " ".join((k.get("adres") or "").split()),
+            "ad": ad_onar(temiz_ad(k["ad"])), "tur": k["tur"], "kategori": k["tur"], "ilce": ilce,
+            "adres": adres_onar(k.get("adres")),
             "telefon": " ".join((k.get("telefon") or "").split()),
-            "saat": (k.get("saat") or "").strip(), "gun": (k.get("gun") or "").strip(),
+            "saat": (k.get("saat") or "").strip(), "gun": gun_onar(k.get("gun")),
             "acilis_yili": str(k.get("acilis_yili") or "").strip(),
             "lat": lat, "lng": lng, "koordinat_kaynak": kkaynak, "alan_m2": None,
             "kapali": True,
@@ -278,7 +315,7 @@ def kultur_merkezleri() -> list[dict]:
         ad = " ".join(str(s[0] or "").split())
         if not ad:
             continue
-        adres = " ".join(str(s[1] or "").split())
+        adres = adres_onar(str(s[1] or ""))
         ilce = ilce_bul(adres)
         if not ilce:
             continue
@@ -305,7 +342,7 @@ def sosyal_tesisler() -> list[dict]:
         if not ad:
             continue
         lat, lng = _sayi(s[1]), _sayi(s[2])
-        adres = " ".join(str(s[3] or "").split())
+        adres = adres_onar(str(s[3] or ""))
         ilce = ilce_bul(adres)
         if not ilce:
             continue
@@ -324,6 +361,18 @@ def sosyal_tesisler() -> list[dict]:
 
 
 # ------------------------------------------------------------------- tiyatro sahneleri
+def oyun_adi(ham: str) -> str:
+    """Oyun adını yayına hazırlar: Türkçe başlık + bağlaç/kısaltma onarımı.
+
+    Kaynak BÜYÜK HARF; yalnız tr_baslik'ten geçirmek "Bekçi İle Postacı",
+    "Karagöz' Ün Uykusu", "İbbşt" gibi bozuk adlar bırakıyordu.
+    """
+    ad = temiz_ad(tr_baslik(" ".join((ham or "").split())))
+    # Kesme işaretinden sonraki ek küçük yazılır ve araya boşluk girmez.
+    ad = re.sub(r"'\s*([A-ZÇĞİÖŞÜ])", lambda m: "'" + tr_alt(m.group(1)), ad)
+    return re.sub(r"\b(İbbşt|İbbst)\b", "İBBŞT", re.sub(r"\bMsgsü\b", "MSGSÜ", ad))
+
+
 def tiyatro_sahneleri(ilce_cozucu) -> tuple[list[dict], dict]:
     """Çocuk oyunu sahnelenen İBB Şehir Tiyatroları sahneleri.
 
@@ -348,7 +397,7 @@ def tiyatro_sahneleri(ilce_cozucu) -> tuple[list[dict], dict]:
         ilce = ilce_cozucu(ad, lat, lng)
         if not ilce:
             continue
-        oyunlar = sorted({tr_baslik(r["PLAY_NAME"].strip()) for r in kayitlar})
+        oyunlar = sorted({oyun_adi(r["PLAY_NAME"]) for r in kayitlar})
         yillar = sorted({r["PLAY_DATE"][:4] for r in kayitlar})
         out.append({
             "ad": ad, "tur": "tiyatro", "kategori": "tiyatro", "ilce": ilce,

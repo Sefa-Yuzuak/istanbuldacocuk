@@ -139,6 +139,16 @@ p { margin: 0 0 .85rem; }
 .rozet { font-size: .76rem; background: #f1f6f8; color: #3f5762; border-radius: 6px; padding: .12rem .45rem; }
 .rozet.iyi { background: #e4f5ec; color: var(--yesil); }
 
+/* ---------------------------------------------------------------- fotoğraflar */
+.kapak { margin: .8rem 0 1.2rem; }
+.kapak img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover;
+             border-radius: var(--yuvarlak); border: 1px solid var(--cizgi); background: #eef4f6; }
+.foto-kunye { font-size: .78rem; color: var(--soluk); margin-top: .35rem; }
+.foto-kunye a { color: var(--soluk); }
+.kart.fotolu { padding-top: 0; overflow: hidden; }
+.kart-foto { display: block; margin: 0 -1rem .7rem; aspect-ratio: 16 / 9; background: #eef4f6; }
+.kart-foto img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
 /* ---------------------------------------------------------------- tablolar */
 .tablo-sar { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--cizgi);
              border-radius: var(--yuvarlak); background: #fff; }

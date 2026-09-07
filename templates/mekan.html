@@ -6,6 +6,22 @@
      · <a href="/{{ m.yaka_bilgi.slug }}/">{{ m.yaka_bilgi.ad }}</a></p>
   <h1>{{ m.ad_ayirt }}</h1>
 
+  {% if m.foto %}
+  <figure class="kapak">
+    <img src="/static/img/mekan/{{ m.foto.lg }}" srcset="/static/img/mekan/{{ m.foto.sm }} 640w, /static/img/mekan/{{ m.foto.lg }} 1200w"
+         sizes="(max-width: 700px) 100vw, 1120px" width="1200" height="675"
+         alt="{{ m.ad }}, {{ m.ilce }}" fetchpriority="high">
+    <figcaption class="foto-kunye">
+      {% if m.foto.kaynak == "google" %}
+        Fotoğraf: {{ m.foto.yazar }} — Google Haritalar{% if m.foto.sayfa %} · <a href="{{ m.foto.sayfa }}" rel="nofollow noopener" target="_blank">kaynak</a>{% endif %}
+      {% else %}
+        Fotoğraf: {{ m.foto.yazar }}{% if m.foto.lisans_url %} · <a href="{{ m.foto.lisans_url }}" rel="license nofollow noopener" target="_blank">{{ m.foto.lisans }}</a>{% else %} · {{ m.foto.lisans }}{% endif %}
+        · <a href="{{ m.foto.sayfa }}" rel="nofollow noopener" target="_blank">Wikimedia Commons</a>
+      {% endif %}
+    </figcaption>
+  </figure>
+  {% endif %}
+
   <p class="kisa-cevap">{{ kisa }}</p>
 
   <section class="bolum">

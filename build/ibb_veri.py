@@ -78,20 +78,34 @@ def _alan_ve_merkez(halka: list) -> tuple[float, float, float]:
     return cy / olcek_y, cx / olcek_x, alan
 
 
+def _tr_bas(p: str) -> str:
+    """Sözcüğün ilk harfini TÜRKÇE kurala göre büyütür.
+
+    `"i".upper()` ASCII "I" verir; İSTANBUL/İDEALTEPE/İNÖNÜ küçültülüp geri
+    büyütülünce "Istanbul", "Idealtepe", "Inönü" oluyordu (88 sayfada görünür).
+    """
+    if not p:
+        return p
+    ilk = {"i": "İ", "ı": "I"}.get(p[0], p[0].upper())
+    return ilk + p[1:]
+
+
+def _kucult(ad: str) -> str:
+    return ad.replace("I", "ı").replace("İ", "i").lower()
+
+
 def _ilce_duzelt(ad: str) -> str:
     """BEYOĞLU -> Beyoğlu. Türkçe büyük-küçük harf tuzağına dikkat."""
     ad = (ad or "").strip()
     if not ad:
         return ""
-    kucuk = ad.replace("I", "ı").replace("İ", "i").lower()
-    return " ".join(p[:1].upper() + p[1:] for p in kucuk.split())
+    return " ".join(_tr_bas(p) for p in _kucult(ad).split())
 
 
 def _baslik(ad: str) -> str:
     ad = " ".join((ad or "").split())
     if ad.isupper():
-        kucuk = ad.replace("I", "ı").replace("İ", "i").lower()
-        ad = " ".join(p[:1].upper() + p[1:] for p in kucuk.split())
+        ad = " ".join(_tr_bas(p) for p in _kucult(ad).split())
     return ad
 
 

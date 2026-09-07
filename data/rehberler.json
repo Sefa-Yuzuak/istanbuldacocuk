@@ -110,13 +110,13 @@
      "Alaaddin'in Sihirli Lambası",
      "Anatole Sokak Oyuncuları \"Ben Sen O Biz Siz Onlar\"",
      "Bana Bir Masal Anlat / Kuzguncuk Sanat Tiyatrosu",
-     "Bekçi İle Postacı",
+     "Bekçi ile Postacı",
      "Benim Güzel Pabuçlarım",
      "Benim Küçük Yıldızım",
      "Berfu'nun Rüyası (Berko Çocuk Tiyatrosu)",
      "Berko Çocuk Tiyatrosu \"Berfu'nun Rüyası\"",
-     "Bilge Aşçı Ve Çınar'ın Hikayesi / Tiyatro Pan",
-     "Bilge Aşçı Ve Çınar’ın Hikayesi (Pan Tiyatro)",
+     "Bilge Aşçı ve Çınar'ın Hikayesi / Tiyatro Pan",
+     "Bilge Aşçı ve Çınar’ın Hikayesi (Pan Tiyatro)",
      "Bir Gece Masalı",
      "Bir Gün Ayakkabımın Teki",
      "Bir Kümes Hikayesi",
@@ -175,7 +175,7 @@
     "baslik": "Neden kütüphane?",
     "paragraflar": [
      "Çocukla dışarı çıkmanın maliyeti hızla artıyor: bir oyun alanı, bir kafe, iki bilet derken hafta sonu pahalıya geliyor. Halk kütüphanesi bunun tersi — kapalı, ısıtılan, sessiz ve tamamen ücretsiz bir mekân.",
-     "İBB kütüphanelerinde giriş ve üyelik için ücret alınmaz. Ödünç kitap almak için üyelik gerekir, içeride okumak için gerekmez. Çocuk bölümü ve etkinlik takvimi kütüphaneden kütüphaneye değişir; gitmeden önce aramanız en doğrusu — bu sitedeki her kütüphane sayfasında telefon numarası var."
+     "İBB kütüphanelerinde giriş ve üyelik için ücret alınmaz. Ödünç kitap almak için üyelik gerekir, içeride okumak için gerekmez. Çocuk bölümü ve etkinlik takvimi kütüphaneden kütüphaneye değişir. Hangi kütüphanede çocuk bölümü olduğu İBB'nin açık veri setinde yer almıyor; bu yüzden burada da yazmıyoruz — gitmeden önce aramanız en doğrusu, bu sitedeki her kütüphane sayfasında telefon numarası var."
     ]
    },
    {
@@ -360,19 +360,19 @@
       [
        "15 Temmuz Kent Ormanı 3. Etap",
        "Eyüpsultan",
-       "Kent Ormani",
+       "Kent ormanı",
        "2.227.626 m²"
       ],
       [
        "15 Temmuz Kent Ormanı 2. Etap",
        "Eyüpsultan",
-       "Kent Ormani",
+       "Kent ormanı",
        "1.623.680 m²"
       ],
       [
        "15 Temmuz Kent Ormanı 1. Etap",
        "Eyüpsultan",
-       "Kent Ormani",
+       "Kent ormanı",
        "1.522.150 m²"
       ],
       [
@@ -384,7 +384,7 @@
       [
        "Hacıosman Atatürk Kent Ormanı ve Derbent Bölümü",
        "Sarıyer",
-       "Kent Ormani",
+       "Kent ormanı",
        "1.076.206 m²"
       ],
       [
@@ -408,7 +408,7 @@
       [
        "Rahmi Demir Kent Ormanı",
        "Çekmeköy",
-       "Kent Ormani",
+       "Kent ormanı",
        "331.581 m²"
       ],
       [
@@ -426,7 +426,7 @@
       [
        "Fatih Çeşmesi Mesire Alanı",
        "Eyüpsultan",
-       "Mesire",
+       "Mesire alanı",
        "290.032 m²"
       ],
       [
@@ -468,7 +468,7 @@
       [
        "Sadabat Mesire Alanı",
        "Kağıthane",
-       "Mesire",
+       "Mesire alanı",
        "207.425 m²"
       ],
       [

@@ -1,5 +1,10 @@
 {% macro kart(m) %}
-<article class="kart">
+<article class="kart{% if m.foto %} fotolu{% endif %}">
+  {% if m.foto %}
+  <a class="kart-foto" href="{{ m.url }}" tabindex="-1" aria-hidden="true">
+    <img src="/static/img/mekan/{{ m.foto.sm }}" width="640" height="360" alt="" loading="lazy" decoding="async">
+  </a>
+  {% endif %}
   <a class="kart-bag" href="{{ m.url }}">
     <span class="kart-ikon" aria-hidden="true">{{ m.kat.ikon }}</span>
     <span class="kart-ad">{{ m.ad_ayirt }}</span>

@@ -35,27 +35,33 @@ TEMPLATES = KOK / "templates"
 FUTBOL_SAHASI_M2 = 7140          # 105 × 68 m, FIFA standart saha
 
 KATEGORILER = {
-    "park": {"ad": "Park, Koru ve Ormanlar", "tekil": "Yeşil alan", "slug": "park",
+    "park": {"ad": "Park, Koru ve Ormanlar", "cumle": "parklar, korular ve ormanlar",
+             "tekil": "Yeşil alan", "slug": "park",
              "ikon": "🌳", "schema": "Park",
              "aciklama": "İBB'nin yeşil alan envanterindeki büyük parklar, korular, "
                          "mesire alanları ve kent ormanları. Girişleri ücretsiz."},
-    "muze": {"ad": "İBB Müzeleri", "tekil": "Müze", "slug": "muze",
+    "muze": {"ad": "İBB Müzeleri", "cumle": "İBB müzeleri", "tekil": "Müze", "slug": "muze",
              "ikon": "🏛", "schema": "Museum",
              "aciklama": "İstanbul Büyükşehir Belediyesi'ne bağlı müzeler; adres, "
                          "çalışma gün ve saatleriyle."},
-    "kutuphane": {"ad": "İBB Kütüphaneleri", "tekil": "Kütüphane", "slug": "kutuphane",
+    "kutuphane": {"ad": "İBB Kütüphaneleri", "cumle": "İBB kütüphaneleri",
+                  "tekil": "Kütüphane", "slug": "kutuphane",
                   "ikon": "📚", "schema": "Library",
-                  "aciklama": "İBB'ye bağlı halk kütüphaneleri. Üyelik ve kullanım ücretsiz; "
-                              "birçoğunda çocuk bölümü var."},
-    "tiyatro": {"ad": "Çocuk Tiyatrosu Sahneleri", "tekil": "Tiyatro sahnesi",
+                  "aciklama": "İBB'ye bağlı halk kütüphaneleri. Giriş ve üyelik ücretsiz. "
+                              "Çocuk bölümü olup olmadığı açık veride yer almıyor; "
+                              "gitmeden önce kütüphaneyi arayın."},
+    "tiyatro": {"ad": "Çocuk Tiyatrosu Sahneleri", "cumle": "çocuk tiyatrosu sahneleri",
+                "tekil": "Tiyatro sahnesi",
                 "slug": "cocuk-tiyatrosu", "ikon": "🎭", "schema": "PerformingArtsTheater",
                 "aciklama": "İBB Şehir Tiyatroları'nın çocuk oyunu sahnelediği sahneler; "
                             "hangi sahnede kaç çocuk oyunu oynandığı açık veriden."},
-    "kultur": {"ad": "Kültür Merkezleri", "tekil": "Kültür merkezi", "slug": "kultur-merkezi",
+    "kultur": {"ad": "Kültür Merkezleri", "cumle": "kültür merkezleri",
+               "tekil": "Kültür merkezi", "slug": "kultur-merkezi",
                "ikon": "🎨", "schema": "CivicStructure",
                "aciklama": "İBB kültür merkezleri; hangisinde çocuk birimi bulunduğu "
                            "kurumun kendi verisinden."},
-    "tesis": {"ad": "İBB Sosyal Tesisleri", "tekil": "Sosyal tesis", "slug": "sosyal-tesis",
+    "tesis": {"ad": "İBB Sosyal Tesisleri", "cumle": "İBB sosyal tesisleri",
+              "tekil": "Sosyal tesis", "slug": "sosyal-tesis",
               "ikon": "☕", "schema": "LocalBusiness",
               "aciklama": "İBB'nin işlettiği sosyal tesisler; çoğu park, koru ya da "
                           "sahil içinde, aileyle oturmaya uygun."},
@@ -168,9 +174,44 @@ def alan_yazi(m2) -> str:
     return metin
 
 
+GUN_KODU = {"pazartesi": "Mo", "salı": "Tu", "çarşamba": "We", "perşembe": "Th",
+            "cuma": "Fr", "cumartesi": "Sa", "pazar": "Su"}
+
+
+def schema_saat(m: dict) -> str | None:
+    """schema.org openingHours biçimi ("Tu-Su 10:00-18:00") ya da None.
+
+    Ham Türkçe metin ("Salı-Pazar 10:00 - 18:00") geçersiz yapısal veridir; Google
+    ayrıştıramaz. Çeviremediğimizde alanı hiç yayımlamıyoruz — yanlış işaretlemektense
+    eksik bırakmak doğru.
+    """
+    gun, saat = (m.get("gun") or "").strip(), (m.get("saat") or "").strip()
+    saat = saat.replace(" ", "")
+    ss = re.fullmatch(r"(\d{1,2}:\d{2})-(\d{1,2}:\d{2})", saat)
+    if not ss:
+        return None
+    araligi = f"{ss.group(1)}-{ss.group(2)}"
+    g = gun.lower().replace("i̇", "i")
+    if not gun or re.search(r"her\s*gün", g):
+        return f"Mo-Su {araligi}"
+    parca = [p.strip() for p in g.split("-")]
+    if len(parca) == 2 and all(p in GUN_KODU for p in parca):
+        return f"{GUN_KODU[parca[0]]}-{GUN_KODU[parca[1]]} {araligi}"
+    if len(parca) == 1 and parca[0] in GUN_KODU:
+        return f"{GUN_KODU[parca[0]]} {araligi}"
+    return None
+
+
 def saat_yazi(m: dict) -> str:
-    parca = [x for x in (m.get("gun"), m.get("saat")) if x]
-    return " ".join(parca)
+    """Gün + saat. Gün alanı zaten saat içeriyorsa saati tekrarlama.
+
+    İtfaiye Müzesi'nin gün alanı tam programı taşıyor ("Hafta içi: 09:00 - 17:00 /
+    Hafta sonu: Kapalı"); saati eklemek "Hafta sonu: Kapalı 09:00 - 17:00" üretiyordu.
+    """
+    gun, saat = m.get("gun") or "", m.get("saat") or ""
+    if gun and re.search(r"\d{1,2}[:.]\d{2}", gun):
+        return gun
+    return " ".join(x for x in (gun, saat) if x)
 
 
 # ------------------------------------------------------------------------- hazırlama
@@ -266,8 +307,10 @@ def kisa_cevap(m: dict) -> str:
         return (f"{m['ad']}, {yer}'nda bulunan bir İBB müzesi."
                 + (f" Açık olduğu saatler: {m['saat_yazi']}." if m["saat_yazi"] else ""))
     if m["kategori"] == "tiyatro":
-        return (f"{m['ad']}, {yer}'nda bulunan bir İBB Şehir Tiyatroları sahnesi; "
-                f"çocuk oyunları da bu sahnede oynanıyor.")
+        return (f"{m['ad']}, {yer}'nda bulunan bir İBB Şehir Tiyatroları sahnesi. "
+                f"Kurumun {m['veri_yillari']} açık veri kayıtlarında bu sahnede "
+                f"{binlik(m['cocuk_seans'])} çocuk oyunu seansı görünüyor; güncel program "
+                f"için İBB Şehir Tiyatroları'nın kendi sitesine bakın.")
     if m["kategori"] == "kultur":
         return (f"{m['ad']}, {yer}'nda bulunan bir İBB kültür merkezi."
                 + (" Çocuk birimi var." if m.get("cocuk_birimi") else ""))
@@ -303,11 +346,14 @@ def mekan_schema(m: dict, site: dict) -> dict:
         s["hasMap"] = m["maps_url"]
     if m.get("telefon"):
         s["telephone"] = m["telefon"]
-    if m["saat_yazi"]:
-        s["openingHours"] = m["saat_yazi"]
+    _oh = schema_saat(m)
+    if _oh:
+        s["openingHours"] = _oh
     if m.get("alan_m2"):
         s["additionalProperty"] = [{"@type": "PropertyValue", "name": "Alan",
                                     "value": m["alan_m2"], "unitCode": "MTK"}]
+    if m.get("foto"):
+        s["image"] = f"{site['url']}/static/img/mekan/{m['foto']['lg']}"
     return s
 
 
@@ -320,6 +366,9 @@ def liste_schema(site, ad, yol, mekanlar):
 
 
 def sss_schema(sorular):
+    """Boş FAQPage yayımlanmaz: Google en az bir Question ister, boş blok hatalı sayılır."""
+    if not sorular:
+        return None
     return {"@context": "https://schema.org", "@type": "FAQPage",
             "mainEntity": [{"@type": "Question", "name": s["s"],
                             "acceptedAnswer": {"@type": "Answer", "text": s["c"]}}
@@ -337,9 +386,10 @@ def mekan_sss(m: dict) -> list[dict]:
                        f"ve bakım günlerinde değişebilir; gitmeden önce arayın."})
     if m["kategori"] == "park":
         s.append({"s": f"{m['ad']} girişi ücretli mi?",
-                  "c": "Hayır. İBB'nin yeşil alan envanterindeki parklar, korular ve kent "
-                       "ormanları halka açık ve girişleri ücretsizdir. Tesis, otopark veya "
-                       "büfe hizmetleri ücretli olabilir."})
+                  "c": "İBB'nin yeşil alan envanterindeki parklar, korular ve kent ormanları "
+                       "halka açık alanlardır ve girişleri için ücret alınmaz. İBB veri "
+                       "setinde ücret sütunu bulunmuyor; otopark, tesis ve büfe hizmetleri "
+                       "ile bazı mesire alanlarında hafta sonu uygulamaları ücretli olabilir."})
         if m["alan_yazi"]:
             s.append({"s": f"{m['ad']} ne kadar büyük?",
                       "c": f"İBB kaydına göre {m['alan_yazi']}."
@@ -350,9 +400,10 @@ def mekan_sss(m: dict) -> list[dict]:
                   "c": "İBB kütüphanelerinde giriş ve üyelik ücretsizdir. Ödünç kitap almak "
                        "için üyelik gerekir; içeride okumak için gerekmez."})
     if m["kategori"] == "muze":
-        s.append({"s": f"{m['ad']} giriş ücreti ne kadar?",
-                  "c": "Giriş ücreti İBB'nin açık veri kaydında yer almıyor. Güncel ücret ve "
-                       "indirim durumu için müzeyi arayın ya da İBB'nin müze sayfasına bakın."})
+        s.append({"s": f"{m['ad']} giriş ücretini nereden öğrenebilirim?",
+                  "c": "Giriş ücreti İBB'nin açık veri setinde yer almadığı için burada da "
+                       "yazmıyoruz. Güncel ücret ve indirim durumunu müzeyi arayarak ya da "
+                       "İBB'nin kendi müze sayfasından öğrenebilirsiniz."})
     if m["kategori"] == "tiyatro":
         s.append({"s": f"{m['ad']} çocuk oyunu sahneliyor mu?",
                   "c": f"İBB Şehir Tiyatroları'nın {m['veri_yillari']} dönemine ait açık "
@@ -413,6 +464,10 @@ def main() -> None:
     site["veri_tarihi_tr"] = date.fromisoformat(site["veri_tarihi"]).strftime("%d.%m.%Y")
 
     mekanlar = hazirla(yukle("mekanlar.json"), site)
+    # Gerçek fotoğraflar (build/foto.py): yoksa None kalır, sayfa emoji kapakla çıkar.
+    fotolar = yukle("foto.json", {})
+    for m in mekanlar:
+        m["foto"] = fotolar.get(m["ad"]) or None
     yesil = yukle("yesil_alanlar.json")
     for y in yesil:
         y["alan_yazi"] = alan_yazi(y.get("alan_m2"))
@@ -480,7 +535,7 @@ def main() -> None:
 
     ortak = {"site": site, "ilceler": ilceler, "kategoriler": kategoriler, "yakalar": yakalar,
              "rehberler": rehberler, "toplam": len(mekanlar), "yesil_toplam": len(yesil)}
-    yollar: list[tuple[str, str]] = []
+    yollar: list[tuple[str, str, str | None]] = []
 
     def tam_baslik(b: str) -> str:
         """Site adı yalnızca 60 karaktere sığıyorsa eklenir; yer adları kısaltılmaz."""
@@ -496,11 +551,12 @@ def main() -> None:
                 return aday
         return m["ad_ayirt"]
 
-    def sayfa(yol, sablon, baslik, aciklama, schema, oncelik="0.6", **kw):
+    def sayfa(yol, sablon, baslik, aciklama, schema, oncelik="0.6", og_gorsel=None, **kw):
         yaz(yol, env.get_template(sablon).render(
             baslik=baslik, tam_baslik=tam_baslik(baslik), meta_desc=kisalt(aciklama),
-            canonical=yol, schema=schema, **ortak, **kw))
-        yollar.append((yol, oncelik))
+            canonical=yol, schema=[x for x in schema if x], og_gorsel=og_gorsel,
+            **ortak, **kw))
+        yollar.append((yol, oncelik, og_gorsel))
 
     # ---------------------------------------------------------------- ana sayfa
     sayfa("/", "home.html",
@@ -543,17 +599,17 @@ def main() -> None:
             url = f"{y['url']}{k['slug']}/"
             sayfa(url, "liste.html",
                   f"{y['ad']} {k['ad']}: {len(uyeler)} Yer",
-                  f"İstanbul {y['ad']}'nda {k['ad'].lower()}: {len(uyeler)} kayıt, "
+                  f"İstanbul {y['ad']}'nda {k['cumle']}: {len(uyeler)} kayıt, "
                   f"ilçe, adres ve koordinatıyla. {k['aciklama']}",
                   [liste_schema(site, f"{y['ad']} {k['ad']}", url, uyeler),
-                   sss_schema(liste_sss(f"{y['ad']} {k['ad'].lower()}", uyeler)),
+                   sss_schema(liste_sss(f"{y['ad']}'ndaki {k['cumle']}", uyeler)),
                    kirintilar(site, (y["ad"], y["url"]), (k["ad"], url))],
-                  oncelik="0.8", liste=uyeler, liste_basligi=f"{y['ad']} {k['ad'].lower()}",
+                  oncelik="0.8", liste=uyeler, liste_basligi=f"{y['ad']} {k['cumle']}",
                   giris=(f"{k['aciklama']} İstanbul {y['ad']}'nda bu türden {len(uyeler)} kayıt "
                          f"var; {len({m['ilce'] for m in uyeler})} ilçeye dağılmış durumda. "
                          f"{y['aciklama']} Listedeki her kayıt İBB Açık Veri Portalı'ndan "
                          f"geliyor; kaynağı ve son doğrulama tarihi kendi sayfasında yazılı."),
-                  sss=liste_sss(f"{y['ad']} {k['ad'].lower()}", uyeler),
+                  sss=liste_sss(f"{y['ad']}'ndaki {k['cumle']}", uyeler),
                   kirinti=[(y["ad"], y["url"]), (k["ad"], url)])
 
     # ---------------------------------------------------------------- kategori sayfaları
@@ -563,10 +619,10 @@ def main() -> None:
               f"İstanbul'daki {len(k['mekanlar'])} {k['tekil'].lower()}; ilçe, adres, "
               f"koordinat ve resmî kaynağıyla. {k['aciklama']}",
               [liste_schema(site, k["ad"], k["url"], k["mekanlar"]),
-               sss_schema(liste_sss(f"İstanbul {k['ad'].lower()}", k["mekanlar"])),
+               sss_schema(liste_sss(f"İstanbul'daki {k['cumle']}", k["mekanlar"])),
                kirintilar(site, (k["ad"], k["url"]))],
               oncelik="0.9", liste=k["mekanlar"], liste_basligi=k["ad"], giris=k["aciklama"],
-              sss=liste_sss(f"İstanbul {k['ad'].lower()}", k["mekanlar"]),
+              sss=liste_sss(f"İstanbul'daki {k['cumle']}", k["mekanlar"]),
               kirinti=[(k["ad"], k["url"])])
 
     # ---------------------------------------------------------------- ilçe sayfaları
@@ -580,8 +636,11 @@ def main() -> None:
         park_url = f"{i['url']}parklar/"
         sayfa(i["url"], "liste.html",
               f"{bulunma(i['ad'])} Çocukla Gidilecek Yerler",
-              f"{i['ad']} ilçesinde çocukla gidilebilecek {len(i['mekanlar'])} yer ve "
-              f"ilçedeki {len(i['yesil'])} park/korunun tam listesi — İBB açık verisinden.",
+              (f"{i['ad']} ilçesinde çocukla gidilebilecek {len(i['mekanlar'])} yer ve "
+               f"ilçedeki {len(i['yesil'])} park/korunun tam listesi — İBB açık verisinden."
+               if i["mekanlar"] else
+               f"{i['ad']} ilçesindeki {len(i['yesil'])} park, koru ve mesire alanının tam "
+               f"listesi — büyüklükleri ve konumlarıyla, İBB açık verisinden."),
               [liste_schema(site, f"{i['ad']} mekânları", i["url"], i["mekanlar"]),
                sss_schema(liste_sss(f"{i['ad']} mekânları", i["mekanlar"], ek=[
                    {"s": f"{bulunma(i['ad'])} kaç park var?",
@@ -593,9 +652,10 @@ def main() -> None:
               oncelik="0.8", liste=i["mekanlar"], liste_basligi=f"{i['ad']} — çocukla gidilecek yerler",
               giris=(f"{i['ad']}, İstanbul'un {i['yaka']['ad']}'nda yer alıyor. İBB'nin "
                      f"açık veri kayıtlarına göre ilçede "
-                     + (", ".join(f"{sayi} {ad}" for ad, sayi in dokum(i["mekanlar"]))
-                        or "kendi sayfası açılan bir mekân")
-                     + f" bulunuyor; ayrıca İBB envanterinde ilçe için {len(i['yesil'])} park, "
+                     + (", ".join(f"{sayi} {ad}" for ad, sayi in dokum(i["mekanlar"])) + " bulunuyor"
+                        if i["mekanlar"] else
+                        "kendi sayfası açılan bir müze, kütüphane ya da büyük park bulunmuyor")
+                     + f"; ayrıca İBB envanterinde ilçe için {len(i['yesil'])} park, "
                      f"koru ve mesire alanı kayıtlı ve bunların toplam büyüklüğü "
                      f"{binlik(i['yesil_m2'])} m². Aşağıdaki kayıtların hepsi resmî açık "
                      f"veriden derlendi; her birinin kaynağı ve doğrulama tarihi kendi "
@@ -682,6 +742,7 @@ def main() -> None:
                kirintilar(site, ("İlçeler", "/ilce/"), (m["ilce"], f"/ilce/{m['ilce_slug']}/"),
                           (m["ad"], m["url"]))],
               oncelik="0.7", m=m, sss=sss, kisa=kisa_cevap(m), yakin=yakin, ayni_ilce=ayni_ilce,
+              og_gorsel=(f"/static/img/mekan/{m['foto']['lg']}" if m.get("foto") else None),
               kirinti=[("İlçeler", "/ilce/"), (m["ilce"], f"/ilce/{m['ilce_slug']}/"),
                        (m["ad"], m["url"])])
 
@@ -698,8 +759,8 @@ def main() -> None:
     if rehberler:
         sayfa("/rehber/", "rehber_dizini.html",
               "İstanbul'da Çocukla Gezi Rehberleri",
-              "İstanbul'da çocukla nereye gidilir, hangi kütüphanede çocuk bölümü var, "
-              "hangi sahnede çocuk oyunu oynuyor — kaynaklı rehberler.",
+              "İstanbul'da çocukla nereye gidilir, hangi sahnede çocuk oyunu sahnelendi, "
+              "hangi park kaç metrekare — hepsi İBB açık verisinden hesaplanmış rehberler.",
               [kirintilar(site, ("Rehberler", "/rehber/"))], oncelik="0.8",
               kirinti=[("Rehberler", "/rehber/")])
     for r in rehberler:
@@ -743,10 +804,13 @@ def main() -> None:
 
     # ---------------------------------------------------------------- sitemap / robots
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
-          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    for yol, onc in yollar:
+          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+          'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">']
+    for yol, onc, gorsel in yollar:
+        img = (f"<image:image><image:loc>{site['url']}{gorsel}</image:loc></image:image>"
+               if gorsel else "")
         sm.append(f"  <url><loc>{site['url']}{yol}</loc>"
-                  f"<lastmod>{site['veri_tarihi']}</lastmod><priority>{onc}</priority></url>")
+                  f"<lastmod>{site['veri_tarihi']}</lastmod><priority>{onc}</priority>{img}</url>")
     sm.append("</urlset>")
     (DIST / "sitemap.xml").write_text("\n".join(sm), encoding="utf-8")
 
@@ -782,10 +846,11 @@ def main() -> None:
         llms += [f"- [{r['baslik']}]({site['url']}{r['url']}): {r['ozet']}" for r in rehberler]
     (DIST / "llms.txt").write_text("\n".join(llms), encoding="utf-8")
 
+    fotolu = sum(1 for m in mekanlar if m.get("foto"))
     supheli = sum(1 for m in mekanlar if m.get("koordinat_durum") == "supheli")
     print(f"✓ {len(yollar)} sayfa | {len(mekanlar)} mekân | {len(yesil)} yeşil alan | "
           f"{len(ilceler)} ilçe | {len(rehberler)} rehber -> {DIST}")
-    print(f"  koordinatlı {len(noktalar)} | ücretsiz {len(ucretsiz)} | kapalı {len(kapali)}"
+    print(f"  koordinatlı {len(noktalar)} | fotoğraflı {fotolu} | ücretsiz {len(ucretsiz)} | kapalı {len(kapali)}"
           + (f" | ŞÜPHELİ KOORDİNAT {supheli}" if supheli else ""))
 
 

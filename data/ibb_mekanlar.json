@@ -14,7 +14,7 @@
   "kaynak": "İBB Açık Veri Portalı — İBB Kütüphaneleri Lokasyon, Çalışma Gün ve Saatleri"
  },
  {
-  "ad": "Burgazada Iskele Çıkışı Meydan Yeşil Alan",
+  "ad": "Burgazada İskele Çıkışı Meydan Yeşil Alan",
   "tur": "meydan",
   "ilce": "Adalar",
   "adres": "",
@@ -98,20 +98,6 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
-  "ad": "Burgazada Iskele Çocuk Parkı",
-  "tur": "park",
-  "ilce": "Adalar",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 40.881301,
-  "lng": 29.069264,
-  "alan_m2": 372,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
   "ad": "Burgazada Pazar Yeri Çınar Altı Yeşil Alan",
   "tur": "park",
   "ilce": "Adalar",
@@ -140,7 +126,7 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
-  "ad": "Burgazada Vapur Iskelesi Yeşil Alan",
+  "ad": "Burgazada Vapur İskelesi Yeşil Alan",
   "tur": "park",
   "ilce": "Adalar",
   "adres": "",
@@ -151,6 +137,20 @@
   "lat": 40.88246,
   "lng": 29.071149,
   "alan_m2": 104,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
+  "ad": "Burgazada İskele Çocuk Parkı",
+  "tur": "park",
+  "ilce": "Adalar",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 40.881301,
+  "lng": 29.069264,
+  "alan_m2": 372,
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
@@ -193,20 +193,6 @@
   "lat": 40.870424,
   "lng": 29.129906,
   "alan_m2": 308,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
-  "ad": "Büyükada Izzet Orbay Parkı",
-  "tur": "park",
-  "ilce": "Adalar",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 40.867236,
-  "lng": 29.13358,
-  "alan_m2": 858,
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
@@ -336,6 +322,20 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
+  "ad": "Büyükada İzzet Orbay Parkı",
+  "tur": "park",
+  "ilce": "Adalar",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 40.867236,
+  "lng": 29.13358,
+  "alan_m2": 858,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
   "ad": "Heybeliada Bahriye Çeşmesi Parkı Yeşil Alan",
   "tur": "park",
   "ilce": "Adalar",
@@ -406,20 +406,6 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
-  "ad": "Heybeliada Inönü Parkı",
-  "tur": "park",
-  "ilce": "Adalar",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 40.875124,
-  "lng": 29.099451,
-  "alan_m2": 2660,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
   "ad": "Heybeliada Koğuş Önü Yeşil Alan",
   "tur": "park",
   "ilce": "Adalar",
@@ -476,6 +462,20 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
+  "ad": "Heybeliada İnönü Parkı",
+  "tur": "park",
+  "ilce": "Adalar",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 40.875124,
+  "lng": 29.099451,
+  "alan_m2": 2660,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
   "ad": "Heybeliada Şehit Atilla Altıkat Parkı Yeşil Alan",
   "tur": "park",
   "ilce": "Adalar",
@@ -501,20 +501,6 @@
   "lat": 40.909407,
   "lng": 29.054935,
   "alan_m2": 825,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
-  "ad": "Kınalıada Itfaiye Önü Spor Aletleri",
-  "tur": "park",
-  "ilce": "Adalar",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 40.906253,
-  "lng": 29.055849,
-  "alan_m2": 242,
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
@@ -588,6 +574,20 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
+  "ad": "Kınalıada İtfaiye Önü Spor Aletleri",
+  "tur": "park",
+  "ilce": "Adalar",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 40.906253,
+  "lng": 29.055849,
+  "alan_m2": 242,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
   "ad": "Cemil Meriç Kütüphanesi",
   "tur": "kutuphane",
   "ilce": "Arnavutköy",
@@ -644,20 +644,6 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
-  "ad": "Içerenköy Meydanları",
-  "tur": "meydan",
-  "ilce": "Ataşehir",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 40.97193,
-  "lng": 29.118107,
-  "alan_m2": 2285,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
   "ad": "Merkez Cami Parkı",
   "tur": "meydan",
   "ilce": "Ataşehir",
@@ -669,6 +655,20 @@
   "lat": 40.968796,
   "lng": 29.114943,
   "alan_m2": 966,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
+  "ad": "İçerenköy Meydanları",
+  "tur": "meydan",
+  "ilce": "Ataşehir",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 40.97193,
+  "lng": 29.118107,
+  "alan_m2": 2285,
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
@@ -812,7 +812,7 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
-  "ad": "Florya Atatürk Ormanı Ve Ipa Yerleşkesi",
+  "ad": "Florya Atatürk Ormanı Ve İpa Yerleşkesi",
   "tur": "koru",
   "ilce": "Bakırköy",
   "adres": "",
@@ -1862,20 +1862,6 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
-  "ad": "Iski Anadolu Hisarı Yerli Suyu Memba Alanı",
-  "tur": "park",
-  "ilce": "Beykoz",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 41.087814,
-  "lng": 29.085433,
-  "alan_m2": 3877,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
   "ad": "Kılıçlı Mahalle Parkı",
   "tur": "park",
   "ilce": "Beykoz",
@@ -2069,6 +2055,20 @@
   "lat": 41.13897,
   "lng": 29.143583,
   "alan_m2": 6391,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
+  "ad": "İski Anadolu Hisarı Yerli Suyu Memba Alanı",
+  "tur": "park",
+  "ilce": "Beykoz",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 41.087814,
+  "lng": 29.085433,
+  "alan_m2": 3877,
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
@@ -2814,20 +2814,6 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
-  "ad": "Inönü Parkı",
-  "tur": "park",
-  "ilce": "Beşiktaş",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 41.041869,
-  "lng": 28.996903,
-  "alan_m2": 5837,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
   "ad": "Konaklar Parkı",
   "tur": "park",
   "ilce": "Beşiktaş",
@@ -2909,6 +2895,20 @@
   "lat": 41.048574,
   "lng": 29.008816,
   "alan_m2": 22720,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
+  "ad": "İnönü Parkı",
+  "tur": "park",
+  "ilce": "Beşiktaş",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 41.041869,
+  "lng": 28.996903,
+  "alan_m2": 5837,
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
@@ -3430,34 +3430,6 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
-  "ad": "Idris Bitlis Parkı",
-  "tur": "park",
-  "ilce": "Eyüpsultan",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 41.056374,
-  "lng": 28.93333,
-  "alan_m2": 2467,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
-  "ad": "Ispark Zemin Altı Otopark Üstü Parkı",
-  "tur": "park",
-  "ilce": "Eyüpsultan",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 41.084878,
-  "lng": 28.925811,
-  "alan_m2": 1606,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
   "ad": "Kutlu Doğum Parkı",
   "tur": "park",
   "ilce": "Eyüpsultan",
@@ -3609,6 +3581,34 @@
   "lat": 41.081128,
   "lng": 28.951073,
   "alan_m2": 8807,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
+  "ad": "İdris Bitlis Parkı",
+  "tur": "park",
+  "ilce": "Eyüpsultan",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 41.056374,
+  "lng": 28.93333,
+  "alan_m2": 2467,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
+  "ad": "İspark Zemin Altı Otopark Üstü Parkı",
+  "tur": "park",
+  "ilce": "Eyüpsultan",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 41.084878,
+  "lng": 28.925811,
+  "alan_m2": 1606,
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
@@ -4172,20 +4172,6 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
-  "ad": "Ito Parkı",
-  "tur": "park",
-  "ilce": "Fatih",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 41.019676,
-  "lng": 28.966284,
-  "alan_m2": 34802,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
   "ad": "Koca Mustafa Paşa Sahil Parkı",
   "tur": "park",
   "ilce": "Fatih",
@@ -4396,6 +4382,20 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
+  "ad": "İto Parkı",
+  "tur": "park",
+  "ilce": "Fatih",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 41.019676,
+  "lng": 28.966284,
+  "alan_m2": 34802,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
   "ad": "Şair Nedim Parkı",
   "tur": "park",
   "ilce": "Fatih",
@@ -4494,7 +4494,7 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
-  "ad": "Ibb Gaziosmanpaşa Hürriyet Mahallesi Zemin Üstü Parkı",
+  "ad": "İbb Gaziosmanpaşa Hürriyet Mahallesi Zemin Üstü Parkı",
   "tur": "park",
   "ilce": "Gaziosmanpaşa",
   "adres": "",
@@ -4830,7 +4830,7 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
-  "ad": "Moda Inciburnu Parkı",
+  "ad": "Moda İnciburnu Parkı",
   "tur": "park",
   "ilce": "Kadıköy",
   "adres": "",
@@ -4956,20 +4956,6 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
-  "ad": "Ibb Sosyal Tesisler - Kartal Ido Arası Kara Ve Sahil Parkı",
-  "tur": "park",
-  "ilce": "Kartal",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 40.893391,
-  "lng": 29.169264,
-  "alan_m2": 203138,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
   "ad": "Kartal Akşemsettin Parkı",
   "tur": "park",
   "ilce": "Kartal",
@@ -5009,20 +4995,6 @@
   "lat": 40.915957,
   "lng": 29.221227,
   "alan_m2": 192,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
-  "ad": "Kartal Ido - Kartal Kumcular Arası Kara Ve Sahil Parkı",
-  "tur": "park",
-  "ilce": "Kartal",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 40.884313,
-  "lng": 29.197552,
-  "alan_m2": 91966,
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
@@ -5079,6 +5051,20 @@
   "lat": 40.886589,
   "lng": 29.181413,
   "alan_m2": 55961,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
+  "ad": "Kartal İdo - Kartal Kumcular Arası Kara Ve Sahil Parkı",
+  "tur": "park",
+  "ilce": "Kartal",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 40.884313,
+  "lng": 29.197552,
+  "alan_m2": 91966,
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
@@ -5233,6 +5219,20 @@
   "lat": 40.887557,
   "lng": 29.18664,
   "alan_m2": 32344,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
+  "ad": "İbb Sosyal Tesisler - Kartal İdo Arası Kara Ve Sahil Parkı",
+  "tur": "park",
+  "ilce": "Kartal",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 40.893391,
+  "lng": 29.169264,
+  "alan_m2": 203138,
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
@@ -5488,20 +5488,6 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
-  "ad": "Istasyon Mahallesi Parkı",
-  "tur": "park",
-  "ilce": "Küçükçekmece",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 41.0314,
-  "lng": 28.77806,
-  "alan_m2": 7440,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
   "ad": "Küçükçekmece Atatürk Mahallesi Parkı",
   "tur": "park",
   "ilce": "Küçükçekmece",
@@ -5586,7 +5572,21 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
-  "ad": "Idealtepe 50. Yıl Korusu",
+  "ad": "İstasyon Mahallesi Parkı",
+  "tur": "park",
+  "ilce": "Küçükçekmece",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 41.0314,
+  "lng": 28.77806,
+  "alan_m2": 7440,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
+  "ad": "İdealtepe 50. Yıl Korusu",
   "tur": "koru",
   "ilce": "Maltepe",
   "adres": "",
@@ -5740,20 +5740,6 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
-  "ad": "Idealtepe - Dragos Arası Kara Ve Sahil Parkı",
-  "tur": "park",
-  "ilce": "Maltepe",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 40.913377,
-  "lng": 29.132646,
-  "alan_m2": 72426,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
   "ad": "Kanuni Sultan Süleyman Parkı",
   "tur": "park",
   "ilce": "Maltepe",
@@ -5796,7 +5782,7 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
-  "ad": "Maltepe Kumcular - Ibb Sosyal Tesisler Arası Kara Ve Sahil Parkı",
+  "ad": "Maltepe Kumcular - İbb Sosyal Tesisler Arası Kara Ve Sahil Parkı",
   "tur": "park",
   "ilce": "Maltepe",
   "adres": "",
@@ -5905,6 +5891,20 @@
   "lat": 40.947765,
   "lng": 29.162115,
   "alan_m2": 14214,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
+  "ad": "İdealtepe - Dragos Arası Kara Ve Sahil Parkı",
+  "tur": "park",
+  "ilce": "Maltepe",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 40.913377,
+  "lng": 29.132646,
+  "alan_m2": 72426,
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
@@ -6031,20 +6031,6 @@
   "lat": 40.939121,
   "lng": 29.311421,
   "alan_m2": 97189,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
-  "ad": "Ibn-i Sina Caddesi Park Alanı",
-  "tur": "park",
-  "ilce": "Pendik",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 40.87484,
-  "lng": 29.248369,
-  "alan_m2": 3106,
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
@@ -6255,6 +6241,20 @@
   "lat": 40.934278,
   "lng": 29.300126,
   "alan_m2": 28247,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
+  "ad": "İbn-i Sina Caddesi Park Alanı",
+  "tur": "park",
+  "ilce": "Pendik",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 40.87484,
+  "lng": 29.248369,
+  "alan_m2": 3106,
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
@@ -6608,34 +6608,6 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
-  "ad": "Iski Molla Murat Suyu Memba Alanı",
-  "tur": "park",
-  "ilce": "Sarıyer",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 41.166703,
-  "lng": 29.030595,
-  "alan_m2": 6572,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
-  "ad": "Istinye Ido Parkı",
-  "tur": "park",
-  "ilce": "Sarıyer",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 41.113637,
-  "lng": 29.061656,
-  "alan_m2": 2469,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
   "ad": "Japon Bahçesi Parkı",
   "tur": "park",
   "ilce": "Sarıyer",
@@ -6874,6 +6846,34 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
+  "ad": "İski Molla Murat Suyu Memba Alanı",
+  "tur": "park",
+  "ilce": "Sarıyer",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 41.166703,
+  "lng": 29.030595,
+  "alan_m2": 6572,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
+  "ad": "İstinye İdo Parkı",
+  "tur": "park",
+  "ilce": "Sarıyer",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 41.113637,
+  "lng": 29.061656,
+  "alan_m2": 2469,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
   "ad": "Şalcıkır Parkı",
   "tur": "park",
   "ilce": "Sarıyer",
@@ -6888,7 +6888,7 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
-  "ad": "Şehit Tevfik Inan Parkı",
+  "ad": "Şehit Tevfik İnan Parkı",
   "tur": "park",
   "ilce": "Sarıyer",
   "adres": "",
@@ -7266,20 +7266,6 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
-  "ad": "Şehit Ibrahim Doğan Parkı",
-  "tur": "park",
-  "ilce": "Tuzla",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 40.830466,
-  "lng": 29.366371,
-  "alan_m2": 26304,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
   "ad": "Şehit Ömer Öner Parkı",
   "tur": "park",
   "ilce": "Tuzla",
@@ -7291,6 +7277,20 @@
   "lat": 40.813907,
   "lng": 29.305949,
   "alan_m2": 152148,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
+  "ad": "Şehit İbrahim Doğan Parkı",
+  "tur": "park",
+  "ilce": "Tuzla",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 40.830466,
+  "lng": 29.366371,
+  "alan_m2": 26304,
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
@@ -7448,20 +7448,6 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
-  "ad": "Çatalca Inceğiz C Tipi Mesire Alanı",
-  "tur": "mesire",
-  "ilce": "Çatalca",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 41.181836,
-  "lng": 28.392752,
-  "alan_m2": 119000,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
   "ad": "Çatalca Karapınar Mesire Alanı",
   "tur": "mesire",
   "ilce": "Çatalca",
@@ -7501,6 +7487,20 @@
   "lat": 41.280175,
   "lng": 28.344138,
   "alan_m2": 33048,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
+  "ad": "Çatalca İnceğiz C Tipi Mesire Alanı",
+  "tur": "mesire",
+  "ilce": "Çatalca",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 41.181836,
+  "lng": 28.392752,
+  "alan_m2": 119000,
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
@@ -7686,7 +7686,7 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
-  "ad": "Iski Atik Valide Suyu Memba Alanı",
+  "ad": "İski Atik Valide Suyu Memba Alanı",
   "tur": "park",
   "ilce": "Ümraniye",
   "adres": "",
@@ -7714,7 +7714,7 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
-  "ad": "Istanbul Kent Üniversitesi Mesut Yılmaz Hatıra Ormanı",
+  "ad": "İstanbul Kent Üniversitesi Mesut Yılmaz Hatıra Ormanı",
   "tur": "hatira_ormani",
   "ilce": "Üsküdar",
   "adres": "",
@@ -8666,76 +8666,6 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
-  "ad": "Ibrahim Özdemir Parkı",
-  "tur": "park",
-  "ilce": "Şile",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 41.172308,
-  "lng": 29.60787,
-  "alan_m2": 963,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
-  "ad": "Ihsanoğlu Mahalle Parkı",
-  "tur": "park",
-  "ilce": "Şile",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 41.09305,
-  "lng": 29.808225,
-  "alan_m2": 1082,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
-  "ad": "Imrendere Mahalle Parkı",
-  "tur": "park",
-  "ilce": "Şile",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 41.142418,
-  "lng": 29.598158,
-  "alan_m2": 1716,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
-  "ad": "Imrenli Mahalle Parkı",
-  "tur": "park",
-  "ilce": "Şile",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 41.146233,
-  "lng": 29.738534,
-  "alan_m2": 772,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
-  "ad": "Isaköy Mahalle Parkı",
-  "tur": "park",
-  "ilce": "Şile",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 41.106845,
-  "lng": 29.824661,
-  "alan_m2": 2031,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
   "ad": "Kabakoz Mahalle Parkı",
   "tur": "park",
   "ilce": "Şile",
@@ -8904,20 +8834,6 @@
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
-  "ad": "Kumbaba Ibb Parkı",
-  "tur": "park",
-  "ilce": "Şile",
-  "adres": "",
-  "telefon": "",
-  "saat": "",
-  "gun": "",
-  "acilis_yili": "",
-  "lat": 41.166579,
-  "lng": 29.58078,
-  "alan_m2": 4244,
-  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
- },
- {
   "ad": "Kumbaba Rekreasyon Alanı Parkı",
   "tur": "park",
   "ilce": "Şile",
@@ -8929,6 +8845,20 @@
   "lat": 41.168518,
   "lng": 29.583317,
   "alan_m2": 22122,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
+  "ad": "Kumbaba İbb Parkı",
+  "tur": "park",
+  "ilce": "Şile",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 41.166579,
+  "lng": 29.58078,
+  "alan_m2": 4244,
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
@@ -9461,6 +9391,76 @@
   "lat": 41.170328,
   "lng": 29.625452,
   "alan_m2": 823,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
+  "ad": "İbrahim Özdemir Parkı",
+  "tur": "park",
+  "ilce": "Şile",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 41.172308,
+  "lng": 29.60787,
+  "alan_m2": 963,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
+  "ad": "İhsanoğlu Mahalle Parkı",
+  "tur": "park",
+  "ilce": "Şile",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 41.09305,
+  "lng": 29.808225,
+  "alan_m2": 1082,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
+  "ad": "İmrendere Mahalle Parkı",
+  "tur": "park",
+  "ilce": "Şile",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 41.142418,
+  "lng": 29.598158,
+  "alan_m2": 1716,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
+  "ad": "İmrenli Mahalle Parkı",
+  "tur": "park",
+  "ilce": "Şile",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 41.146233,
+  "lng": 29.738534,
+  "alan_m2": 772,
+  "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
+ },
+ {
+  "ad": "İsaköy Mahalle Parkı",
+  "tur": "park",
+  "ilce": "Şile",
+  "adres": "",
+  "telefon": "",
+  "saat": "",
+  "gun": "",
+  "acilis_yili": "",
+  "lat": 41.106845,
+  "lng": 29.824661,
+  "alan_m2": 2031,
   "kaynak": "İBB Açık Veri Portalı — İstanbul Kentsel Açık ve Yeşil Alan Koordinatları"
  },
  {
