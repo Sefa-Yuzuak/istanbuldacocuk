@@ -365,6 +365,12 @@ def kirp_kaydet(veri: bytes, ad_slug: str) -> dict:
             if yol.stat().st_size <= BUTCE[et]:
                 break
         out[et] = yol.name
+    # Paylaşım kartı için JPEG kopya: X ve WhatsApp WebP og:image'ı güvenilir
+    # biçimde basmıyor, kart boş çıkıyor. Sayfada kullanılmaz, yalnız og:image.
+    og = IMG / f"{ad_slug}-og.jpg"
+    im.resize(BOYUTLAR["lg"], Image.LANCZOS).convert("RGB").save(
+        og, "JPEG", quality=82, optimize=True)
+    out["og"] = og.name
     return out
 
 

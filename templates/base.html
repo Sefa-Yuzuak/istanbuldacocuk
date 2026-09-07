@@ -13,9 +13,13 @@
 <meta property="og:description" content="{{ meta_desc }}">
 <meta property="og:url" content="{{ site.url }}{{ canonical }}">
 <meta property="og:locale" content="tr_TR">
-{% if og_gorsel %}<meta property="og:image" content="{{ site.url }}{{ og_gorsel }}">
-<meta property="og:image:width" content="1200"><meta property="og:image:height" content="675">
-<meta name="twitter:image" content="{{ site.url }}{{ og_gorsel }}">{% endif %}
+{# Fotoğrafsız sayfalar boş paylaşım kartı veriyordu; markalı varsayılan görsel devrede.
+   og_gorsel her zaman JPEG: X ve WhatsApp WebP önizlemeyi güvenilir basmıyor. #}
+<meta property="og:image" content="{{ site.url }}{{ og_gorsel or '/static/og.jpg' }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="{{ 675 if og_gorsel else 630 }}">
+<meta property="og:image:alt" content="{{ baslik }} — {{ site.ad }}">
+<meta name="twitter:image" content="{{ site.url }}{{ og_gorsel or '/static/og.jpg' }}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#12506b">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">

@@ -52,7 +52,8 @@ def main() -> int:
         if not veri:
             continue
         slug = f["lg"].rsplit("-lg.webp", 1)[0]
-        kirp_kaydet(veri, slug)
+        f.update(kirp_kaydet(veri, slug))   # 'og' (paylaşım JPEG'i) dahil
+        HEDEF.write_text(json.dumps(kayitlar, ensure_ascii=False, indent=1), "utf-8")
         yeni = sum((IMG / f[e]).stat().st_size for e in ("lg", "sm"))
         onceki += eski
         sonraki += yeni

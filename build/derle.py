@@ -825,7 +825,10 @@ def main() -> None:
                           (m["ad"], m["url"]))],
               oncelik="0.7", m=m, sss=sss, kisa=kisa_cevap(m), yakin=yakin,
               ayni_ilce=[b for b in ayni_ilce if b not in m["ayni_adres"]],
-              og_gorsel=(f"/static/img/mekan/{m['foto']['lg']}" if m.get("foto") else None),
+              # foto anahtarı var ama değeri None olabiliyor; get()'in varsayılanı
+              # bu durumda devreye girmez.
+              og_gorsel=(f"/static/img/mekan/{m['foto']['og']}"
+                         if (m.get("foto") or {}).get("og") else None),
               kirinti=[("İlçeler", "/ilce/"), (m["ilce"], f"/ilce/{m['ilce_slug']}/"),
                        (m["ad"], m["url"])])
 
