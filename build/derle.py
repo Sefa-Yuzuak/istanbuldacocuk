@@ -15,6 +15,7 @@ sürece puan uydurmak, resmî kaydı sahte bir otoriteyle süslemek olur.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import math
 import re
@@ -591,8 +592,22 @@ def main() -> None:
         if (STATIC / ad).exists():
             shutil.copy(STATIC / ad, DIST / ad)
 
+    # CSS ve JS içerik damgasıyla adlandırılıyor. nginx bunları bir yıl
+    # "immutable" veriyor; sabit adla yayımlansalardı stil değişikliği geri gelen
+    # ziyaretçiye bir yıl boyunca ulaşmaz, sayfa bozuk görünürdü.
+    damga = {}
+    for ad in ("s.css", "harita.js"):
+        kaynak = DIST / "static" / ad
+        ozet = hashlib.sha256(kaynak.read_bytes()).hexdigest()[:8]
+        kok, uzanti = ad.rsplit(".", 1)
+        yeni = f"{kok}.{ozet}.{uzanti}"
+        kaynak.rename(DIST / "static" / yeni)
+        damga[ad] = f"/static/{yeni}"
+    ortak_damga = {"css_url": damga["s.css"], "js_url": damga["harita.js"]}
+
     ortak = {"site": site, "ilceler": ilceler, "kategoriler": kategoriler, "yakalar": yakalar,
-             "rehberler": rehberler, "toplam": len(mekanlar), "yesil_toplam": len(yesil)}
+             "rehberler": rehberler, "toplam": len(mekanlar), "yesil_toplam": len(yesil),
+             **ortak_damga}
     yollar: list[tuple[str, str, str | None]] = []
 
     def tam_baslik(b: str) -> str:
