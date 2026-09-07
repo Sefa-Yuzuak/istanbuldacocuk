@@ -341,8 +341,8 @@
  {
   "slug": "istanbulun-en-buyuk-parklari",
   "baslik": "İstanbul'un En Büyük Parkları ve Koruları",
-  "ozet": "İBB'nin yeşil alan envanterindeki 523 kaydın en büyükleri: hangi park kaç metrekare, hangi ilçede.",
-  "cevap": "İBB'nin yeşil alan envanterinde 523 park, koru ve mesire alanı kayıtlı; toplam alan 23.859.522 m². En büyüğü 15 Temmuz Kent Ormanı 3. Etap (Eyüpsultan, 2.227.626 m²).",
+  "ozet": "İBB'nin yeşil alan envanterindeki 529 kaydın en büyükleri: hangi park kaç metrekare, hangi ilçede.",
+  "cevap": "İBB'nin yeşil alan envanterinde 529 park, koru ve mesire alanı kayıtlı; toplam alan 23.804.038 m². En büyüğü 15 Temmuz Kent Ormanı 3. Etap (Eyüpsultan, 2.227.626 m²).",
   "bolumler": [
    {
     "baslik": "En büyük 25 yeşil alan",
@@ -373,7 +373,7 @@
        "15 Temmuz Kent Ormanı 1. Etap",
        "Eyüpsultan",
        "Kent ormanı",
-       "1.522.150 m²"
+       "1.521.027 m²"
       ],
       [
        "Orhangazi Şehir Parkı",
@@ -403,7 +403,7 @@
        "Yıldız Korusu",
        "Beşiktaş",
        "Koru",
-       "390.260 m²"
+       "390.163 m²"
       ],
       [
        "Rahmi Demir Kent Ormanı",
@@ -439,7 +439,7 @@
        "Küçük Çamlıca Korusu",
        "Üsküdar",
        "Koru",
-       "271.380 m²"
+       "271.223 m²"
       ],
       [
        "100. Yıl Parkı",
@@ -490,22 +490,22 @@
        "175.661 m²"
       ],
       [
-       "Menekşe Deresi Parkı",
-       "Küçükçekmece",
-       "Park",
-       "169.592 m²"
-      ],
-      [
        "Büyük Çamlıca Korusu",
        "Üsküdar",
        "Koru",
-       "166.746 m²"
+       "163.297 m²"
       ],
       [
        "Hidiv Korusu",
        "Beykoz",
        "Koru",
        "159.852 m²"
+      ],
+      [
+       "İstanbul Kent Üniversitesi Mesut Yılmaz Hatıra Ormanı",
+       "Üsküdar",
+       "Hatıra ormanı",
+       "159.533 m²"
       ]
      ]
     }
@@ -525,7 +525,7 @@
    },
    {
     "s": "İstanbul'da kaç park var?",
-    "c": "İBB'nin park, koru, mesire ve kent ormanı envanterinde 523 kayıt bulunuyor. Bu sayı yalnızca İBB sorumluluğundaki alanları kapsar; ilçe belediyelerinin parkları ayrı kayıtlarda tutulur."
+    "c": "İBB'nin park, koru, mesire ve kent ormanı envanterinde 529 kayıt bulunuyor. Bu sayı yalnızca İBB sorumluluğundaki alanları kapsar; ilçe belediyelerinin parkları ayrı kayıtlarda tutulur."
    },
    {
     "s": "Park girişleri ücretli mi?",
@@ -543,7 +543,7 @@
   "slug": "anadolu-mu-avrupa-mi-yesil-alan",
   "baslik": "Anadolu Yakası mı, Avrupa Yakası mı? İlçe İlçe Yeşil Alan",
   "ozet": "İBB verisiyle iki yakanın karşılaştırması: hangi yakada kaç park var, hangi ilçede ne kadar yeşil alan.",
-  "cevap": "İBB yeşil alan envanterinde Avrupa yakasında 242 kayıt (15.963.414 m²), Anadolu yakasında 281 kayıt (7.896.108 m²) bulunuyor. Avrupa yakası 25, Anadolu yakası 14 ilçeden oluşuyor; bu yüzden toplam yerine ilçe başına bakmak daha anlamlı.",
+  "cevap": "İBB yeşil alan envanterinde Avrupa yakasında 243 kayıt (15.920.550 m²), Anadolu yakasında 286 kayıt (7.883.488 m²) bulunuyor. Avrupa yakası 25, Anadolu yakası 14 ilçeden oluşuyor; bu yüzden toplam yerine ilçe başına bakmak daha anlamlı.",
   "bolumler": [
    {
     "baslik": "En çok yeşil alanı olan ilçeler",
@@ -562,13 +562,13 @@
        "Eyüpsultan",
        "Avrupa",
        "38",
-       "6.323.249 m²"
+       "6.322.126 m²"
       ],
       [
        "Sarıyer",
        "Avrupa",
        "34",
-       "1.891.060 m²"
+       "1.891.059 m²"
       ],
       [
        "Maltepe",
@@ -585,50 +585,50 @@
       [
        "Pendik",
        "Anadolu",
-       "25",
+       "26",
        "1.219.286 m²"
       ],
       [
        "Üsküdar",
        "Anadolu",
-       "23",
-       "906.826 m²"
+       "24",
+       "903.220 m²"
       ],
       [
        "Kartal",
        "Anadolu",
        "25",
-       "836.737 m²"
+       "836.355 m²"
       ],
       [
        "Beykoz",
        "Anadolu",
        "29",
-       "827.597 m²"
+       "826.068 m²"
       ],
       [
        "Küçükçekmece",
        "Avrupa",
        "9",
-       "717.693 m²"
-      ],
-      [
-       "Beşiktaş",
-       "Avrupa",
-       "13",
-       "671.325 m²"
+       "682.763 m²"
       ],
       [
        "Fatih",
        "Avrupa",
-       "28",
-       "661.546 m²"
+       "27",
+       "636.752 m²"
       ],
       [
        "Büyükçekmece",
        "Avrupa",
        "4",
-       "609.900 m²"
+       "609.895 m²"
+      ],
+      [
+       "Çatalca",
+       "Avrupa",
+       "14",
+       "536.945 m²"
       ]
      ]
     }
@@ -643,11 +643,11 @@
   "sss": [
    {
     "s": "Hangi yakada daha çok park var?",
-    "c": "İBB envanterinde Avrupa yakasında 242, Anadolu yakasında 281 yeşil alan kayıtlı. Avrupa yakasında 25, Anadolu yakasında 14 ilçe bulunduğu için bu fark tek başına bir üstünlük göstergesi değil."
+    "c": "İBB envanterinde Avrupa yakasında 243, Anadolu yakasında 286 yeşil alan kayıtlı. Avrupa yakasında 25, Anadolu yakasında 14 ilçe bulunduğu için bu fark tek başına bir üstünlük göstergesi değil."
    },
    {
     "s": "En çok yeşil alana sahip ilçe hangisi?",
-    "c": "İBB kaydına göre Eyüpsultan — 6.323.249 m². Bu yalnızca İBB sorumluluğundaki alanları kapsar."
+    "c": "İBB kaydına göre Eyüpsultan — 6.322.126 m². Bu yalnızca İBB sorumluluğundaki alanları kapsar."
    }
   ],
   "kaynaklar": [

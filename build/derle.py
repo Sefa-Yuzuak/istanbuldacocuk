@@ -142,10 +142,14 @@ def km(a_lat, a_lng, b_lat, b_lng) -> float:
 
 
 def kisalt(metin: str, en: int = 158) -> str:
+    """Meta açıklamayı kırpar; mümkünse CÜMLE sonunda biter, yoksa kelime sonunda."""
     metin = " ".join((metin or "").split())
     if len(metin) <= en:
         return metin
     kesik = metin[:en]
+    nokta = max(kesik.rfind(". "), kesik.rfind("! "), kesik.rfind("? "))
+    if nokta > en * 0.55:
+        return kesik[:nokta + 1]
     bosluk = kesik.rfind(" ")
     return (kesik[:bosluk] if bosluk > en * 0.6 else kesik).rstrip(" ,.;:") + "…"
 
@@ -417,6 +421,11 @@ def mekan_sss(m: dict) -> list[dict]:
                         "İBB'nin kültür merkezleri veri setinde bu merkez için çocuk birimi "
                         "'YOK' olarak işaretli. Merkezde çocuklara yönelik etkinlik yine de "
                         "düzenlenebilir; programı merkeze sorun.")})
+    if m.get("ayni_adres"):
+        s.append({"s": f"{m['ad']} ile aynı adreste başka ne var?",
+                  "c": f"Aynı adreste İBB'nin {len(m['ayni_adres'])} birimi daha kayıtlı: "
+                       + ", ".join(b["ad"] for b in m["ayni_adres"])
+                       + ". Aynı ziyarette hepsini görebilirsiniz."})
     if m.get("telefon"):
         s.append({"s": f"{m['ad']} telefon numarası nedir?",
                   "c": f"İBB açık veri kaydındaki numara: {m['telefon']}. Numaralar "
@@ -494,6 +503,17 @@ def main() -> None:
     ilce_grup: dict[str, list[dict]] = {}
     for m in mekanlar:
         ilce_grup.setdefault(m["ilce"], []).append(m)
+
+    # Aynı adreste birden çok İBB birimi var (Müze Gazhane'nin C/L/P binaları,
+    # Haliç Sanat 1/2/3). Sayfaları neredeyse kopya kalmasın diye her biri
+    # diğerlerini gösterir; bu hem ayırt eder hem ziyaretçinin işine yarar.
+    adres_grup: dict[str, list[dict]] = {}
+    for m in mekanlar:
+        if m.get("adres"):
+            adres_grup.setdefault(f"{m['ilce']}|{m['adres'].lower()}", []).append(m)
+    for m in mekanlar:
+        g = adres_grup.get(f"{m['ilce']}|{(m.get('adres') or '').lower()}", [])
+        m["ayni_adres"] = [b for b in g if b["slug"] != m["slug"]]
     yesil_grup: dict[str, list[dict]] = {}
     for y in yesil:
         yesil_grup.setdefault(y["ilce"], []).append(y)
@@ -741,7 +761,8 @@ def main() -> None:
               [mekan_schema(m, site), sss_schema(sss),
                kirintilar(site, ("İlçeler", "/ilce/"), (m["ilce"], f"/ilce/{m['ilce_slug']}/"),
                           (m["ad"], m["url"]))],
-              oncelik="0.7", m=m, sss=sss, kisa=kisa_cevap(m), yakin=yakin, ayni_ilce=ayni_ilce,
+              oncelik="0.7", m=m, sss=sss, kisa=kisa_cevap(m), yakin=yakin,
+              ayni_ilce=[b for b in ayni_ilce if b not in m["ayni_adres"]],
               og_gorsel=(f"/static/img/mekan/{m['foto']['lg']}" if m.get("foto") else None),
               kirinti=[("İlçeler", "/ilce/"), (m["ilce"], f"/ilce/{m['ilce_slug']}/"),
                        (m["ad"], m["url"])])

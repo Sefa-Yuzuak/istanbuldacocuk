@@ -19,6 +19,7 @@ from __future__ import annotations
 import csv
 import io
 import json
+import math
 import re
 import statistics
 import sys
@@ -234,6 +235,147 @@ def ist_ici(lat, lng) -> bool:
             and IST_KUTU[0] <= lat <= IST_KUTU[1] and IST_KUTU[2] <= lng <= IST_KUTU[3])
 
 
+# OSM'in önerdiği ilçe, kaydın koordinatından bu km'den uzaktaysa öneri reddedilir.
+YAKINLIK_ESIGI_KM = 6.0
+
+
+def ilce_karar(kayitlar: list[dict], osm: dict) -> int:
+    """İBB'nin ilçe alanı ile OSM ters çözümü çeliştiğinde COĞRAFYAYA sorar.
+
+    İkisi de yanılabiliyor: İBB Taksim Gezi Parkı'nı Şişli yazmış (gerçekte Beyoğlu),
+    OSM ise Burgazada'daki bir kaydı Fatih sanıyor. Bu yüzden hakem, kaydın
+    koordinatının hangi ilçenin kayıt kümesine daha yakın düştüğüdür: aday ilçenin
+    ortancasına belirgin biçimde (en az 2 kat) daha yakınsa düzeltilir, yoksa
+    İBB'nin değeri korunur.
+    """
+    ortanca: dict[str, tuple[float, float]] = {}
+    grup: dict[str, list[dict]] = defaultdict(list)
+    for k in kayitlar:
+        if k.get("lat"):
+            grup[k["ilce"]].append(k)
+    for il, g in grup.items():
+        if len(g) >= 4:
+            ortanca[il] = (statistics.median(x["lat"] for x in g),
+                           statistics.median(x["lng"] for x in g))
+
+    def uzaklik(k, il):
+        """Kaydın, o ilçenin kayıt kümesinin ortancasına kuş uçuşu km'si."""
+        if il not in ortanca:
+            return None
+        o = ortanca[il]
+        return math.hypot((k["lat"] - o[0]) * 111, (k["lng"] - o[1]) * 84)
+
+    duzeltilen = 0
+    for k in kayitlar:
+        if not k.get("lat"):
+            continue
+        aday = osm.get(f"{k['lat']:.6f},{k['lng']:.6f}")
+        aday = ILCE_DUZELT.get(aday, aday)
+        if not aday or aday == k["ilce"] or aday not in ILCELER:
+            continue
+        d_ibb, d_osm = uzaklik(k, k["ilce"]), uzaklik(k, aday)
+        if d_ibb is None or d_osm is None:
+            continue
+        # OSM'in dediği ilçe hem daha yakın hem de coğrafi olarak makul olmalı.
+        # Gezi Parkı Şişli/Beyoğlu sınırında (1,97'ye karşı 1,58 km) -> düzeltilir.
+        # Burgazada'daki kayıt için OSM "Fatih" diyor (17,7 km) -> reddedilir.
+        if d_osm >= d_ibb or d_osm > YAKINLIK_ESIGI_KM:
+            continue
+        k["ilce_kaynak_ibb"] = k["ilce"]
+        k["ilce"] = aday
+        duzeltilen += 1
+    return duzeltilen
+
+
+def osm_ortusuyor(ad: str, osm_ad: str) -> bool:
+    """OSM sonucu gerçekten bu mekân mı, yoksa yakındaki başka bir yer mi?
+
+    Adres tabanlı yedek sorgu bazen çevredeki rastgele bir POI'yi döndürüyor:
+    "Dudullu Ödünç Kütüphanesi" için yağlama cihazları mağazası, "Baruthane Galeri"
+    için Hyatt Regency oteli. Ortak ayırt edici sözcük yoksa koordinat kullanılmaz —
+    yaklaşık konum göstermektense hiç göstermemek doğru.
+    """
+    a = {t for t in re.findall(r"[a-z]{4,}", katla(ad))}
+    o = {t for t in re.findall(r"[a-z]{4,}", katla(osm_ad))}
+    return bool(a & o)
+
+
+def _yesil_kayit(g: list[dict], ilce: str, tur: str, ad: str) -> dict:
+    """Bir ya da birkaç poligon parçasından tek yeşil alan kaydı kurar."""
+    alan = sum(x["alan_m2"] or 0 for x in g) or None
+    noktali = [x for x in g if ist_ici(x.get("lat"), x.get("lng"))]
+    if noktali and alan:
+        # Ağırlık merkezi, parça alanlarıyla ağırlıklı ortalama.
+        ag = sum(x["alan_m2"] or 0 for x in noktali) or 1
+        lat = sum(x["lat"] * (x["alan_m2"] or 0) for x in noktali) / ag
+        lng = sum(x["lng"] * (x["alan_m2"] or 0) for x in noktali) / ag
+    elif noktali:
+        lat = statistics.mean(x["lat"] for x in noktali)
+        lng = statistics.mean(x["lng"] for x in noktali)
+    else:
+        lat = lng = None
+    return {
+        "ad": ad, "tur": tur, "kategori": "park", "ilce": ilce,
+        "adres": "", "telefon": "", "saat": "", "gun": "", "acilis_yili": "",
+        "lat": round(lat, 6) if lat else None, "lng": round(lng, 6) if lng else None,
+        "koordinat_kaynak": "İBB Açık Veri — poligon ağırlık merkezi" if lat else None,
+        "alan_m2": round(alan) if alan else None,
+        "parca_sayisi": len(g),
+        "kapali": False, "ucretsiz": True,
+        "kaynak_ad": KAYNAK["yesil"][0], "kaynak_url": KAYNAK["yesil"][1],
+    }
+
+
+# "Müze Gazhane C Binası / L Binası / P Binası" üç mekân değil, tek mekânın üç binası;
+# üçüne ayrı sayfa açmak %99 aynı üç sayfa demek. Ama aynı adresteki "Karikatür ve Mizah
+# Müzesi" ile "İklim Müzesi" GERÇEKTEN ayrı müzeler. Ayrım adın kendisinde: yalnız sondaki
+# bina/birim etiketiyle ayrışanlar birleşir.
+BIRIM_EKI = re.compile(r"\s*(?:[A-ZÇĞİÖŞÜ]\s*)?(?:bina|binası|blok|blogu|bloğu|etap|kısım|kısmı)?\s*\d*\s*$", re.I)
+
+
+def _birim_koku(ad: str) -> str:
+    kok = re.sub(r"\s+(?:[A-ZÇĞİÖŞÜ]|\d+)\s+(?:Binası|Bina|Blok|Bloğu)\s*$", "", ad, flags=re.I)
+    kok = re.sub(r"\s+\d+\s*$", "", kok)
+    return katla(kok).strip()
+
+
+def birimleri_birlestir(mekanlar: list[dict]) -> tuple[list[dict], int]:
+    """Aynı adres + aynı tür + aynı ad kökü olan birimleri tek kayda indirir."""
+    gruplar: dict[tuple, list[dict]] = defaultdict(list)
+    for m in mekanlar:
+        anahtar = (m["ilce"], (m.get("adres") or "").lower(), m["kategori"], _birim_koku(m["ad"]))
+        gruplar[anahtar].append(m)
+    sonuc, birlesen = [], 0
+    for (_, _, _, kok), g in gruplar.items():
+        if len(g) == 1 or not kok:
+            sonuc.extend(g)
+            continue
+        birlesen += len(g) - 1
+        ana = max(g, key=lambda x: len(x["ad"]))
+        ortak = re.sub(r"\s+(?:[A-ZÇĞİÖŞÜ]|\d+)\s+(?:Binası|Bina|Blok|Bloğu)\s*$", "",
+                       ana["ad"], flags=re.I)
+        ortak = re.sub(r"\s+\d+\s*$", "", ortak).strip()
+        ana = dict(ana, ad=ortak or ana["ad"],
+                   birimler=sorted(x["ad"] for x in g))
+        sonuc.append(ana)
+    return sonuc, birlesen
+
+
+AYRI_PARK_ORANI = 4.0     # mesafe / √alan bunun üstündeyse parçalar ayrı yerlerdir
+
+
+def _dagilmis(g: list[dict]) -> bool:
+    """Parçalar tek bir yerin bölümleri olamayacak kadar dağınık mı?"""
+    pts = [(x["lat"], x["lng"]) for x in g if ist_ici(x.get("lat"), x.get("lng"))]
+    alan = sum(x["alan_m2"] or 0 for x in g)
+    if len(pts) < 2 or alan <= 0:
+        return False
+    en_uzak = max(
+        math.hypot((a - c) * 111_320, (b - d) * 111_320 * math.cos(math.radians(a)))
+        for i, (a, b) in enumerate(pts) for (c, d) in pts[i + 1:])
+    return en_uzak > AYRI_PARK_ORANI * math.sqrt(alan)
+
+
 # --------------------------------------------------------------------- yeşil alanlar
 def yesil_alanlar(kayitlar: list[dict]) -> tuple[list[dict], dict]:
     """Yeşil alanları temizler ve parça parça girilmiş parkları birleştirir.
@@ -249,36 +391,25 @@ def yesil_alanlar(kayitlar: list[dict]) -> tuple[list[dict], dict]:
         temel = re.sub(r"\s*[/\-]\s*(doğu|batı|kuzey|güney)?\s*\d+\s*$", "", k["ad"], flags=re.I)
         gruplar[(temiz_ad(temel).lower(), ilce, k["tur"])].append(k)
 
-    sonuc, birlesen = [], 0
+    sonuc, birlesen, bolunen = [], 0, 0
     for (_, ilce, tur), g in gruplar.items():
+        # Aynı adı taşıyan parçalar her zaman tek yerin bölümü değil: Şile'de 1,4 km
+        # arayla iki ayrı 350 m²'lik "Değirmençayır Mahalle Parkı" var. Ölçüt, parçalar
+        # arası mesafenin alanın karakteristik boyuna (√alan) oranı: sahil boyunca uzanan
+        # gerçek tek park 2-3 civarında kalıyor, ayrı parklar 5'in üstüne çıkıyor.
+        if len(g) > 1 and _dagilmis(g):
+            bolunen += len(g)
+            for tekil in g:
+                sonuc.append(_yesil_kayit([tekil], ilce, tur, temiz_ad(tekil["ad"])))
+            continue
         if len(g) > 1:
             birlesen += len(g)
-        alan = sum(x["alan_m2"] or 0 for x in g) or None
-        noktali = [x for x in g if ist_ici(x.get("lat"), x.get("lng"))]
-        if noktali and alan:
-            # Ağırlık merkezi, parça alanlarıyla ağırlıklı ortalama.
-            ag = sum(x["alan_m2"] or 0 for x in noktali) or 1
-            lat = sum(x["lat"] * (x["alan_m2"] or 0) for x in noktali) / ag
-            lng = sum(x["lng"] * (x["alan_m2"] or 0) for x in noktali) / ag
-        elif noktali:
-            lat = statistics.mean(x["lat"] for x in noktali)
-            lng = statistics.mean(x["lng"] for x in noktali)
-        else:
-            lat = lng = None
         temel_ad = temiz_ad(re.sub(r"\s*[/\-]\s*(doğu|batı|kuzey|güney)?\s*\d+\s*$", "",
                                    g[0]["ad"], flags=re.I))
-        sonuc.append({
-            "ad": temel_ad, "tur": tur, "kategori": "park", "ilce": ilce,
-            "adres": "", "telefon": "", "saat": "", "gun": "", "acilis_yili": "",
-            "lat": round(lat, 6) if lat else None, "lng": round(lng, 6) if lng else None,
-            "koordinat_kaynak": "İBB Açık Veri — poligon ağırlık merkezi" if lat else None,
-            "alan_m2": round(alan) if alan else None,
-            "parca_sayisi": len(g),
-            "kapali": False, "ucretsiz": True,
-            "kaynak_ad": KAYNAK["yesil"][0], "kaynak_url": KAYNAK["yesil"][1],
-        })
+        sonuc.append(_yesil_kayit(g, ilce, tur, temel_ad))
     sonuc.sort(key=lambda x: -(x["alan_m2"] or 0))
-    return sonuc, {"ham": len(ham), "birlesen_satir": birlesen, "sonuc": len(sonuc)}
+    return sonuc, {"ham": len(ham), "birlesen_satir": birlesen,
+                   "bolunen_satir": bolunen, "sonuc": len(sonuc)}
 
 
 # ------------------------------------------------------------------ müze / kütüphane
@@ -290,7 +421,7 @@ def muze_kutuphane(kayitlar: list[dict], koordinat: dict) -> list[dict]:
         ilce = ILCE_DUZELT.get(k["ilce"], k["ilce"])
         c = koordinat.get(f"{k['tur']}|{k['ad']}|{k['ilce']}")
         lat = lng = kkaynak = None
-        if c and ist_ici(c["lat"], c["lng"]):
+        if c and ist_ici(c["lat"], c["lng"]) and osm_ortusuyor(k["ad"], c.get("osm_ad", "")):
             lat, lng, kkaynak = c["lat"], c["lng"], c["kaynak"]
         out.append({
             "ad": ad_onar(temiz_ad(k["ad"])), "tur": k["tur"], "kategori": k["tur"], "ilce": ilce,
@@ -528,9 +659,14 @@ def main() -> None:
     tiyatro, t_ozet = tiyatro_sahneleri(tiyatro_ilce)
     tiyatro = tiyatro_ayikla(tiyatro, kultur)
 
+    # İlçe hakemliği: OSM ters çözümü ile İBB kaydı çeliştiğinde coğrafyaya sor.
+    iyol = DATA / "ilce_osm.json"
+    ilce_osm = json.loads(iyol.read_text(encoding="utf-8")) if iyol.exists() else {}
+    duzeltilen_ilce = ilce_karar(yesil + mk + kultur + tesis + tiyatro, ilce_osm) if ilce_osm else 0
+
     sayfali_yesil = [y for y in yesil
                      if y["tur"] != "park" or (y["alan_m2"] or 0) >= PARK_SAYFA_ESIGI]
-    mekanlar = sayfali_yesil + mk + kultur + tesis + tiyatro
+    mekanlar, birlesen_birim = birimleri_birlestir(sayfali_yesil + mk + kultur + tesis + tiyatro)
     for m in mekanlar:
         m["yaka"] = "anadolu" if m["ilce"] in ANADOLU else "avrupa"
     for y in yesil:
@@ -547,15 +683,18 @@ def main() -> None:
 
     bilinmeyen = {m["ilce"] for m in mekanlar} - set(ILCELER)
     print(f"yeşil alan  : {y_ozet['ham']} ham satır -> {y_ozet['sonuc']} alan "
-          f"({y_ozet['birlesen_satir']} satır parça olarak birleşti)")
+          f"({y_ozet['birlesen_satir']} satır birleşti, "
+          f"{y_ozet['bolunen_satir']} satır ayrı yer olarak bölündü)")
     print(f"  sayfalı   : {len(sayfali_yesil)} (park eşiği {PARK_SAYFA_ESIGI:,} m²)")
     print(f"müze/kütüph.: {len(mk)}  (koordinatlı {sum(1 for m in mk if m['lat'])})")
     print(f"kültür merk.: {len(kultur)}  (çocuk birimi olan {sum(1 for k in kultur if k.get('cocuk_birimi'))})")
     print(f"sosyal tesis: {len(tesis)}  (koordinatlı {sum(1 for m in tesis if m['lat'])})")
     print(f"tiyatro sah.: {len(tiyatro)}  ({t_ozet['seans']} çocuk oyunu seansı, "
           f"{t_ozet['oyun_adi']} farklı oyun, {t_ozet['yil']})")
+    print(f"aynı binanın birimleri birleşti: {birlesen_birim}")
     print(f"TOPLAM sayfalı mekân: {len(mekanlar)} | koordinatlı "
           f"{sum(1 for m in mekanlar if m['lat'])} | şüpheli koordinat {supheli}")
+    print(f"ilçe düzeltmesi (OSM hakemliği): {duzeltilen_ilce}")
     print(f"ilçe: {len({m['ilce'] for m in mekanlar})}"
           + (f"  UYARI bilinmeyen ilçe: {bilinmeyen}" if bilinmeyen else ""))
     print("kategori:", dict(Counter(m["kategori"] for m in mekanlar)))

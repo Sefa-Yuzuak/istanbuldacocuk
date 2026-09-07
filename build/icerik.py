@@ -333,6 +333,18 @@ def main() -> None:
                      "mekânın adından değil.",
                      "Koordinatı kendi ilçesinin ortancasından çok uzağa düşen kayıtlar "
                      "şüpheli olarak işaretlenir ve haritaya konmaz; kaynak veri değiştirilmez.",
+                     "İlçe bilgisi OpenStreetMap ters çözümüyle karşılaştırılır. İkisi de "
+                     "yanılabiliyor: İBB Taksim Gezi Parkı'nı Şişli yazmış (park Beyoğlu'nda), "
+                     "OSM ise Burgazada'daki bir kaydı Fatih sanıyor. Bu yüzden anlaşmazlıkta "
+                     "hakem coğrafyadır — kayıt hangi ilçenin kayıt kümesine belirgin biçimde "
+                     "daha yakın düşüyorsa o kabul edilir, aksi hâlde İBB'nin değeri korunur.",
+                     "Poligonların iç halkaları (park içindeki gölet, bina, yol adası) alandan "
+                     "düşülür. Düşülmediğinde 16 kaydın büyüklüğü olduğundan fazla görünüyordu; "
+                     "Menekşe Deresi Parkı'nda fark 33.000 m²ydi.",
+                     "OpenStreetMap'ten gelen koordinat, mekân adıyla hiçbir ayırt edici sözcük "
+                     "paylaşmıyorsa kullanılmaz. Adres tabanlı arama bazen çevredeki başka bir "
+                     "yeri döndürüyor (bir kütüphane için yağlama cihazları mağazası gibi); "
+                     "yaklaşık konum göstermektense hiç göstermemeyi seçiyoruz.",
                  ]},
                 {"baslik": "Hangi mekânın kendi sayfası var?",
                  "paragraflar": [

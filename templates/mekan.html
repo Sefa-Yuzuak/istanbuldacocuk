@@ -72,6 +72,10 @@
     <p class="uyari">Bu liste <strong>{{ m.veri_yillari }} dönemine ait geçmiş kayıttır, güncel program
        değildir.</strong> Oyun takvimi ve bilet için İBB Şehir Tiyatroları'nın kendi sitesine bakın.</p>
     {% endif %}
+    {% if m.birimler %}
+    <p>İBB kaydında bu mekân {{ m.birimler|length }} ayrı birim olarak tutuluyor:
+       {{ m.birimler|join(", ") }}. Hepsi aynı adreste olduğu için tek sayfada topladık.</p>
+    {% endif %}
     {% if m.kategori == "park" and m.parca_sayisi and m.parca_sayisi > 1 %}
     <p class="soluk kucuk">Bu alan İBB kaydında {{ m.parca_sayisi }} ayrı poligon parçası olarak
        tutuluyor; yukarıdaki büyüklük parçaların toplamıdır.</p>
@@ -94,6 +98,17 @@
     Kaynak: <a href="{{ m.kaynak_url }}" rel="nofollow noopener" target="_blank">{{ m.kaynak_ad }}</a>
     · Son doğrulama: <strong>{{ site.veri_tarihi_tr }}</strong>
   </p>
+
+  {% if m.ayni_adres %}
+  <section class="bolum">
+    <h2>Aynı adresteki diğer birimler</h2>
+    <p class="soluk">İBB kaydında bu adreste {{ m.ayni_adres|length }} birim daha var;
+       aynı ziyarette hepsini görebilirsiniz.</p>
+    <div class="izgara">
+      {% for b in m.ayni_adres %}{{ kart(b) }}{% endfor %}
+    </div>
+  </section>
+  {% endif %}
 
   {% if yakin %}
   <section class="bolum">

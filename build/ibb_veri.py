@@ -41,13 +41,18 @@ KAYNAKLAR = {
 
 
 def _halkalar(geom: dict):
-    """Polygon / MultiPolygon içindeki dış halkaları verir."""
+    """Her poligon için (dış halka, iç halkalar) verir.
+
+    GeoJSON'da bir poligonun ilk halkası dış sınır, sonrakiler DELİKTİR (park içindeki
+    gölet, bina, yol adası). 9.519 poligonun 50'sinde delik var; düşülmezse o alanların
+    büyüklüğü olduğundan fazla görünür.
+    """
     t, k = geom["type"], geom["coordinates"]
     if t == "Polygon":
-        yield k[0]
+        yield k[0], k[1:]
     elif t == "MultiPolygon":
         for parca in k:
-            yield parca[0]
+            yield parca[0], parca[1:]
 
 
 def _alan_ve_merkez(halka: list) -> tuple[float, float, float]:
@@ -152,8 +157,11 @@ def geojson_oku(dosya: Path) -> list[dict]:
         if not ad:
             continue
         toplam_alan, en_iyi = 0.0, None
-        for halka in _halkalar(ozellik["geometry"]):
-            lat, lng, alan = _alan_ve_merkez(halka)
+        for dis, icler in _halkalar(ozellik["geometry"]):
+            lat, lng, alan = _alan_ve_merkez(dis)
+            for ic in icler:                      # delikleri düş
+                alan -= _alan_ve_merkez(ic)[2]
+            alan = max(alan, 0.0)
             toplam_alan += alan
             if en_iyi is None or alan > en_iyi[2]:
                 en_iyi = (lat, lng, alan)

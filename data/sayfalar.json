@@ -13,7 +13,7 @@
     "baslik": "Neden puan yok?",
     "paragraflar": [
      "Benzer sitelerin çoğu her mekâna bir puan verir. Bir mekânı gezmeden, ölçmeden ona 8,4/10 vermek okuru yanıltır: puan, olmayan bir değerlendirmeyi varmış gibi gösterir.",
-     "Bu sitedeki 284 kaydın tamamı resmî açık veriden gelir ve puanlanmamıştır. Bunun yerine ölçülebilir bilgi yayımlıyoruz: alan kaç metrekare, hangi gün ve saatte açık, girişi ücretsiz mi, kapalı alan mı, koordinatı ne."
+     "Bu sitedeki 280 kaydın tamamı resmî açık veriden gelir ve puanlanmamıştır. Bunun yerine ölçülebilir bilgi yayımlıyoruz: alan kaç metrekare, hangi gün ve saatte açık, girişi ücretsiz mi, kapalı alan mı, koordinatı ne."
     ]
    },
    {
@@ -27,14 +27,17 @@
      "Müze ve kütüphane veri setlerinde koordinat sütunu yok, yalnız adres var. Bu kayıtların konumu OpenStreetMap üzerinden bulundu ve bulunanlarda koordinat kaynağı sayfada açıkça yazılıyor; bulunamayanlarda koordinat boş bırakıldı.",
      "Şehir Tiyatroları veri setinde sahnenin ilçesi yok. İlçe, sahne adında geçiyorsa oradan, geçmiyorsa koordinatın OpenStreetMap'te ters çözümlenmesiyle belirlendi.",
      "Adres alanlarında ilçe çıkarımı yanıltıcı olabiliyor: “Arnavutköy Sosyal Tesisi” Arnavutköy ilçesinde değil, Beşiktaş'ın Arnavutköy mahallesinde. Bu yüzden ilçe her zaman adresin ilçe alanından alınır, mekânın adından değil.",
-     "Koordinatı kendi ilçesinin ortancasından çok uzağa düşen kayıtlar şüpheli olarak işaretlenir ve haritaya konmaz; kaynak veri değiştirilmez."
+     "Koordinatı kendi ilçesinin ortancasından çok uzağa düşen kayıtlar şüpheli olarak işaretlenir ve haritaya konmaz; kaynak veri değiştirilmez.",
+     "İlçe bilgisi OpenStreetMap ters çözümüyle karşılaştırılır. İkisi de yanılabiliyor: İBB Taksim Gezi Parkı'nı Şişli yazmış (park Beyoğlu'nda), OSM ise Burgazada'daki bir kaydı Fatih sanıyor. Bu yüzden anlaşmazlıkta hakem coğrafyadır — kayıt hangi ilçenin kayıt kümesine belirgin biçimde daha yakın düşüyorsa o kabul edilir, aksi hâlde İBB'nin değeri korunur.",
+     "Poligonların iç halkaları (park içindeki gölet, bina, yol adası) alandan düşülür. Düşülmediğinde 16 kaydın büyüklüğü olduğundan fazla görünüyordu; Menekşe Deresi Parkı'nda fark 33.000 m²ydi.",
+     "OpenStreetMap'ten gelen koordinat, mekân adıyla hiçbir ayırt edici sözcük paylaşmıyorsa kullanılmaz. Adres tabanlı arama bazen çevredeki başka bir yeri döndürüyor (bir kütüphane için yağlama cihazları mağazası gibi); yaklaşık konum göstermektense hiç göstermemeyi seçiyoruz."
     ]
    },
    {
     "baslik": "Hangi mekânın kendi sayfası var?",
     "paragraflar": [
-     "İBB müzeleri (48), kütüphaneleri (72), kültür merkezleri (16), sosyal tesisleri (30) ve çocuk oyunu sahnelenen tiyatro sahneleri (12) için ayrı sayfa açılır. Yeşil alanlarda eşik 50.000 m²'dir; bu büyüklüğün üzerindeki 106 park, koru ve kent ormanı kendi sayfasını alır.",
-     "Daha küçük mahalle parkları için ayrı sayfa açmıyoruz: onlar hakkında doğrulanmış olarak söyleyebileceğimiz her şey (ad, tür, büyüklük, konum) ilçe park listelerinde zaten var. Envanterin tamamı — 523 kayıt — o listelerde yer alıyor."
+     "İBB müzeleri (44), kütüphaneleri (72), kültür merkezleri (16), sosyal tesisleri (30) ve çocuk oyunu sahnelenen tiyatro sahneleri (12) için ayrı sayfa açılır. Yeşil alanlarda eşik 50.000 m²'dir; bu büyüklüğün üzerindeki 106 park, koru ve kent ormanı kendi sayfasını alır.",
+     "Daha küçük mahalle parkları için ayrı sayfa açmıyoruz: onlar hakkında doğrulanmış olarak söyleyebileceğimiz her şey (ad, tür, büyüklük, konum) ilçe park listelerinde zaten var. Envanterin tamamı — 529 kayıt — o listelerde yer alıyor."
     ]
    },
    {
@@ -61,12 +64,12 @@
      {
       "ad": "Park, Bahçe ve Yeşil Alan Verileri",
       "url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
-      "not": "523 yeşil alan kaydı, poligon geometrisiyle"
+      "not": "529 yeşil alan kaydı, poligon geometrisiyle"
      },
      {
       "ad": "İBB Müzeleri Lokasyon, Çalışma Gün ve Saatleri",
       "url": "https://data.ibb.gov.tr/dataset/ibb-muzeleri-lokasyon-calisma-gun-ve-saatleri",
-      "not": "48 müze"
+      "not": "44 müze"
      },
      {
       "ad": "İBB Kütüphaneleri Lokasyon, Çalışma Gün ve Saatleri",
