@@ -1,0 +1,660 @@
+[
+ {
+  "slug": "istanbulda-cocuk-tiyatrosu",
+  "baslik": "İstanbul'da Çocuk Tiyatrosu: Hangi Sahnede Oynanıyor?",
+  "ozet": "İBB Şehir Tiyatroları'nın açık verisine göre çocuk oyunları 12 sahnede oynanıyor. Sahneler, ilçeleri ve kaç çocuk oyunu seansı sahnelendiği.",
+  "cevap": "İBB Şehir Tiyatroları'nın 2017–2023 dönemine ait açık veri kayıtlarında 1.830 çocuk oyunu seansı görünüyor; bu seanslar 12 sahnede, 78 farklı oyunla gerçekleşmiş. En çok çocuk oyunu sahnelenen yer Ümraniye Sahnesi (Ümraniye).",
+  "bolumler": [
+   {
+    "baslik": "Çocuk oyunu sahnelenen sahneler",
+    "paragraflar": [
+     "Aşağıdaki tablo İBB Şehir Tiyatroları'nın kendi açık veri setinden üretildi. Sayılar, o sahnede kaydı bulunan çocuk oyunu seanslarının toplamıdır — kaç ayrı oyun oynandığını değil, kaç kez perde açıldığını gösterir."
+    ],
+    "tablo": {
+     "basliklar": [
+      "Sahne",
+      "İlçe",
+      "Çocuk oyunu seansı",
+      "İzleyici"
+     ],
+     "satirlar": [
+      [
+       "Ümraniye Sahnesi",
+       "Ümraniye",
+       "216",
+       "75.460"
+      ],
+      [
+       "Gaziosmanpaşa Sahnesi",
+       "Gaziosmanpaşa",
+       "209",
+       "45.220"
+      ],
+      [
+       "Kağıthane Sadabad Sahnesi",
+       "Kağıthane",
+       "203",
+       "84.068"
+      ],
+      [
+       "Fatih Reşat Nuri Sahnesi",
+       "Fatih",
+       "201",
+       "57.902"
+      ],
+      [
+       "Harbiye Muhsin Ertuğrul Sahnesi",
+       "Şişli",
+       "198",
+       "92.740"
+      ],
+      [
+       "Üsküdar Musahipzade Celâl Sahnesi",
+       "Üsküdar",
+       "184",
+       "55.530"
+      ],
+      [
+       "Sultangazi Hoca Ahmet Yesevi Sahnesi",
+       "Sultangazi",
+       "140",
+       "47.370"
+      ],
+      [
+       "Kadıköy Haldun Taner Sahnesi",
+       "Kadıköy",
+       "138",
+       "37.246"
+      ],
+      [
+       "Gaziosmanpaşa Ferih Egemen Çocuk Tiyatrosu Sahnesi",
+       "Gaziosmanpaşa",
+       "106",
+       "19.549"
+      ],
+      [
+       "Kağıthane Küçük Kemal Çocuk Tiyatrosu Sahnesi",
+       "Kağıthane",
+       "104",
+       "11.102"
+      ],
+      [
+       "Müze Gazhane Prof. Dr. Sevda Şener Sahnesi",
+       "Kadıköy",
+       "70",
+       "16.144"
+      ],
+      [
+       "Üsküdar Kerem Yılmazer Sahnesi",
+       "Üsküdar",
+       "61",
+       "10.971"
+      ]
+     ]
+    },
+    "uyari": "Bu veri 2017–2023 dönemini kapsar ve GÜNCEL PROGRAM DEĞİLDİR. Hangi oyunun bugün hangi sahnede olduğunu ve bilet durumunu İBB Şehir Tiyatroları'nın kendi sitesinden öğrenin."
+   },
+   {
+    "baslik": "Bilet ve program nereden öğrenilir?",
+    "paragraflar": [
+     "İBB Şehir Tiyatroları'nın oyun takvimi ve bilet satışı kurumun kendi sitesi üzerinden yürüyor. Açık veri seti yalnızca geçmiş sezonların kaydını içerdiği için burada güncel takvim yayımlanmıyor; uydurmak yerine kaynağa yönlendiriyoruz.",
+     "Sahnelerin konumu ve hangi ilçede olduğu bu sitedeki sahne sayfalarında koordinatıyla birlikte duruyor."
+    ]
+   },
+   {
+    "baslik": "Verideki çocuk oyunlarından bazıları",
+    "paragraflar": [
+     "Açık veri setinde çocuk kategorisinde kayıtlı 78 farklı oyun adı geçiyor. Bir bölümü:"
+    ],
+    "liste": [
+     "Alaaddin'in Sihirli Lambası",
+     "Anatole Sokak Oyuncuları \"Ben Sen O Biz Siz Onlar\"",
+     "Bana Bir Masal Anlat / Kuzguncuk Sanat Tiyatrosu",
+     "Bekçi İle Postacı",
+     "Benim Güzel Pabuçlarım",
+     "Benim Küçük Yıldızım",
+     "Berfu'nun Rüyası (Berko Çocuk Tiyatrosu)",
+     "Berko Çocuk Tiyatrosu \"Berfu'nun Rüyası\"",
+     "Bilge Aşçı Ve Çınar'ın Hikayesi / Tiyatro Pan",
+     "Bilge Aşçı Ve Çınar’ın Hikayesi (Pan Tiyatro)",
+     "Bir Gece Masalı",
+     "Bir Gün Ayakkabımın Teki",
+     "Bir Kümes Hikayesi",
+     "Bir Varmış Bir Yokmuş Masal Konseri (Ayşegül Dede)",
+     "Bisküvi Adam",
+     "Burnunu Kaybeden Palyaço (Uygur Çocuk Tiyatrosu)",
+     "Canavar Mı Yok Mu? / Ginko Tiyatro",
+     "Cengiz Samsun Kukla Tiyatrosu \"Karagöz'ün İnadı - Bahçe\"",
+     "Dedektif Köpek Cash",
+     "Define Adası",
+     "Demir Kız (Konuk Oyun)",
+     "Elma Kurdu Kırtık",
+     "Evvel Zaman İçinde (Konuk Oyun)",
+     "Fabrika Sanat Tiyatrosu \"Işıl Dünya\"",
+     "Fındıkkıran",
+     "Fısıltı Odası / Mimbaz Tiyatro",
+     "Gökkuşağının Altında (Uygur Çocuk Tiyatrosu)",
+     "Harikalar Mutfağı",
+     "Herkes Sihirbaz Olacak",
+     "Karagöz (Hayali Kybele - Sibel Tomaç)"
+    ]
+   }
+  ],
+  "sss": [
+   {
+    "s": "İstanbul'da çocuk tiyatrosu nerede var?",
+    "c": "İBB Şehir Tiyatroları'nın açık verisine göre çocuk oyunları 12 sahnede oynandı: Ümraniye Sahnesi (Ümraniye), Gaziosmanpaşa Sahnesi (Gaziosmanpaşa), Kağıthane Sadabad Sahnesi (Kağıthane), Fatih Reşat Nuri Sahnesi (Fatih), Harbiye Muhsin Ertuğrul Sahnesi (Şişli), Üsküdar Musahipzade Celâl Sahnesi (Üsküdar) ve diğerleri."
+   },
+   {
+    "s": "Çocuk tiyatrosu bileti ne kadar?",
+    "c": "Bilet fiyatı açık veri setinde yer almıyor. Güncel fiyat ve kontenjan için İBB Şehir Tiyatroları'nın kendi sitesine bakın."
+   },
+   {
+    "s": "Bu liste güncel program mı?",
+    "c": "Hayır. Veri 2017–2023 dönemine aittir ve hangi sahnede çocuk oyunu geleneği olduğunu gösterir. Güncel takvim için kurumun sitesine bakın."
+   }
+  ],
+  "kaynaklar": [
+   {
+    "ad": "İBB Açık Veri Portalı — Şehir Tiyatroları Veri Seti",
+    "url": "https://data.ibb.gov.tr/dataset/sehir-tiyatrolari-veri-seti"
+   },
+   {
+    "ad": "İBB Şehir Tiyatroları (güncel program ve bilet)",
+    "url": "https://sehirtiyatrolari.ibb.istanbul/tr"
+   }
+  ]
+ },
+ {
+  "slug": "ibb-kutuphaneleri-cocukla",
+  "baslik": "Çocukla Kütüphane: İstanbul'daki 72 İBB Kütüphanesi",
+  "ozet": "İBB'ye bağlı 72 halk kütüphanesinin ilçesi, adresi ve çalışma saatleri. Giriş ve üyelik ücretsiz; yağmurlu günün en ucuz planı.",
+  "cevap": "İstanbul'da İBB'ye bağlı 72 halk kütüphanesi var ve hepsinde giriş ücretsizdir. Kütüphaneler 29 ilçeye yayılmış durumda; 69 tanesinin çalışma saati İBB'nin açık veri kaydında yer alıyor.",
+  "bolumler": [
+   {
+    "baslik": "Neden kütüphane?",
+    "paragraflar": [
+     "Çocukla dışarı çıkmanın maliyeti hızla artıyor: bir oyun alanı, bir kafe, iki bilet derken hafta sonu pahalıya geliyor. Halk kütüphanesi bunun tersi — kapalı, ısıtılan, sessiz ve tamamen ücretsiz bir mekân.",
+     "İBB kütüphanelerinde giriş ve üyelik için ücret alınmaz. Ödünç kitap almak için üyelik gerekir, içeride okumak için gerekmez. Çocuk bölümü ve etkinlik takvimi kütüphaneden kütüphaneye değişir; gitmeden önce aramanız en doğrusu — bu sitedeki her kütüphane sayfasında telefon numarası var."
+    ]
+   },
+   {
+    "baslik": "Hangi ilçede kaç kütüphane var?",
+    "paragraflar": [
+     "İBB'nin açık veri kaydına göre dağılım:"
+    ],
+    "tablo": {
+     "basliklar": [
+      "İlçe",
+      "Kütüphane sayısı"
+     ],
+     "satirlar": [
+      [
+       "Fatih",
+       "10"
+      ],
+      [
+       "Beyoğlu",
+       "6"
+      ],
+      [
+       "Kadıköy",
+       "6"
+      ],
+      [
+       "Eyüpsultan",
+       "5"
+      ],
+      [
+       "Bakırköy",
+       "3"
+      ],
+      [
+       "Bayrampaşa",
+       "3"
+      ],
+      [
+       "Küçükçekmece",
+       "3"
+      ],
+      [
+       "Şişli",
+       "3"
+      ],
+      [
+       "Arnavutköy",
+       "2"
+      ],
+      [
+       "Avcılar",
+       "2"
+      ],
+      [
+       "Başakşehir",
+       "2"
+      ],
+      [
+       "Beykoz",
+       "2"
+      ],
+      [
+       "Esenyurt",
+       "2"
+      ],
+      [
+       "Güngören",
+       "2"
+      ],
+      [
+       "Kartal",
+       "2"
+      ],
+      [
+       "Maltepe",
+       "2"
+      ],
+      [
+       "Sarıyer",
+       "2"
+      ],
+      [
+       "Sultangazi",
+       "2"
+      ],
+      [
+       "Tuzla",
+       "2"
+      ],
+      [
+       "Ümraniye",
+       "2"
+      ],
+      [
+       "Adalar",
+       "1"
+      ],
+      [
+       "Bağcılar",
+       "1"
+      ],
+      [
+       "Beşiktaş",
+       "1"
+      ],
+      [
+       "Gaziosmanpaşa",
+       "1"
+      ],
+      [
+       "Pendik",
+       "1"
+      ],
+      [
+       "Sancaktepe",
+       "1"
+      ],
+      [
+       "Sultanbeyli",
+       "1"
+      ],
+      [
+       "Çekmeköy",
+       "1"
+      ],
+      [
+       "Üsküdar",
+       "1"
+      ]
+     ]
+    }
+   },
+   {
+    "baslik": "Kütüphaneye çocukla gitmeden önce",
+    "liste": [
+     "Çalışma günü ve saati kütüphaneye göre değişiyor; sayfadaki saat bilgisi İBB kaydından geliyor, resmî tatillerde değişebilir.",
+     "Çocuk bölümü olup olmadığı açık veri setinde yer almıyor. Telefonla sormak birkaç dakika sürüyor ve boşa yolculuğu önlüyor.",
+     "Ödünç almak isterseniz üyelik için kimlik gerekir."
+    ]
+   }
+  ],
+  "sss": [
+   {
+    "s": "İBB kütüphaneleri ücretli mi?",
+    "c": "Hayır. İBB halk kütüphanelerinde giriş ve üyelik ücretsizdir."
+   },
+   {
+    "s": "İstanbul'da kaç İBB kütüphanesi var?",
+    "c": "İBB'nin açık veri kaydında 72 kütüphane bulunuyor (2026-09-07 itibarıyla)."
+   },
+   {
+    "s": "Kütüphaneye kaç yaşındaki çocukla gidilir?",
+    "c": "Yaş sınırı yok; ancak kütüphane sessiz bir ortamdır. Çocuk bölümü olan kütüphaneler bebek ve okul öncesi için daha rahattır — hangi kütüphanede çocuk bölümü olduğunu telefonla teyit edin."
+   }
+  ],
+  "kaynaklar": [
+   {
+    "ad": "İBB Açık Veri Portalı — İBB Kütüphaneleri Lokasyon, Çalışma Gün ve Saatleri",
+    "url": "https://data.ibb.gov.tr/dataset/ibb-kutuphaneleri-lokasyon-calisma-gun-ve-saatleri"
+   }
+  ]
+ },
+ {
+  "slug": "istanbulun-en-buyuk-parklari",
+  "baslik": "İstanbul'un En Büyük Parkları ve Koruları",
+  "ozet": "İBB'nin yeşil alan envanterindeki 523 kaydın en büyükleri: hangi park kaç metrekare, hangi ilçede.",
+  "cevap": "İBB'nin yeşil alan envanterinde 523 park, koru ve mesire alanı kayıtlı; toplam alan 23.859.522 m². En büyüğü 15 Temmuz Kent Ormanı 3. Etap (Eyüpsultan, 2.227.626 m²).",
+  "bolumler": [
+   {
+    "baslik": "En büyük 25 yeşil alan",
+    "paragraflar": [
+     "Büyüklükler, İBB'nin yayımladığı poligon geometrilerinden hesaplandı. Kaynakta bazı parklar birden çok parça olarak kayıtlı; bu parçalar birleştirilip toplam alan verildi, yoksa aynı park listede birkaç kez ve gerçek boyutunun altında görünürdü."
+    ],
+    "tablo": {
+     "basliklar": [
+      "Yeşil alan",
+      "İlçe",
+      "Tür",
+      "Büyüklük"
+     ],
+     "satirlar": [
+      [
+       "15 Temmuz Kent Ormanı 3. Etap",
+       "Eyüpsultan",
+       "Kent Ormani",
+       "2.227.626 m²"
+      ],
+      [
+       "15 Temmuz Kent Ormanı 2. Etap",
+       "Eyüpsultan",
+       "Kent Ormani",
+       "1.623.680 m²"
+      ],
+      [
+       "15 Temmuz Kent Ormanı 1. Etap",
+       "Eyüpsultan",
+       "Kent Ormani",
+       "1.522.150 m²"
+      ],
+      [
+       "Orhangazi Şehir Parkı",
+       "Maltepe",
+       "Park",
+       "1.205.857 m²"
+      ],
+      [
+       "Hacıosman Atatürk Kent Ormanı ve Derbent Bölümü",
+       "Sarıyer",
+       "Kent Ormani",
+       "1.076.206 m²"
+      ],
+      [
+       "Florya Atatürk Ormanı ve İPA Yerleşkesi",
+       "Bakırköy",
+       "Koru",
+       "645.483 m²"
+      ],
+      [
+       "Emirgan Korusu",
+       "Sarıyer",
+       "Koru",
+       "428.026 m²"
+      ],
+      [
+       "Yıldız Korusu",
+       "Beşiktaş",
+       "Koru",
+       "390.260 m²"
+      ],
+      [
+       "Rahmi Demir Kent Ormanı",
+       "Çekmeköy",
+       "Kent Ormani",
+       "331.581 m²"
+      ],
+      [
+       "Büyükçekmece Doğal Yaşam Parkı",
+       "Büyükçekmece",
+       "Park",
+       "331.082 m²"
+      ],
+      [
+       "Avcılar Sahil Parkı",
+       "Avcılar",
+       "Park",
+       "299.368 m²"
+      ],
+      [
+       "Fatih Çeşmesi Mesire Alanı",
+       "Eyüpsultan",
+       "Mesire",
+       "290.032 m²"
+      ],
+      [
+       "Beykoz Korusu",
+       "Beykoz",
+       "Koru",
+       "276.100 m²"
+      ],
+      [
+       "Küçük Çamlıca Korusu",
+       "Üsküdar",
+       "Koru",
+       "271.380 m²"
+      ],
+      [
+       "100. Yıl Parkı",
+       "Büyükçekmece",
+       "Park",
+       "235.465 m²"
+      ],
+      [
+       "Topkapı Deprem Parkı",
+       "Zeytinburnu",
+       "Park",
+       "225.291 m²"
+      ],
+      [
+       "Şehit Kadir Yıldırım Parkı (Caddebostan Kara ve Sahil Parkı)",
+       "Kadıköy",
+       "Park",
+       "213.789 m²"
+      ],
+      [
+       "Çırpıcı Şehir Parkı",
+       "Bakırköy",
+       "Park",
+       "212.123 m²"
+      ],
+      [
+       "Sadabat Mesire Alanı",
+       "Kağıthane",
+       "Mesire",
+       "207.425 m²"
+      ],
+      [
+       "İBB Sosyal Tesisler - Kartal İDO Arası Kara ve Sahil Parkı",
+       "Kartal",
+       "Park",
+       "203.138 m²"
+      ],
+      [
+       "Küçükçekmece Gölü Sahil Parkı",
+       "Küçükçekmece",
+       "Park",
+       "176.390 m²"
+      ],
+      [
+       "Şehit Gülşen Bahadır Parkı",
+       "Bakırköy",
+       "Park",
+       "175.661 m²"
+      ],
+      [
+       "Menekşe Deresi Parkı",
+       "Küçükçekmece",
+       "Park",
+       "169.592 m²"
+      ],
+      [
+       "Büyük Çamlıca Korusu",
+       "Üsküdar",
+       "Koru",
+       "166.746 m²"
+      ],
+      [
+       "Hidiv Korusu",
+       "Beykoz",
+       "Koru",
+       "159.852 m²"
+      ]
+     ]
+    }
+   },
+   {
+    "baslik": "Büyük park her zaman iyi park mı?",
+    "paragraflar": [
+     "Değil. Bir kent ormanının 2 km² olması, çocuklu bir aile için yürüyüş mesafesinde oyun grubu, tuvalet ya da gölge olduğu anlamına gelmiyor. Bu listedeki büyüklük ölçülebilir bir gerçek; mekânın çocuğa uygunluğu ise gidip görmeden söylenemez, biz de puan vermiyoruz.",
+     "Mahallenizdeki parkı arıyorsanız ilçe park listelerine bakın: orada büyüklüğüne bakılmaksızın İBB kaydındaki her yeşil alan var."
+    ]
+   }
+  ],
+  "sss": [
+   {
+    "s": "İstanbul'un en büyük parkı hangisi?",
+    "c": "İBB yeşil alan envanterine göre 15 Temmuz Kent Ormanı 3. Etap (Eyüpsultan), 2.227.626 m²."
+   },
+   {
+    "s": "İstanbul'da kaç park var?",
+    "c": "İBB'nin park, koru, mesire ve kent ormanı envanterinde 523 kayıt bulunuyor. Bu sayı yalnızca İBB sorumluluğundaki alanları kapsar; ilçe belediyelerinin parkları ayrı kayıtlarda tutulur."
+   },
+   {
+    "s": "Park girişleri ücretli mi?",
+    "c": "İBB'nin yeşil alan envanterindeki parklar, korular ve kent ormanları halka açıktır ve girişleri ücretsizdir. Otopark, tesis veya büfe hizmetleri ücretli olabilir."
+   }
+  ],
+  "kaynaklar": [
+   {
+    "ad": "İBB Açık Veri Portalı — Park, Bahçe ve Yeşil Alan Verileri",
+    "url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri"
+   }
+  ]
+ },
+ {
+  "slug": "anadolu-mu-avrupa-mi-yesil-alan",
+  "baslik": "Anadolu Yakası mı, Avrupa Yakası mı? İlçe İlçe Yeşil Alan",
+  "ozet": "İBB verisiyle iki yakanın karşılaştırması: hangi yakada kaç park var, hangi ilçede ne kadar yeşil alan.",
+  "cevap": "İBB yeşil alan envanterinde Avrupa yakasında 242 kayıt (15.963.414 m²), Anadolu yakasında 281 kayıt (7.896.108 m²) bulunuyor. Avrupa yakası 25, Anadolu yakası 14 ilçeden oluşuyor; bu yüzden toplam yerine ilçe başına bakmak daha anlamlı.",
+  "bolumler": [
+   {
+    "baslik": "En çok yeşil alanı olan ilçeler",
+    "paragraflar": [
+     "Aşağıdaki tablo, İBB'nin envanterinde kayıtlı alanların ilçe toplamlarıdır. Bir uyarı: bu sayı ilçenin toplam yeşil alanı değil, İBB sorumluluğundaki alanların toplamıdır — ilçe belediyelerinin parkları bu veri setinde yok."
+    ],
+    "tablo": {
+     "basliklar": [
+      "İlçe",
+      "Yaka",
+      "Kayıt",
+      "Toplam alan"
+     ],
+     "satirlar": [
+      [
+       "Eyüpsultan",
+       "Avrupa",
+       "38",
+       "6.323.249 m²"
+      ],
+      [
+       "Sarıyer",
+       "Avrupa",
+       "34",
+       "1.891.060 m²"
+      ],
+      [
+       "Maltepe",
+       "Anadolu",
+       "16",
+       "1.699.030 m²"
+      ],
+      [
+       "Bakırköy",
+       "Avrupa",
+       "20",
+       "1.378.811 m²"
+      ],
+      [
+       "Pendik",
+       "Anadolu",
+       "25",
+       "1.219.286 m²"
+      ],
+      [
+       "Üsküdar",
+       "Anadolu",
+       "23",
+       "906.826 m²"
+      ],
+      [
+       "Kartal",
+       "Anadolu",
+       "25",
+       "836.737 m²"
+      ],
+      [
+       "Beykoz",
+       "Anadolu",
+       "29",
+       "827.597 m²"
+      ],
+      [
+       "Küçükçekmece",
+       "Avrupa",
+       "9",
+       "717.693 m²"
+      ],
+      [
+       "Beşiktaş",
+       "Avrupa",
+       "13",
+       "671.325 m²"
+      ],
+      [
+       "Fatih",
+       "Avrupa",
+       "28",
+       "661.546 m²"
+      ],
+      [
+       "Büyükçekmece",
+       "Avrupa",
+       "4",
+       "609.900 m²"
+      ]
+     ]
+    }
+   },
+   {
+    "baslik": "Sayı ile deneyim aynı şey değil",
+    "paragraflar": [
+     "Bir ilçenin toplam yeşil alanı yüksek çıkabilir çünkü sınırları içinde tek bir dev kent ormanı vardır; bu, oturduğunuz mahallede yürüme mesafesinde park olduğu anlamına gelmez. Kendi mahallenize bakmak için ilçe park listelerini kullanın — orada her kaydın büyüklüğü ve konumu var."
+    ]
+   }
+  ],
+  "sss": [
+   {
+    "s": "Hangi yakada daha çok park var?",
+    "c": "İBB envanterinde Avrupa yakasında 242, Anadolu yakasında 281 yeşil alan kayıtlı. Avrupa yakasında 25, Anadolu yakasında 14 ilçe bulunduğu için bu fark tek başına bir üstünlük göstergesi değil."
+   },
+   {
+    "s": "En çok yeşil alana sahip ilçe hangisi?",
+    "c": "İBB kaydına göre Eyüpsultan — 6.323.249 m². Bu yalnızca İBB sorumluluğundaki alanları kapsar."
+   }
+  ],
+  "kaynaklar": [
+   {
+    "ad": "İBB Açık Veri Portalı — Park, Bahçe ve Yeşil Alan Verileri",
+    "url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri"
+   }
+  ]
+ }
+]

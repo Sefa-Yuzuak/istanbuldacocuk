@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block icerik %}
+<h1>{{ baslik }}</h1>
+<p class="giris">İBB'nin Park, Bahçe ve Yeşil Alanlar verisinde {{ i.ad }} ilçesi için kayıtlı
+   <strong>{{ yesil|length }}</strong> park, koru ve mesire alanının tamamı. Toplam
+   <strong>{{ toplam_m2|binlik }} m²</strong> yeşil alan. Büyüklükler poligon geometrisinden
+   hesaplandı; parça parça kayıtlı parklar birleştirildi.</p>
+<p class="damga">Kaynak: İBB Açık Veri Portalı — Park, Bahçe ve Yeşil Alan Verileri ·
+   Son doğrulama: <strong>{{ site.veri_tarihi_tr }}</strong></p>
+
+<div class="arac-cubugu">
+  <label class="ara-etiket" for="ara">Parkta ara</label>
+  <input id="ara" type="search" placeholder="Park adı yazın…" autocomplete="off">
+  <p class="soluk kucuk" id="sayac">{{ yesil|length }} kayıt</p>
+</div>
+
+<div class="tablo-sar">
+  <table class="veri" id="park-tablo">
+    <thead>
+      <tr><th scope="col">Ad</th><th scope="col">Tür</th>
+          <th scope="col">Büyüklük</th><th scope="col">Konum</th></tr>
+    </thead>
+    <tbody>
+      {% for y in yesil %}
+      <tr>
+        <td>{% if y.url %}<a href="{{ y.url }}">{{ y.ad }}</a>{% else %}{{ y.ad }}{% endif %}</td>
+        <td>{{ y.tur_ad }}</td>
+        <td class="sag">{% if y.alan_m2 %}{{ y.alan_m2|binlik }} m²{% else %}—{% endif %}</td>
+        <td>{% if y.maps_url %}<a href="{{ y.maps_url }}" rel="nofollow noopener" target="_blank">Haritada gör</a>{% else %}—{% endif %}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<section class="bolum">
+  <h2>Bu liste ne işe yarar?</h2>
+  <p>Mahallenizdeki parkın adını biliyorsanız büyüklüğünü ve tam konumunu buradan görebilirsiniz.
+     Listede İBB envanterindeki her kayıt var — 50.000 m²'den büyük olanların ayrıca kendi
+     sayfası bulunuyor. Küçük mahalle parklarına ayrı sayfa açmıyoruz; onlar hakkında
+     söylenebilecek doğrulanmış bilgi bu tablodakinden fazlası değil.</p>
+</section>
+
+{% if sss %}
+<section class="bolum sss">
+  <h2>Sık sorulanlar</h2>
+  {% for s in sss %}
+  <details{% if loop.first %} open{% endif %}><summary>{{ s.s }}</summary><p>{{ s.c }}</p></details>
+  {% endfor %}
+</section>
+{% endif %}
+{% endblock %}
+
+{% block betik %}
+<script>
+(function () {
+  var g = document.getElementById("ara"), t = document.getElementById("park-tablo"),
+      s = document.getElementById("sayac");
+  if (!g || !t) return;
+  var satirlar = Array.prototype.slice.call(t.tBodies[0].rows);
+  g.addEventListener("input", function () {
+    var q = g.value.trim().toLocaleLowerCase("tr"), n = 0;
+    satirlar.forEach(function (r) {
+      var uydu = !q || r.cells[0].textContent.toLocaleLowerCase("tr").indexOf(q) > -1;
+      r.hidden = !uydu; if (uydu) n++;
+    });
+    s.textContent = n + " kayıt";
+  });
+})();
+</script>
+{% endblock %}

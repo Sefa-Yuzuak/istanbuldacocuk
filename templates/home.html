@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% from "_kart.html" import kart %}
+{% block icerik %}
+<section class="kahraman">
+  <h1>İstanbul'da çocukla gidilecek yerler</h1>
+  <p class="giris">Bu sitedeki her kayıt <strong>İstanbul Büyükşehir Belediyesi Açık Veri
+    Portalı'ndan</strong> alınmıştır: parkın kaç metrekare olduğu, kütüphanenin hangi saatlerde
+    açık olduğu, hangi sahnede çocuk oyunu oynandığı — hepsi kurumun kendi kaydından, kaynak
+    bağlantısı ve koordinatıyla. Mekânlara puan verilmez; elimizde olmayan bilgi uydurulmaz.</p>
+  <ul class="sayilar">
+    <li><b>{{ toplam }}</b><span>mekân sayfası</span></li>
+    <li><b>{{ yesil_toplam }}</b><span>park ve koru envanteri</span></li>
+    <li><b>{{ ucretsiz_sayi }}</b><span>ücretsiz yer</span></li>
+    <li><b>{{ (toplam_alan / 1000000)|round(1) }} km²</b><span>toplam yeşil alan</span></li>
+  </ul>
+  <p class="cip-liste">
+    {% for y in yakalar %}<a class="cip vurgu" href="{{ y.url }}">{{ y.ad }}</a>{% endfor %}
+    <a class="cip vurgu" href="/ucretsiz/">Ücretsiz yerler</a>
+    <a class="cip vurgu" href="/yagmurlu-gunde/">Yağmurlu güne uygun</a>
+    <a class="cip vurgu" href="/harita/">Harita</a>
+  </p>
+</section>
+
+<section class="bolum">
+  <h2>Neye göre arıyorsunuz?</h2>
+  <div class="izgara">
+    {% for k in kategoriler %}
+    <article class="kart kutu">
+      <a class="kart-bag" href="{{ k.url }}">
+        <span class="kart-ikon" aria-hidden="true">{{ k.ikon }}</span>
+        <span class="kart-ad">{{ k.ad }}</span>
+      </a>
+      <p class="kart-alt">{{ k.mekanlar|length }} kayıt</p>
+      <p class="soluk kucuk">{{ k.aciklama }}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="bolum">
+  <h2>En büyük yeşil alanlar</h2>
+  <p class="soluk">İBB envanterindeki en geniş park, koru ve kent ormanları.</p>
+  <div class="izgara">
+    {% for m in one_cikan %}{{ kart(m) }}{% endfor %}
+  </div>
+</section>
+
+{% if tiyatrolar %}
+<section class="bolum">
+  <h2>Çocuk oyunu oynanan sahneler</h2>
+  <p class="soluk">İBB Şehir Tiyatroları'nın açık veri kayıtlarında en çok çocuk oyunu seansı
+     görünen sahneler. Bu geçmiş kayıttır, güncel program değildir.</p>
+  <div class="izgara">
+    {% for m in tiyatrolar %}{{ kart(m) }}{% endfor %}
+  </div>
+  <p><a class="dugme ikincil" href="/tur/cocuk-tiyatrosu/">Tüm sahneler</a></p>
+</section>
+{% endif %}
+
+<section class="bolum">
+  <h2>İlçeye göre</h2>
+  <p class="soluk">Her ilçe sayfasında o ilçedeki mekânlar ve ilçenin
+     <strong>tam park envanteri</strong> var.</p>
+  <ul class="cip-liste">
+    {% for i in ilceler %}
+    <li><a class="cip" href="{{ i.url }}">{{ i.ad }} <span class="cip-sayi">{{ i.yesil|length }}</span></a></li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="bolum">
+  <h2>Bu site nasıl çalışıyor?</h2>
+  <div class="yontem">
+    <p><strong>Kaynak tek: resmî açık veri.</strong> İBB'nin park/yeşil alan, müze, kütüphane,
+       kültür merkezi, sosyal tesis ve Şehir Tiyatroları veri setleri. Her mekân sayfasında
+       hangi veri setinden geldiği ve doğrulama tarihi yazılı.</p>
+    <p><strong>Puan yok.</strong> Bir mekânı gezip değerlendirmeden ona not vermek, resmî kaydı
+       sahte bir otoriteyle süslemek olur. Bunun yerine ölçülebilir bilgiyi veriyoruz:
+       kaç metrekare, hangi saatlerde açık, ücretsiz mi, kapalı alan mı.</p>
+    <p><strong>Kaynak hataları düzeltilir ve yazılır.</strong> Parça parça kayıtlı parklar
+       birleştirildi, ondalık ayracı düşmüş koordinatlar onarıldı, ilçesiyle tutarsız
+       koordinatlar işaretlendi. Ayrıntısı <a href="/hakkinda/">Hakkında</a> sayfasında.</p>
+  </div>
+</section>
+{% endblock %}

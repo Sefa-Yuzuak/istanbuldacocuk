@@ -1,0 +1,492 @@
+{
+ "kutuphane|Taş Mektep Kütüphanesi|Adalar": {
+  "lat": 40.869026,
+  "lng": 29.124413,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Taş Mektep Kütüphanesi, 37, Türkoğlu Sokağı, Nizam Mahallesi, Adalar, İstanbul, Marmar"
+ },
+ "muze|Taş Mektep Müze|Adalar": null,
+ "kutuphane|Cemil Meriç Kütüphanesi|Arnavutköy": {
+  "lat": 41.186282,
+  "lng": 28.764706,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Cemil Meriç Kütüphanesi, Erdener Sokak, Yunus Emre Mahallesi, Arnavutköy, İstanbul, Ma"
+ },
+ "kutuphane|Rıfat Ilgaz Kütüphanesi|Arnavutköy": {
+  "lat": 41.179359,
+  "lng": 28.746002,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Rıfat Ilgaz Kütüphanesi, 1187/A, Eski Edirne Asfaltı Caddesi, Arnavutköy Merkez Mahall"
+ },
+ "kutuphane|Fakir Baykurt Kütüphanesi|Avcılar": {
+  "lat": 41.031238,
+  "lng": 28.702602,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Fakir Baykurt Kütüphanesi, 180, Kazım Karabekir Caddesi, Yeşilkent Mahallesi, Avcılar,"
+ },
+ "kutuphane|Sabahattin Eyüboğlu Kütüphanesi|Avcılar": {
+  "lat": 41.001177,
+  "lng": 28.71131,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Sabahattin Eyüboğlu Kütüphanesi, 89, Firuzköy Bulvarı, Üniversite Mahallesi, Avcılar, "
+ },
+ "kutuphane|Bakırköy Ödünç Kütüphane|Bakırköy": {
+  "lat": 40.980942,
+  "lng": 28.874369,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Bakırköy Ödünç Kütüphane, Cumhuriyet Meydanı, Kartaltepe Mahallesi, Bakırköy, İstanbul"
+ },
+ "kutuphane|Baruthane Kütüphane|Bakırköy": {
+  "lat": 40.9755,
+  "lng": 28.860091,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Baruthane Kütüphane, Rauf Orbay Caddesi, Ataköy, Ataköy 2-5-6. Kısım Mahallesi, Bakırk"
+ },
+ "kutuphane|İPA İstanbul Kitaplığı|Bakırköy": {
+  "lat": 40.974789,
+  "lng": 28.787166,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB İPA İstanbul Kitaplığı, 2, Valilik Yolu Caddesi, Basınköy Mahallesi, Bakırköy, İstanbu"
+ },
+ "muze|Bakırköy Sanat|Bakırköy": null,
+ "muze|Baruthane Galeri|Bakırköy": {
+  "lat": 40.976088,
+  "lng": 28.857101,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "Hyatt Regency Istanbul Ataköy, Rauf Orbay Caddesi, Ataköy, Ataköy 2-5-6. Kısım Mahallesi, "
+ },
+ "muze|Baruthane Müze|Bakırköy": {
+  "lat": 40.97563,
+  "lng": 28.859495,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "Baruthane Müze, Rauf Orbay Caddesi, Ataköy, Ataköy 2-5-6. Kısım Mahallesi, Bakırköy, İstan"
+ },
+ "kutuphane|Evliya Çelebi Kütüphanesi|Bayrampaşa": {
+  "lat": 41.038943,
+  "lng": 28.895624,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Evliya Çelebi Kütüphanesi, Kazım Karabekir Caddesi, Altıntepsi Mahallesi, Bayrampaşa, "
+ },
+ "kutuphane|Suat Derviş Kütüphanesi|Bayrampaşa": {
+  "lat": 41.045783,
+  "lng": 28.902505,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Suat Derviş Kütüphanesi, 104-406, Tuna Caddesi, Bereç, Muratpaşa Mahallesi, Bayrampaşa"
+ },
+ "kutuphane|Sâmiha Ayverdi Kütüphanesi|Bayrampaşa": {
+  "lat": 41.072839,
+  "lng": 28.88711,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Sâmiha Ayverdi Kütüphanesi, 385, Eski Edirne Asfaltı, Cevatpaşa Mahallesi, Bayrampaşa,"
+ },
+ "kutuphane|Nasrettin Hoca Çocuk Kütüphanesi|Bağcılar": null,
+ "kutuphane|Rasim Özdenören Kütüphanesi|Başakşehir": {
+  "lat": 41.104566,
+  "lng": 28.785439,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Rasim Özdenören Kütüphanesi, A2/4, Ilgaz Sokak, Onurkent, Başakşehir Mahallesi, Başakş"
+ },
+ "kutuphane|Sabahattin Ali Kütüphanesi|Başakşehir": {
+  "lat": 41.068115,
+  "lng": 28.752934,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Sabahattin Ali Kütüphanesi, 49, Osmanlı Caddesi, Altınşehir Mahallesi, Başakşehir, İst"
+ },
+ "kutuphane|Feza Gürsey Kütüphanesi|Beykoz": {
+  "lat": 41.079096,
+  "lng": 29.074031,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Feza Gürsey Kütüphanesi, 50, Göksu Caddesi, Göksu Mahallesi, Beykoz, İstanbul, Marmara"
+ },
+ "kutuphane|Çubuklu Silolar Kütüphanesi|Beykoz": {
+  "lat": 41.108245,
+  "lng": 29.083587,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Çubuklu Silolar Kütüphanesi, Şehit Ersin Güner Caddesi, Çubuklu Mahallesi, Beykoz, İst"
+ },
+ "muze|Anadolu Hisarı Müzesi|Beykoz": null,
+ "muze|Dijital Sanatlar Müzesi|Beykoz": null,
+ "muze|Doğa ve Bilim Müzesi|Beykoz": null,
+ "kutuphane|Atatürk Kitaplığı (Merkez Kütüphane)|Beyoğlu": null,
+ "kutuphane|Casa Botter Kütüphanesi|Beyoğlu": {
+  "lat": 41.033861,
+  "lng": 28.978167,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İstiklal Caddesi, Kuloğlu, Kuloğlu Mahallesi, Beyoğlu, İstanbul, Marmara Bölgesi, 34433, T"
+ },
+ "kutuphane|Kuyumcular Hanı Kütüphanesi|Beyoğlu": null,
+ "kutuphane|Okçular Tekkesi Kütüphanesi|Beyoğlu": {
+  "lat": 41.040979,
+  "lng": 28.960307,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Okçular Tekkesi Kütüphanesi, 1, Okçular Sokağı, Kulaksız Mahallesi, Keçeci Piri Mahall"
+ },
+ "kutuphane|Peyami Safa Kütüphanesi|Beyoğlu": {
+  "lat": 41.033406,
+  "lng": 28.969404,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Peyami Safa Kütüphanesi, 24, Bahariye Caddesi, Şişhane, Bedrettin, Bedrettin Mahallesi"
+ },
+ "kutuphane|Sevgi Soysal Kütüphanesi|Beyoğlu": {
+  "lat": 41.039443,
+  "lng": 28.985559,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Sevgi Soysal Kütüphanesi, 2, Aydede Caddesi, Talimhane, Kocatepe Mahallesi, Beyoğlu, İ"
+ },
+ "muze|Atatürk Kitaplığı Sanat Galerisi|Beyoğlu": null,
+ "muze|Casa Botter Sanat Galerisi|Beyoğlu": null,
+ "muze|Cumhuriyet Müzesi|Beyoğlu": null,
+ "muze|Kuyumcular Hanı Müzesi|Beyoğlu": null,
+ "muze|Metrohan|Beyoğlu": {
+  "lat": 41.028252,
+  "lng": 28.974031,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İETT Metrohan, Tünel Meydanı Sokağı, Tünel, Asmalı Mescit, Asmalı Mescit Mahallesi, Beyoğl"
+ },
+ "muze|İstanbul Boğaziçi Müzesi|Beyoğlu": null,
+ "muze|İstanbul Sanat Müzesi|Beyoğlu": {
+  "lat": 41.025911,
+  "lng": 28.982812,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İstanbul Modern Sanat Müzesi, 1/1, Tophane İskele Caddesi, Tophane, Kılıçali Paşa, Kılıçal"
+ },
+ "kutuphane|Beşiktaş İskele Kütüphanesi|Beşiktaş": {
+  "lat": 41.041202,
+  "lng": 29.007217,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Beşiktaş İskele Kütüphanesi, 16, Çiğdem Sokağı, Sinanpaşa Mahallesi, Akaretler, Beşikt"
+ },
+ "muze|Aşiyan Müzesi|Beşiktaş": {
+  "lat": 41.082658,
+  "lng": 29.053452,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "Aşiyan Müzesi, Kayalar Sokağı, Aşiyan, Bebek Mahallesi, Beşiktaş, İstanbul, Marmara Bölges"
+ },
+ "muze|Bebek Sarnıcı Sanat Galerisi|Beşiktaş": null,
+ "muze|İtfaiye Müzesi|Beşiktaş": null,
+ "kutuphane|Gülten Akın Kütüphanesi|Esenyurt": {
+  "lat": 41.033952,
+  "lng": 28.651397,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Gülten Akın Kütüphanesi, 81, Kaya Sokağı, Kıraç, Şehitler Mahallesi, Esenyurt, İstanbu"
+ },
+ "kutuphane|İsmail Hakkı Tonguç Kütüphanesi|Esenyurt": {
+  "lat": 41.033481,
+  "lng": 28.682769,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB İsmail Hakkı Tonguç Kütüphanesi, 19 Mayıs Bulvarı, Sultaniye Mahallesi, Esenyurt, İsta"
+ },
+ "kutuphane|Erdem Bayazıt Kütüphanesi|Eyüpsultan": null,
+ "kutuphane|Eyüp Sultan Kütüphanesi|Eyüpsultan": null,
+ "kutuphane|Hasan Hüseyin Korkmazgil Kütüphanesi|Eyüpsultan": {
+  "lat": 41.08297,
+  "lng": 28.928199,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Hasan Hüseyin Korkmazgil Kütüphanesi, 26, Cengiz Topel Caddesi, Akşemsettin Mahallesi,"
+ },
+ "kutuphane|Naile Akıncı Kütüphanesi|Eyüpsultan": {
+  "lat": 41.043831,
+  "lng": 28.937395,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Naile Akıncı Kütüphanesi, Feshane Caddesi, Nişancı Mahallesi, Eyüpsultan, İstanbul, Ma"
+ },
+ "kutuphane|Sesli Kütüphane|Eyüpsultan": {
+  "lat": 41.048243,
+  "lng": 28.93546,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Sesli Kütüphane, 6, Silahtarağa Caddesi, Merkez Mahallesi, Eyüpsultan, İstanbul, Marma"
+ },
+ "muze|Artİstanbul Feshane|Eyüpsultan": {
+  "lat": 41.044263,
+  "lng": 28.937615,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "Artistanbul Feshane, Defterdar Caddesi, Nişancı Mahallesi, Eyüpsultan, İstanbul, Marmara B"
+ },
+ "kutuphane|Ahmet Kabaklı Kütüphanesi|Fatih": {
+  "lat": 41.01961,
+  "lng": 28.939875,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Ahmet Kabaklı Kütüphanesi, 66/3, Akşemsettin Caddesi, Akdeniz, Hırka-i Şerif Mahallesi"
+ },
+ "kutuphane|Ayşe Hatun Halk Kütüphanesi|Fatih": null,
+ "kutuphane|Bulgur Palas Kütüphanesi|Fatih": {
+  "lat": 41.006995,
+  "lng": 28.944046,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Bulgur Palas Kütüphanesi, Seyit Yakuphan Sokağı, Yenikapı, Aksaray Mahallesi, İstanbul"
+ },
+ "kutuphane|Kadın Eserleri Kütüphanesi|Fatih": {
+  "lat": 41.030741,
+  "lng": 28.950488,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Kadın Eserleri Kütüphanesi, Ayvansaray Caddesi, Fener, Balat Mahallesi, İstanbul, Fati"
+ },
+ "kutuphane|Kara Surları Berlgradkapı Kitaplığı|Fatih": null,
+ "kutuphane|Kara Surları Mevlanakapı Kütüphanesi|Fatih": {
+  "lat": 41.014673,
+  "lng": 28.922071,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Kara Surları Mevlanakapı Kütüphanesi, 1, Mevlanakapı Caddesi, Mevlanakapı Mahallesi, İ"
+ },
+ "kutuphane|Kazı Evi Kütüphanesi|Fatih": null,
+ "kutuphane|Kütüphane Troleybüs|Fatih": {
+  "lat": 41.012047,
+  "lng": 28.962204,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Kütüphane Troleybüs, 4, Prof. Dr. Cavit Orhan Tütengil Sokağı, Süleymaniye Mahallesi, "
+ },
+ "kutuphane|Saraçhane Kütüphanesi|Fatih": null,
+ "kutuphane|Tasarım Müzesi Kütüphanesi|Fatih": {
+  "lat": 41.015827,
+  "lng": 28.965595,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "Süleymaniye hamami, Mimar Sinan Caddesi, Süleymaniye Mahallesi, İstanbul, Fatih, İstanbul,"
+ },
+ "muze|Bukoleon Sarayı|Fatih": {
+  "lat": 41.002449,
+  "lng": 28.975835,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "Bukoleon Sarayı Kalıntıları, Kapıağası Hisarı Sokağı, Sultan Ahmet Mahallesi, İstanbul, Fa"
+ },
+ "muze|Bulgur Palas Müzesi|Fatih": null,
+ "muze|Gülhane Sarnıcı|Fatih": {
+  "lat": 41.01368,
+  "lng": 28.981862,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "Gülhane Sarnıcı, Gülhane Parkı Sokağı, Cankurtaran Mahallesi, İstanbul, Fatih, İstanbul, M"
+ },
+ "muze|Haliç Sanat 1|Fatih": null,
+ "muze|Haliç Sanat 2|Fatih": null,
+ "muze|Haliç Sanat 3|Fatih": null,
+ "muze|Million Taşı|Fatih": {
+  "lat": 41.008067,
+  "lng": 28.978018,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "Milyon Taşı, Sultanahmet Meydanı, Binbirdirek Mahallesi, İstanbul, Fatih, İstanbul, Marmar"
+ },
+ "muze|Polyektus Kazıevi|Fatih": null,
+ "muze|Saraçhane Sergi Salonu|Fatih": null,
+ "muze|Tekfur Sarayı Müzesi|Fatih": {
+  "lat": 41.033942,
+  "lng": 28.940676,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "Tekfur Sarayı Müzesi, Şişhane Caddesi, Ayvansaray Mahallesi, İstanbul, Fatih, İstanbul, Ma"
+ },
+ "muze|Yedikule Gazhane Hangar|Fatih": {
+  "lat": 40.993192,
+  "lng": 28.922542,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İstanbul Surları, Yedikule Caddesi, Yedikule Mahallesi, İstanbul, Fatih, İstanbul, Marmara"
+ },
+ "muze|Yerebatan Sarnıcı Müzesi|Fatih": null,
+ "muze|İBB Belgradkapı Kara Surları Ziyaretçi Merkezi|Fatih": null,
+ "muze|İBB Mevlanakapı Kara Surları Ziyaretçi Merkezi|Fatih": {
+  "lat": 41.01814,
+  "lng": 28.926532,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "Holiday Inn Istanbul City, Turgut Özal Millet Caddesi, Mevlanakapı Mahallesi, İstanbul, Fa"
+ },
+ "muze|İstanbul Tasarım Müzesi|Fatih": {
+  "lat": 41.015827,
+  "lng": 28.965595,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "Süleymaniye hamami, Mimar Sinan Caddesi, Süleymaniye Mahallesi, İstanbul, Fatih, İstanbul,"
+ },
+ "kutuphane|Gaziosmanpaşa Meydan Kütüphanesi|Gaziosmanpaşa": null,
+ "kutuphane|Osman Nuri Ergin Kütüphanesi|Güngören": {
+  "lat": 41.028549,
+  "lng": 28.877082,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Osman Nuri Ergin Kütüphanesi, 78, Çinçindere Caddesi, Üçyüzlü, Gençosman Mahallesi, Gü"
+ },
+ "kutuphane|Sezai Karakoç Kütüphanesi|Güngören": {
+  "lat": 41.035921,
+  "lng": 28.872448,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Sezai Karakoç Kütüphanesi, 1, Doğanay Sokağı, Üçyüzlü, Gençosman Mahallesi, Güngören, "
+ },
+ "kutuphane|Metin And Kütüphanesi|K.çekmece": null,
+ "kutuphane|Afife Batur Kütüphanesi|Kadıköy": {
+  "lat": 40.997044,
+  "lng": 29.043726,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Afife Batur Kütüphanesi, 125, Kurbağalıdere Caddesi, Hasanpaşa Mahallesi, Kadıköy, İst"
+ },
+ "kutuphane|Kadıköy İskelesi Kütüphanesi|Kadıköy": {
+  "lat": 40.98504,
+  "lng": 29.02481,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "Caferağa Mahallesi, Kadıköy, İstanbul, Marmara Bölgesi, 34710, Türkiye"
+ },
+ "kutuphane|Moda İskelesi Kütüphanesi|Kadıköy": {
+  "lat": 40.97899,
+  "lng": 29.025104,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Moda İskelesi Kütüphanesi, Moda Caddesi, Moda, Caferağa Mahallesi, Kadıköy, İstanbul, "
+ },
+ "kutuphane|Müze Gazhane Sesli Kütüphane|Kadıköy": null,
+ "kutuphane|Turhan Selçuk Kütüphanesi|Kadıköy": null,
+ "kutuphane|Özgen Berkol Doğan Kütüphanesi|Kadıköy": {
+  "lat": 40.984096,
+  "lng": 29.030812,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Özgen Berkol Doğan Kütüphanesi, 20, Safa Sokağı, Bahariye, Caferağa Mahallesi, Kadıköy"
+ },
+ "muze|Karikatür ve Mizah Müzesi|Kadıköy": null,
+ "muze|Kemal Sunal Müzesi|Kadıköy": {
+  "lat": 40.970893,
+  "lng": 29.057794,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "Kemal Sunal Müzesi, Tuna Sokağı, Caddebostan Mahallesi, Kadıköy, İstanbul, Marmara Bölgesi"
+ },
+ "muze|Müze Gazhane C Binası|Kadıköy": null,
+ "muze|Müze Gazhane L Binası|Kadıköy": null,
+ "muze|Müze Gazhane P Binası|Kadıköy": null,
+ "muze|Turhan Selçuk Müzesi|Kadıköy": null,
+ "muze|Çocuk Bilim Merkezi|Kadıköy": null,
+ "muze|İklim Müzesi|Kadıköy": {
+  "lat": 40.996329,
+  "lng": 29.041814,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İklim Müzesi, İkbaliye Sokağı, Hasanpaşa Mahallesi, Kadıköy, İstanbul, Marmara Bölgesi, 34"
+ },
+ "kutuphane|Halil İnalcık Kütüphanesi|Kartal": {
+  "lat": 40.905902,
+  "lng": 29.161379,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Halil İnalcık Kütüphanesi, 130, Üsküdar Caddesi, Orhantepe Mahallesi, Kartal, İstanbul"
+ },
+ "kutuphane|Muallim Cevdet Kütüphanesi|Kartal": {
+  "lat": 40.886181,
+  "lng": 29.1966,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Muallim Cevdet Kütüphanesi, 142, Ankara Caddesi, Kordonboyu Mahallesi, Kartal, İstanbu"
+ },
+ "muze|Kağıthane Sanat|Kâğıthane": null,
+ "kutuphane|Atilla İlhan Kütüphanesi|Küçükçekmece": {
+  "lat": 40.990127,
+  "lng": 28.783246,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Atillâ İlhan Kütüphanesi, Kahramanlar Caddesi, Cennet Mahallesi, Küçükçekmece, İstanbu"
+ },
+ "kutuphane|Metin Altıok Kütüphanesi|Küçükçekmece": {
+  "lat": 41.052552,
+  "lng": 28.796212,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Metin Altıok Kütüphanesi, 140, İkitelli Caddesi, İkitelli, Atatürk Mahallesi, Küçükçek"
+ },
+ "kutuphane|Maltepe Ödünç Kütüphane|Maltepe": null,
+ "kutuphane|Muzaffer İzgü Kütüphanesi|Maltepe": {
+  "lat": 40.927566,
+  "lng": 29.156483,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Muzaffer İzgü Kütüphanesi, 31-35, Fevzi Çakmak Caddesi, Gülsuyu Mahallesi, Maltepe, İs"
+ },
+ "muze|Maltepe Sanat|Maltepe": {
+  "lat": 40.925067,
+  "lng": 29.131203,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "Maltepe Sanat, Altayçeşme Mahallesi, Maltepe, İstanbul, Marmara Bölgesi, Türkiye"
+ },
+ "kutuphane|Hasan İzzettin Dinamo Kütüphanesi|Pendik": {
+  "lat": 40.875952,
+  "lng": 29.231976,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Hasan İzzettin Dinamo Kütüphanesi, 95, Erol Kaya Caddesi, Batı Mahallesi, Pendik, İsta"
+ },
+ "kutuphane|Yaşar Kemal Kütüphanesi|Sancaktepe": {
+  "lat": 41.013289,
+  "lng": 29.206408,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Yaşar Kemal Kütüphanesi, 1, İlknur Sokağı, Meclis Mahallesi, Sancaktepe, İstanbul, Mar"
+ },
+ "kutuphane|Ahmet Bedevi Kütüphanesi|Sarıyer": {
+  "lat": 41.154164,
+  "lng": 29.030498,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Ahmet Bedevi Kütüphanesi, Hacı Osman Bayırı Caddesi, PTT Evleri Mahallesi, Sarıyer, İs"
+ },
+ "kutuphane|Cendere Sanat Kitaplığı|Sarıyer": null,
+ "muze|Cendere Sanat Müzesi|Sarıyer": null,
+ "kutuphane|İlhan Varank Kütüphanesi|Sultanbeyli": {
+  "lat": 40.969151,
+  "lng": 29.266968,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB İlhan Varank Kütüphanesi, 17/2, Kadıköy Sokağı, Mehmet Akif Mahallesi, Sultanbeyli, İs"
+ },
+ "kutuphane|Ahmed Arif Halk Kütüphanesi|Sultangazi": null,
+ "kutuphane|Hacı Bektaşi Veli Kütüphanesi|Sultangazi": null,
+ "kutuphane|Necati Cumalı Kütüphanesi|Tuzla": {
+  "lat": 40.817557,
+  "lng": 29.300143,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Necati Cumalı Kütüphanesi, Tahaffuzhane Caddesi, Postane, Postane Mahallesi, Tuzla, İs"
+ },
+ "kutuphane|İdris Güllüce Kütüphanesi|Tuzla": {
+  "lat": 40.850047,
+  "lng": 29.303116,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB İdris Güllüce Kütüphanesi, 20, Aydınlı Yolu Caddesi, İçmeler Mahallesi, Tuzla, İstanbu"
+ },
+ "kutuphane|Fatma Aliye Kütüphanesi|Çekmeköy": {
+  "lat": 41.053154,
+  "lng": 29.238028,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Fatma Aliye Kütüphanesi, 2, 145. Sokak, Alemdağ Mahallesi, Çekmeköy, İstanbul, Marmara"
+ },
+ "kutuphane|Ahmet Süheyl Ünver Kütüphanesi|Ümraniye": null,
+ "kutuphane|Dudullu Ödünç Kütüphanesi|Ümraniye": {
+  "lat": 41.005029,
+  "lng": 29.147644,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "Gülersan Yağlama Cihazları İstanbul Mağaza, 198, Tavukçuyolu Caddesi, Şerifali Mahallesi, "
+ },
+ "muze|Dudullu Sanat Galerisi|Ümraniye": {
+  "lat": 41.005029,
+  "lng": 29.147644,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "Gülersan Yağlama Cihazları İstanbul Mağaza, 198, Tavukçuyolu Caddesi, Şerifali Mahallesi, "
+ },
+ "kutuphane|Salah Birsel Kütüphanesi|Üsküdar": {
+  "lat": 41.029162,
+  "lng": 29.079995,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Salah Birsel Kütüphanesi, 39-31, Bosna Bulvarı, Kısıklı Mahallesi, Üsküdar, İstanbul, "
+ },
+ "kutuphane|Atatürk Müzesi Kütüphanesi|Şişli": {
+  "lat": 41.056404,
+  "lng": 28.987213,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Atatürk Müzesi Kütüphanesi, 140, Halaskargazi Caddesi, Meşrutiyet Mahallesi, Osmanbey,"
+ },
+ "kutuphane|Habitat Kütüphane|Şişli": {
+  "lat": 41.064778,
+  "lng": 28.987263,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Şişli Habitat Kütüphanesi, 211, Abide-i Hürriyet Caddesi, Merkez Mahallesi, Osmanbey, "
+ },
+ "kutuphane|Mecidiyeköy Ödünç Kütüphane|Şişli": {
+  "lat": 41.066532,
+  "lng": 28.995647,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Mecidiyeköy Ödünç Kütüphane, Büyükdere Caddesi, Mecidiyeköy Mahallesi, Osmanbey, Şişli"
+ },
+ "muze|Atatürk Müzesi|Şişli": {
+  "lat": 41.056404,
+  "lng": 28.987213,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Atatürk Müzesi Kütüphanesi, 140, Halaskargazi Caddesi, Meşrutiyet Mahallesi, Osmanbey,"
+ },
+ "muze|Habitat Sanat|Şişli": null,
+ "muze|Mecidiyeköy Sanat Galerisi|Şişli": {
+  "lat": 41.066466,
+  "lng": 28.995354,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "Mecidiyeköy Meydanı, Merkez Mahallesi, Osmanbey, Şişli, İstanbul, Marmara Bölgesi, Türkiye"
+ },
+ "ters|Harbiye Muhsin Ertuğrul Sahnesi": "Şişli",
+ "ters|Harbiye Cemil Topuzlu Açıkhava Tiyatrosu": "Şişli",
+ "ters|Müze Gazhane Prof. Dr. Sevda Şener Sahnesi": "Kadıköy",
+ "ters|Nazım Hikmet Kültür ve Sanat Evi": "Şişli",
+ "ters|İBB Yenibosna Dr. Enver Ören Kültür Merkezi": "Yenibosna Merkez Mahallesi"
+}

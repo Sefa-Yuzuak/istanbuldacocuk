@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block icerik %}
+<h1>{{ baslik }}</h1>
+<p class="giris">İstanbul'un 39 ilçesi. Her ilçe sayfasında o ilçedeki müze, kütüphane, tiyatro
+   sahnesi ve büyük parklar ile birlikte <strong>ilçenin tam yeşil alan envanteri</strong> var —
+   İBB'nin kaydındaki her park, koru ve mesire alanı, büyüklüğüyle.</p>
+<p class="damga">Kaynak: İBB Açık Veri Portalı · Son doğrulama:
+   <strong>{{ site.veri_tarihi_tr }}</strong></p>
+
+{% for y in yakalar %}
+<section class="bolum">
+  <h2>{{ y.ad }} ({{ y.ilceler|length }} ilçe)</h2>
+  <div class="tablo-sar">
+    <table class="veri">
+      <thead>
+        <tr><th scope="col">İlçe</th><th scope="col">Mekân sayfası</th>
+            <th scope="col">Park ve koru</th><th scope="col">Toplam yeşil alan</th></tr>
+      </thead>
+      <tbody>
+        {% for i in y.ilceler %}
+        <tr>
+          <td><a href="{{ i.url }}">{{ i.ad }}</a></td>
+          <td class="sag">{{ i.mekanlar|length }}</td>
+          <td class="sag"><a href="{{ i.url }}parklar/">{{ i.yesil|length }}</a></td>
+          <td class="sag">{{ i.yesil_m2|binlik }} m²</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endfor %}
+{% endblock %}

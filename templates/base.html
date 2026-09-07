@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ tam_baslik }}</title>
+<meta name="description" content="{{ meta_desc }}">
+<link rel="canonical" href="{{ site.url }}{{ canonical }}">
+{% block robots %}<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">{% endblock %}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.ad }}">
+<meta property="og:title" content="{{ baslik }}">
+<meta property="og:description" content="{{ meta_desc }}">
+<meta property="og:url" content="{{ site.url }}{{ canonical }}">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#12506b">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/static/s.css">
+{% if site.gsc %}<meta name="google-site-verification" content="{{ site.gsc }}">{% endif %}
+{% if site.adsense %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsense }}" crossorigin="anonymous"></script>{% endif %}
+{% for s in schema %}
+<script type="application/ld+json">{{ s|json|safe }}</script>
+{% endfor %}
+{% block head_ek %}{% endblock %}
+<!-- derleme: {{ site.derleme_zamani }} -->
+</head>
+<body>
+<a class="atla" href="#icerik">İçeriğe geç</a>
+
+<header class="ust">
+  <div class="kap ust-ic">
+    <a class="logo" href="/" aria-label="{{ site.ad }} ana sayfa">
+      <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path d="M3 22h26v3H3z" fill="#12506b"/><path d="M7 22V11l9-6 9 6v11" fill="none" stroke="#2f9fc7" stroke-width="2.4" stroke-linejoin="round"/><circle cx="16" cy="15" r="3" fill="#f2b134"/></svg>
+      <span>İstanbulda<b>Çocuk</b></span>
+    </a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="ana-menu" aria-label="Menüyü aç"><span></span></button>
+    <nav class="menu" id="ana-menu" aria-label="Ana menü">
+      <a href="/ilce/">📍 İlçeler</a>
+      {% for y in yakalar %}<a href="{{ y.url }}">{{ y.ad }}</a>{% endfor %}
+      <a href="/ucretsiz/">🆓 Ücretsiz</a>
+      <a href="/yagmurlu-gunde/">☔ Yağmurlu gün</a>
+      <a href="/harita/">🗺 Harita</a>
+      {% if rehberler %}<a href="/rehber/">📘 Rehberler</a>{% endif %}
+    </nav>
+  </div>
+</header>
+
+{% if kirinti %}
+<nav class="kirinti kap" aria-label="Site yolu">
+  <a href="/">Ana sayfa</a>
+  {% for ad, yol in kirinti %}<span aria-hidden="true">›</span><a href="{{ yol }}">{{ ad }}</a>{% endfor %}
+</nav>
+{% endif %}
+
+<main id="icerik" class="kap">
+{% block icerik %}{% endblock %}
+</main>
+
+<footer class="alt">
+  <div class="kap">
+    <div class="alt-ust">
+      <div>
+        <p class="alt-ad">{{ site.ad }}</p>
+        <p class="soluk">{{ site.slogan }}</p>
+        <p class="soluk kucuk">Tüm kayıtlar İstanbul Büyükşehir Belediyesi Açık Veri Portalı'ndan
+        derlenmiştir. Son doğrulama: <strong>{{ site.veri_tarihi_tr }}</strong>.</p>
+      </div>
+      <nav aria-label="Keşfet">
+        <p class="alt-baslik">Keşfet</p>
+        <a href="/ilce/">İlçelere göre</a>
+        {% for k in kategoriler %}<a href="{{ k.url }}">{{ k.ad }}</a>{% endfor %}
+        <a href="/harita/">Harita</a>
+      </nav>
+      <nav aria-label="Site">
+        <p class="alt-baslik">Site</p>
+        <a href="/hakkinda/">Hakkında ve yöntem</a>
+        <a href="/kaynaklar/">Veri kaynakları</a>
+        <a href="/gizlilik/">Gizlilik ve çerezler</a>
+        <a href="/veri/mekanlar.json">Açık veri (JSON)</a>
+      </nav>
+    </div>
+    <p class="alt-not">Bu site bağımsızdır; İstanbul Büyükşehir Belediyesi'ni ya da başka bir kurumu
+    temsil etmez, rezervasyon almaz. Çalışma saatleri ve hizmetler değişebilir; gitmeden önce
+    mekânı arayın. © {{ site.yil }} {{ site.ad }}</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var d = document.getElementById("menu-btn"), m = document.getElementById("ana-menu");
+  if (d && m) d.addEventListener("click", function () {
+    var acik = d.getAttribute("aria-expanded") === "true";
+    d.setAttribute("aria-expanded", String(!acik));
+    d.setAttribute("aria-label", acik ? "Menüyü aç" : "Menüyü kapat");
+    m.classList.toggle("acik", !acik);
+  });
+  document.querySelectorAll("[data-kopyala]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      navigator.clipboard.writeText(b.dataset.kopyala).then(function () {
+        var e = b.textContent; b.textContent = "Kopyalandı ✓";
+        setTimeout(function () { b.textContent = e; }, 1600);
+      });
+    });
+  });
+})();
+</script>
+{% block betik %}{% endblock %}
+</body>
+</html>

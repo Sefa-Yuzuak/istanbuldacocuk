@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block head_ek %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+{% endblock %}
+{% block icerik %}
+<h1>{{ baslik }}</h1>
+<p class="giris">İBB açık verisinde koordinatı bulunan {{ nokta_sayisi }} mekân. Türe, yakaya ve
+   ücret durumuna göre süzebilirsiniz. Koordinatı ilçesiyle tutarsız görünen kayıtlar haritaya
+   konmadı.</p>
+
+<div class="harita-arac">
+  <label><input type="checkbox" id="f-ucretsiz"> Yalnız ücretsiz</label>
+  <label><input type="checkbox" id="f-kapali"> Yalnız kapalı alan</label>
+  <label for="f-tur">Tür</label>
+  <select id="f-tur">
+    <option value="">Hepsi</option>
+    {% for k in kategoriler %}<option value="{{ k.anahtar }}">{{ k.ad }}</option>{% endfor %}
+  </select>
+  <label for="f-yaka">Yaka</label>
+  <select id="f-yaka">
+    <option value="">Hepsi</option>
+    {% for y in yakalar %}<option value="{{ y.anahtar }}">{{ y.ad }}</option>{% endfor %}
+  </select>
+  <button class="dugme ikincil" type="button" id="konum">📍 Bana en yakınlar</button>
+  <span class="soluk kucuk" id="harita-sayac"></span>
+</div>
+
+<div id="harita" role="application" aria-label="İstanbul çocuk mekânları haritası"></div>
+
+<section class="bolum">
+  <h2>Haritada ne var?</h2>
+  <p>Haritadaki her nokta, kendi sayfası olan bir mekândır: İBB'nin yeşil alan envanterindeki
+     büyük parklar ve korular, İBB müzeleri ve kütüphaneleri, kültür merkezleri, sosyal
+     tesisler ve İBB Şehir Tiyatroları'nın çocuk oyunu sahnelediği sahneler.</p>
+  <p>Koordinatlar iki kaynaktan geliyor. Park ve korularda konum, İBB'nin yayımladığı poligon
+     geometrisinin ağırlık merkezidir — yani alanın ortası, girişi değil. Müze ve
+     kütüphanelerde İBB verisinde koordinat sütunu bulunmadığı için konum OpenStreetMap
+     üzerinden bulundu; bulunamayan kayıtlar haritada yer almaz, sayfalarında da koordinat
+     yerine "İBB kaydında koordinat yok" yazar.</p>
+  <p>Koordinatı kendi ilçesinin ortancasından çok uzağa düşen kayıtlar şüpheli sayılır ve
+     haritaya konmaz. Kaynak veriyi değiştirmiyoruz; yalnızca güvenmediğimiz bir noktayı
+     doğruymuş gibi göstermiyoruz.</p>
+  <p><strong>"Bana en yakınlar"</strong> düğmesi tarayıcınızdan konum ister ve size en yakın
+     60 mekânı gösterir. Konum tarayıcınızdan çıkmaz, hiçbir sunucuya gönderilmez.</p>
+</section>
+
+<p class="damga">Kaynak: İBB Açık Veri Portalı · Son doğrulama:
+   <strong>{{ site.veri_tarihi_tr }}</strong> ·
+   <a href="/veri/mekanlar.json">Ham veri (JSON)</a></p>
+{% endblock %}
+
+{% block betik %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
+<script src="/static/harita.js" defer></script>
+{% endblock %}

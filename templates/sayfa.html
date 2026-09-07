@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block icerik %}
+<article class="yazi">
+  <h1>{{ p.baslik }}</h1>
+  {% for b in p.bolumler %}
+  <section class="bolum">
+    {% if b.baslik %}<h2>{{ b.baslik }}</h2>{% endif %}
+    {% for x in b.paragraflar %}<p>{{ x }}</p>{% endfor %}
+    {% if b.liste %}
+    <ul class="madde">{% for x in b.liste %}<li>{{ x }}</li>{% endfor %}</ul>
+    {% endif %}
+    {% if b.baglar %}
+    <ul class="madde">
+      {% for l in b.baglar %}
+      <li><a href="{{ l.url }}"{% if l.url.startswith("http") %} rel="nofollow noopener" target="_blank"{% endif %}>{{ l.ad }}</a>{% if l.not %} — {{ l.not }}{% endif %}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </section>
+  {% endfor %}
+  <p class="damga">Son güncelleme: <strong>{{ site.veri_tarihi_tr }}</strong></p>
+</article>
+{% endblock %}

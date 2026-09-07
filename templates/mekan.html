@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% from "_kart.html" import kart %}
+{% block icerik %}
+<article>
+  <p class="ust-etiket">{{ m.kat.ikon }} {{ m.tur_ad }} · <a href="/ilce/{{ m.ilce_slug }}/">{{ m.ilce }}</a>
+     · <a href="/{{ m.yaka_bilgi.slug }}/">{{ m.yaka_bilgi.ad }}</a></p>
+  <h1>{{ m.ad_ayirt }}</h1>
+
+  <p class="kisa-cevap">{{ kisa }}</p>
+
+  <section class="bolum">
+    <h2>Künye</h2>
+    <table class="kunye">
+      <tbody>
+        <tr><th scope="row">Tür</th><td>{{ m.tur_ad }}</td></tr>
+        <tr><th scope="row">İlçe</th><td><a href="/ilce/{{ m.ilce_slug }}/">{{ m.ilce }}</a> ({{ m.yaka_bilgi.ad }})</td></tr>
+        {% if m.adres %}<tr><th scope="row">Adres</th><td>{{ m.adres }}</td></tr>{% endif %}
+        {% if m.telefon %}<tr><th scope="row">Telefon</th><td>{{ m.telefon }}</td></tr>{% endif %}
+        {% if m.gun %}<tr><th scope="row">Açık günler</th><td>{{ m.gun }}</td></tr>{% endif %}
+        {% if m.saat %}<tr><th scope="row">Saat</th><td>{{ m.saat }}</td></tr>{% endif %}
+        {% if m.acilis_yili %}<tr><th scope="row">Açılış yılı</th><td>{{ m.acilis_yili }}</td></tr>{% endif %}
+        {% if m.alan_yazi %}<tr><th scope="row">Büyüklük</th><td>{{ m.alan_yazi }}</td></tr>{% endif %}
+        {% if m.ucretsiz is not none %}
+        <tr><th scope="row">Giriş</th><td>{{ "Ücretsiz" if m.ucretsiz else "Ücretli olabilir" }}</td></tr>
+        {% endif %}
+        {% if m.cocuk_birimi is defined and m.cocuk_birimi is not none %}
+        <tr><th scope="row">Çocuk birimi</th>
+            <td>{{ "İBB verisinde VAR olarak işaretli" if m.cocuk_birimi else "İBB verisinde YOK olarak işaretli" }}</td></tr>
+        {% endif %}
+        <tr><th scope="row">Koordinat</th>
+          <td>
+            {% if m.koordinat_yazi %}
+              <code>{{ m.koordinat_yazi }}</code>
+              <button class="kopya" type="button" data-kopyala="{{ m.koordinat_yazi }}">Kopyala</button>
+            {% elif m.koordinat_durum == "supheli" %}
+              Kaynaktaki koordinat ilçesiyle tutarsız görünüyor; yayımlanmadı.
+            {% else %}
+              İBB kaydında koordinat yok.
+            {% endif %}
+          </td></tr>
+      </tbody>
+    </table>
+    <p><a class="dugme" href="{{ m.maps_url }}" rel="nofollow noopener" target="_blank">📍 Google Haritalar'da aç</a></p>
+    {% if m.koordinat_kaynak %}<p class="soluk kucuk">Koordinat kaynağı: {{ m.koordinat_kaynak }}</p>{% endif %}
+  </section>
+
+  <section class="bolum">
+    <h2>{{ m.ad }} hakkında</h2>
+    <p>{{ m.ozet }}</p>
+    {% if m.kategori == "tiyatro" and m.cocuk_oyunlari %}
+    <p>İBB Şehir Tiyatroları'nın {{ m.veri_yillari }} açık veri kayıtlarında bu sahnede sahnelenen
+       çocuk oyunlarından bazıları:</p>
+    <ul class="etiketler">
+      {% for o in m.cocuk_oyunlari %}<li>{{ o }}</li>{% endfor %}
+    </ul>
+    <p class="uyari">Bu liste <strong>{{ m.veri_yillari }} dönemine ait geçmiş kayıttır, güncel program
+       değildir.</strong> Oyun takvimi ve bilet için İBB Şehir Tiyatroları'nın kendi sitesine bakın.</p>
+    {% endif %}
+    {% if m.kategori == "park" and m.parca_sayisi and m.parca_sayisi > 1 %}
+    <p class="soluk kucuk">Bu alan İBB kaydında {{ m.parca_sayisi }} ayrı poligon parçası olarak
+       tutuluyor; yukarıdaki büyüklük parçaların toplamıdır.</p>
+    {% endif %}
+  </section>
+
+  {% if sss %}
+  <section class="bolum sss">
+    <h2>Sık sorulanlar</h2>
+    {% for s in sss %}
+    <details{% if loop.first %} open{% endif %}>
+      <summary>{{ s.s }}</summary>
+      <p>{{ s.c }}</p>
+    </details>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  <p class="damga">
+    Kaynak: <a href="{{ m.kaynak_url }}" rel="nofollow noopener" target="_blank">{{ m.kaynak_ad }}</a>
+    · Son doğrulama: <strong>{{ site.veri_tarihi_tr }}</strong>
+  </p>
+
+  {% if yakin %}
+  <section class="bolum">
+    <h2>Yakındaki diğer yerler</h2>
+    <div class="izgara">
+      {% for b, uzaklik in yakin %}
+      <article class="kart">
+        <a class="kart-bag" href="{{ b.url }}">
+          <span class="kart-ikon" aria-hidden="true">{{ b.kat.ikon }}</span>
+          <span class="kart-ad">{{ b.ad_ayirt }}</span>
+        </a>
+        <p class="kart-alt">{{ b.tur_ad }} · {{ b.ilce }} · {{ uzaklik }} km</p>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if ayni_ilce %}
+  <section class="bolum">
+    <h2>{{ m.ilce|bulunma("ki") }} diğer yerler</h2>
+    <div class="izgara">
+      {% for b in ayni_ilce %}{{ kart(b) }}{% endfor %}
+    </div>
+    <p><a class="dugme ikincil" href="/ilce/{{ m.ilce_slug }}/">{{ m.ilce }} sayfasının tamamı</a></p>
+  </section>
+  {% endif %}
+</article>
+{% endblock %}

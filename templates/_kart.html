@@ -1,0 +1,17 @@
+{% macro kart(m) %}
+<article class="kart">
+  <a class="kart-bag" href="{{ m.url }}">
+    <span class="kart-ikon" aria-hidden="true">{{ m.kat.ikon }}</span>
+    <span class="kart-ad">{{ m.ad_ayirt }}</span>
+  </a>
+  <p class="kart-alt">{{ m.tur_ad }} · {{ m.ilce }}</p>
+  <ul class="rozetler">
+    {% if m.ucretsiz %}<li class="rozet iyi">Ücretsiz</li>{% endif %}
+    {% if m.kapali %}<li class="rozet">Kapalı alan</li>{% endif %}
+    {% if m.alan_m2 %}<li class="rozet">{{ m.alan_m2|binlik }} m²</li>{% endif %}
+    {% if m.cocuk_birimi %}<li class="rozet iyi">Çocuk birimi</li>{% endif %}
+    {% if m.cocuk_seans %}<li class="rozet">{{ m.cocuk_seans|binlik }} çocuk oyunu seansı</li>{% endif %}
+    {% if m.saat %}<li class="rozet">{{ m.saat }}</li>{% endif %}
+  </ul>
+</article>
+{% endmacro %}

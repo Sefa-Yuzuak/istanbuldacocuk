@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block icerik %}
+<h1>{{ baslik }}</h1>
+<p class="giris">İstanbul'da çocukla gezmeye dair sorulara, resmî açık veriye dayanan cevaplar.
+   Buradaki her rehberdeki sayı — kaç kütüphane, hangi park kaç metrekare, hangi sahnede kaç
+   çocuk oyunu oynandı — İBB'nin kendi veri setlerinden hesaplanır, elle yazılmaz. Veri
+   yenilendiğinde metindeki sayılar da yenilenir; böylece rehber sessizce eskimez.</p>
+<p class="damga">Kaynak: İBB Açık Veri Portalı · Son doğrulama:
+   <strong>{{ site.veri_tarihi_tr }}</strong> · {{ rehberler|length }} rehber</p>
+<div class="izgara">
+  {% for r in rehberler %}
+  <article class="kart kutu">
+    <a class="kart-bag" href="{{ r.url }}"><span class="kart-ad">{{ r.baslik }}</span></a>
+    <p class="soluk kucuk">{{ r.ozet }}</p>
+  </article>
+  {% endfor %}
+</div>
+
+<section class="bolum">
+  <h2>Neden az sayıda rehber var?</h2>
+  <p>Bu sitede yalnızca kaynağını gösterebildiğimiz rehberi yayımlıyoruz. "İstanbul'da çocukla
+     gidilecek 50 yer" tipi listeler kolayca üretiliyor ama çoğu, kimsenin gitmediği ve
+     doğrulamadığı mekânlardan oluşuyor. Onun yerine, elimizdeki resmî veriden gerçekten
+     çıkarılabilecek soruları cevaplıyoruz.</p>
+  <p>Mekân aramak için rehberlere ihtiyacınız yok: <a href="/ilce/">ilçe sayfalarında</a> o
+     ilçenin tam park envanteri, <a href="/ucretsiz/">ücretsiz yerler</a> ve
+     <a href="/yagmurlu-gunde/">yağmurlu güne uygun kapalı mekânlar</a> listelerinde ise
+     filtrelenmiş hâli duruyor.</p>
+</section>
+{% endblock %}

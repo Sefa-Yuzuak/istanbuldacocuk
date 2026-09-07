@@ -1,0 +1,173 @@
+[
+ {
+  "url": "/hakkinda/",
+  "baslik": "Hakkında ve Yöntem",
+  "meta": "İstanbulda Çocuk nasıl derleniyor: veri kaynakları, kaynak dosyalardaki hataların nasıl onarıldığı ve neden mekânlara puan verilmediği.",
+  "bolumler": [
+   {
+    "paragraflar": [
+     "İstanbulda Çocuk, İstanbul'da çocuklu ailelerin gidebileceği yerleri resmî açık veriden derleyen bağımsız bir rehberdir. Hiçbir kurumu temsil etmez, rezervasyon almaz, ücret tahsil etmez."
+    ]
+   },
+   {
+    "baslik": "Neden puan yok?",
+    "paragraflar": [
+     "Benzer sitelerin çoğu her mekâna bir puan verir. Bir mekânı gezmeden, ölçmeden ona 8,4/10 vermek okuru yanıltır: puan, olmayan bir değerlendirmeyi varmış gibi gösterir.",
+     "Bu sitedeki 284 kaydın tamamı resmî açık veriden gelir ve puanlanmamıştır. Bunun yerine ölçülebilir bilgi yayımlıyoruz: alan kaç metrekare, hangi gün ve saatte açık, girişi ücretsiz mi, kapalı alan mı, koordinatı ne."
+    ]
+   },
+   {
+    "baslik": "Kaynak dosyalarda bulunan ve onarılan hatalar",
+    "paragraflar": [
+     "Açık veri her zaman temiz gelmiyor. Bulduğumuz ve onardığımız sorunlar, ne yaptığımızla birlikte:"
+    ],
+    "liste": [
+     "Bazı parklar poligon parçası olarak ayrı satırlarda kayıtlı (“… Parkı/doğu 1”, “/doğu 2” gibi). Birleştirilmeseydi aynı park birkaç kez ve gerçek boyutunun altında görünecekti; parçalar toplanarak tek kayda indirildi.",
+     "Sosyal tesis dosyasında koordinatların ondalık ayracı düşmüş (41057845 gibi). Değerler onarıldı ve İstanbul sınır kutusuna göre doğrulandı.",
+     "Müze ve kütüphane veri setlerinde koordinat sütunu yok, yalnız adres var. Bu kayıtların konumu OpenStreetMap üzerinden bulundu ve bulunanlarda koordinat kaynağı sayfada açıkça yazılıyor; bulunamayanlarda koordinat boş bırakıldı.",
+     "Şehir Tiyatroları veri setinde sahnenin ilçesi yok. İlçe, sahne adında geçiyorsa oradan, geçmiyorsa koordinatın OpenStreetMap'te ters çözümlenmesiyle belirlendi.",
+     "Adres alanlarında ilçe çıkarımı yanıltıcı olabiliyor: “Arnavutköy Sosyal Tesisi” Arnavutköy ilçesinde değil, Beşiktaş'ın Arnavutköy mahallesinde. Bu yüzden ilçe her zaman adresin ilçe alanından alınır, mekânın adından değil.",
+     "Koordinatı kendi ilçesinin ortancasından çok uzağa düşen kayıtlar şüpheli olarak işaretlenir ve haritaya konmaz; kaynak veri değiştirilmez."
+    ]
+   },
+   {
+    "baslik": "Hangi mekânın kendi sayfası var?",
+    "paragraflar": [
+     "İBB müzeleri (48), kütüphaneleri (72), kültür merkezleri (16), sosyal tesisleri (30) ve çocuk oyunu sahnelenen tiyatro sahneleri (12) için ayrı sayfa açılır. Yeşil alanlarda eşik 50.000 m²'dir; bu büyüklüğün üzerindeki 106 park, koru ve kent ormanı kendi sayfasını alır.",
+     "Daha küçük mahalle parkları için ayrı sayfa açmıyoruz: onlar hakkında doğrulanmış olarak söyleyebileceğimiz her şey (ad, tür, büyüklük, konum) ilçe park listelerinde zaten var. Envanterin tamamı — 523 kayıt — o listelerde yer alıyor."
+    ]
+   },
+   {
+    "baslik": "Düzeltme ve iletişim",
+    "paragraflar": [
+     "Bir bilgi yanlışsa ya da bir mekân kapandıysa merhaba@istanbuldacocuk.com adresine yazın. Düzeltmeleri kaynağıyla birlikte yaparız; kaynağı olmayan bir bilgiyi yayımlamayız."
+    ]
+   }
+  ]
+ },
+ {
+  "url": "/kaynaklar/",
+  "baslik": "Veri Kaynakları",
+  "meta": "İstanbulda Çocuk'taki her bilginin geldiği resmî veri setleri ve bağlantıları.",
+  "bolumler": [
+   {
+    "paragraflar": [
+     "Sitedeki tüm mekân bilgisi aşağıdaki resmî veri setlerinden derlenmiştir. Son doğrulama tarihi: 2026-09-07."
+    ]
+   },
+   {
+    "baslik": "İBB Açık Veri Portalı veri setleri",
+    "baglar": [
+     {
+      "ad": "Park, Bahçe ve Yeşil Alan Verileri",
+      "url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
+      "not": "523 yeşil alan kaydı, poligon geometrisiyle"
+     },
+     {
+      "ad": "İBB Müzeleri Lokasyon, Çalışma Gün ve Saatleri",
+      "url": "https://data.ibb.gov.tr/dataset/ibb-muzeleri-lokasyon-calisma-gun-ve-saatleri",
+      "not": "48 müze"
+     },
+     {
+      "ad": "İBB Kütüphaneleri Lokasyon, Çalışma Gün ve Saatleri",
+      "url": "https://data.ibb.gov.tr/dataset/ibb-kutuphaneleri-lokasyon-calisma-gun-ve-saatleri",
+      "not": "72 kütüphane"
+     },
+     {
+      "ad": "Kültür Merkezleri Veri Seti",
+      "url": "https://data.ibb.gov.tr/dataset/kultur-merkezleri-veri-seti",
+      "not": "16 kültür merkezi, çocuk birimi bilgisiyle"
+     },
+     {
+      "ad": "Sosyal Tesis Konumları",
+      "url": "https://data.ibb.gov.tr/dataset/sosyal-tesis-konumlari",
+      "not": "30 sosyal tesis"
+     },
+     {
+      "ad": "Şehir Tiyatroları Veri Seti",
+      "url": "https://data.ibb.gov.tr/dataset/sehir-tiyatrolari-veri-seti",
+      "not": "1.830 çocuk oyunu seansı kaydı (2017–2023)"
+     }
+    ]
+   },
+   {
+    "baslik": "Yardımcı kaynaklar",
+    "baglar": [
+     {
+      "ad": "OpenStreetMap / Nominatim",
+      "url": "https://www.openstreetmap.org/copyright",
+      "not": "Müze ve kütüphanelerin koordinatları ile tiyatro sahnelerinin ilçe bilgisi buradan tamamlandı"
+     },
+     {
+      "ad": "İBB Şehir Tiyatroları — güncel program ve bilet",
+      "url": "https://sehirtiyatrolari.ibb.istanbul/tr",
+      "not": "Açık veri güncel takvim içermiyor"
+     }
+    ]
+   },
+   {
+    "baslik": "Bu sitenin verisi",
+    "paragraflar": [
+     "Derlenmiş veri açık biçimde yayımlanıyor; kullanabilirsiniz."
+    ],
+    "baglar": [
+     {
+      "ad": "Mekânlar (JSON)",
+      "url": "/veri/mekanlar.json"
+     },
+     {
+      "ad": "Yeşil alan envanteri (JSON)",
+      "url": "/veri/yesil-alanlar.json"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "url": "/gizlilik/",
+  "baslik": "Gizlilik ve Çerezler",
+  "meta": "İstanbulda Çocuk hangi verileri işliyor, hangi çerezler kullanılıyor, reklam ve ölçümleme nasıl çalışıyor.",
+  "bolumler": [
+   {
+    "paragraflar": [
+     "Bu site statik sayfalardan oluşur. Üyelik yoktur, form yoktur; adınızı, e-postanızı ya da konumunuzu bir sunucuda saklamayız."
+    ]
+   },
+   {
+    "baslik": "Konum bilgisi",
+    "paragraflar": [
+     "Harita sayfasındaki “Bana en yakınlar” düğmesine basarsanız tarayıcınız konumunuzu ister. Konum yalnızca tarayıcınızın içinde, mesafe hesaplamak için kullanılır; hiçbir sunucuya gönderilmez ve saklanmaz. Düğmeye basmazsanız konum hiç istenmez."
+    ]
+   },
+   {
+    "baslik": "Reklamlar ve çerezler",
+    "paragraflar": [
+     "Sitede Google AdSense reklamları gösterilir. Google ve iş ortakları, reklamları göstermek ve ölçmek için çerez ve benzeri teknolojiler kullanabilir; bu yolla tarayıcınızda bir tanımlayıcı saklanabilir ve önceki site ziyaretlerinize göre kişiselleştirilmiş reklam gösterilebilir.",
+     "Reklam kişiselleştirmesini Google'ın Reklam Ayarları sayfasından kapatabilirsiniz. Tarayıcınızın ayarlarından çerezleri tamamen engellemeniz de mümkündür; site çerezsiz de çalışır."
+    ],
+    "baglar": [
+     {
+      "ad": "Google Reklam Ayarları",
+      "url": "https://myadcenter.google.com/"
+     },
+     {
+      "ad": "Google'ın reklam çerezleri hakkındaki açıklaması",
+      "url": "https://policies.google.com/technologies/ads"
+     }
+    ]
+   },
+   {
+    "baslik": "Harita ve dış bağlantılar",
+    "paragraflar": [
+     "Harita karoları OpenStreetMap sunucularından, Leaflet kütüphanesi cdnjs üzerinden yüklenir; bu isteklerde IP adresiniz ilgili servise ulaşır. Google Haritalar bağlantılarına tıkladığınızda Google'ın kendi gizlilik politikası geçerli olur."
+    ]
+   },
+   {
+    "baslik": "İletişim",
+    "paragraflar": [
+     "Gizlilikle ilgili sorularınız için: merhaba@istanbuldacocuk.com"
+    ]
+   }
+  ]
+ }
+]

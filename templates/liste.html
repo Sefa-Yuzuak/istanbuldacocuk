@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% from "_kart.html" import kart %}
+{% block icerik %}
+<h1>{{ baslik }}</h1>
+{% if giris %}<p class="giris">{{ giris }}</p>{% endif %}
+
+<p class="damga">Kaynak: İBB Açık Veri Portalı · Son doğrulama:
+  <strong>{{ site.veri_tarihi_tr }}</strong> · {{ liste|length }} kayıt</p>
+
+{% if alt_baglar %}
+<section class="bolum">
+  <h2>{{ alt_baslik }}</h2>
+  <ul class="cip-liste">
+    {% for b in alt_baglar %}
+    <li><a class="cip" href="{{ b.url }}">{{ b.ad }}{% if b.sayi %} <span class="cip-sayi">{{ b.sayi }}</span>{% endif %}</a></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% if liste %}
+<section class="bolum">
+  <h2>{{ liste_basligi }}</h2>
+  <div class="izgara">
+    {% for m in liste %}{{ kart(m) }}{% endfor %}
+  </div>
+</section>
+{% else %}
+<p class="uyari">Bu listede henüz kayıt yok.</p>
+{% endif %}
+
+{% if onizleme %}
+<section class="bolum">
+  <h2>İlçedeki en büyük yeşil alanlar</h2>
+  <p class="soluk">İBB envanterinde bu ilçe için {{ onizleme_toplam }} park, koru ve mesire alanı
+     kayıtlı. En büyük {{ onizleme|length }} tanesi:</p>
+  <div class="tablo-sar">
+    <table class="veri">
+      <thead><tr><th scope="col">Yeşil alan</th><th scope="col">Tür</th>
+                 <th scope="col">Büyüklük</th><th scope="col">Konum</th></tr></thead>
+      <tbody>
+        {% for y in onizleme %}
+        <tr>
+          <td>{% if y.url %}<a href="{{ y.url }}">{{ y.ad }}</a>{% else %}{{ y.ad }}{% endif %}</td>
+          <td>{{ y.tur_ad }}</td>
+          <td class="sag">{% if y.alan_m2 %}{{ y.alan_m2|binlik }} m²{% else %}—{% endif %}</td>
+          <td>{% if y.maps_url %}<a href="{{ y.maps_url }}" rel="nofollow noopener" target="_blank">Haritada gör</a>{% else %}—{% endif %}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <p><a class="dugme ikincil" href="{{ onizleme_url }}">{{ onizleme_toplam }} yeşil alanın tamamı →</a></p>
+</section>
+{% endif %}
+
+{% if sss %}
+<section class="bolum sss">
+  <h2>Sık sorulanlar</h2>
+  {% for s in sss %}
+  <details{% if loop.first %} open{% endif %}>
+    <summary>{{ s.s }}</summary>
+    <p>{{ s.c }}</p>
+  </details>
+  {% endfor %}
+</section>
+{% endif %}
+{% endblock %}

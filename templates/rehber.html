@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block icerik %}
+<article class="yazi">
+  <h1>{{ r.baslik }}</h1>
+  <p class="giris">{{ r.ozet }}</p>
+  <p class="damga">Son güncelleme: <strong>{{ site.veri_tarihi_tr }}</strong>
+     {% if r.kaynaklar %}· {{ r.kaynaklar|length }} kaynak{% endif %}</p>
+
+  {% if r.cevap %}<p class="kisa-cevap">{{ r.cevap }}</p>{% endif %}
+
+  {% for b in r.bolumler %}
+  <section class="bolum">
+    <h2>{{ b.baslik }}</h2>
+    {% for p in b.paragraflar %}<p>{{ p }}</p>{% endfor %}
+    {% if b.liste %}
+    <ul class="madde">
+      {% for x in b.liste %}<li>{{ x }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+    {% if b.tablo %}
+    <div class="tablo-sar">
+      <table class="veri">
+        <thead><tr>{% for h in b.tablo.basliklar %}<th scope="col">{{ h }}</th>{% endfor %}</tr></thead>
+        <tbody>
+          {% for satir in b.tablo.satirlar %}
+          <tr>{% for h in satir %}<td>{{ h }}</td>{% endfor %}</tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% endif %}
+    {% if b.uyari %}<p class="uyari">{{ b.uyari }}</p>{% endif %}
+  </section>
+  {% endfor %}
+
+  {% if r.sss %}
+  <section class="bolum sss">
+    <h2>Sık sorulanlar</h2>
+    {% for s in r.sss %}
+    <details{% if loop.first %} open{% endif %}><summary>{{ s.s }}</summary><p>{{ s.c }}</p></details>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if r.kaynaklar %}
+  <section class="bolum">
+    <h2>Kaynaklar</h2>
+    <ol class="kaynak-liste">
+      {% for k in r.kaynaklar %}
+      <li><a href="{{ k.url }}" rel="nofollow noopener" target="_blank">{{ k.ad }}</a></li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endif %}
+</article>
+{% endblock %}
