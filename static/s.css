@@ -114,7 +114,9 @@ p { margin: 0 0 .85rem; }
 /* ---------------------------------------------------------------- çipler */
 .cip-liste { list-style: none; display: flex; flex-wrap: wrap; gap: .45rem; padding: 0; margin: .8rem 0; }
 .cip {
-  display: inline-flex; align-items: center; gap: .4rem; min-height: 40px; padding: 0 .85rem;
+  /* 44px dokunmatik hedef alt sınırı. Çipler artık ana gezinme öğesi
+     (ilçe, yaka×tür, rehber bağlantıları); 40px'te parmakla ıskalanıyordu. */
+  display: inline-flex; align-items: center; gap: .4rem; min-height: 44px; padding: 0 .9rem;
   background: #fff; border: 1px solid var(--cizgi); border-radius: 999px;
   text-decoration: none; color: var(--metin); font-size: .92rem;
 }
