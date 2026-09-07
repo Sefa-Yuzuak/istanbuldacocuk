@@ -109,6 +109,25 @@
     ]
    },
    {
+    "baslik": "Fotoğraflar",
+    "paragraflar": [
+     "280 mekânın 201 tanesinde gerçek fotoğraf var. Stok görsel ya da temsilî fotoğraf kullanmıyoruz: eşleşmeden emin olamadığımız mekân, fotoğraf yerine tür simgesiyle kalıyor.",
+     "Kaynak dağılımı: Google Haritalar 172, Wikimedia Commons 12, Wikipedia 17. Her fotoğrafın altında çekenin adı, lisansı ve kaynak bağlantısı yazılıdır."
+    ],
+    "baglar": [
+     {
+      "ad": "Google Haritalar kullanım koşulları",
+      "url": "https://www.google.com/intl/tr/help/terms_maps/",
+      "not": "Google Haritalar fotoğrafları, çeken kişinin adıyla birlikte ve kaynağına bağlantı verilerek gösteriliyor"
+     },
+     {
+      "ad": "Wikimedia Commons — yeniden kullanım",
+      "url": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia",
+      "not": "Commons görselleri kendi lisanslarıyla, yazar adı belirtilerek kullanılıyor"
+     }
+    ]
+   },
+   {
     "baslik": "Bu sitenin verisi",
     "paragraflar": [
      "Derlenmiş veri açık biçimde yayımlanıyor; kullanabilirsiniz."

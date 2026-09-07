@@ -4,11 +4,13 @@
 Üç kademe, sırayla; fotoğrafı olmayan mekân bir sonraki kademeye düşer:
   1. Wikipedia (tr) madde ön görseli — kesin ad eşleşmesi, serbest lisans
   2. Wikimedia Commons — dosya adı araması + koordinata göre 300 m geosearch
-  3. Google Places — build/.places.key varsa (git'e girmez); Find Place → Details → Photo
+  3. Google **Places API (New)** — build/.places.key varsa (git'e girmez);
+     places:searchText → photos[].name → /media. Eski `maps.googleapis.com`
+     uçları yeni projelerde kapalı ("legacy API ... not enabled").
 
 İlke: stok/uydurma fotoğraf YOK. Eşleşme belirsizse foto konmaz, sayfa emoji
 kapakla kalır. Yazar + lisans + kaynak saklanır ve sayfada künye gösterilir.
-Google fotoğraflarında html_attributions olduğu gibi gösterilir.
+Google fotoğraflarında authorAttributions'taki isim künyeye yazılır (zorunlu).
 
 Kullanım:
   python build/foto.py                 # üç kademe (Google, anahtar varsa)
@@ -19,10 +21,12 @@ from __future__ import annotations
 
 import io
 import json
+import math
 import re
 import sys
 import time
 import unicodedata
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -42,8 +46,7 @@ TABAN_KALITE = 48
 # 16:9'a kırpıldıktan sonraki en küçük kabul edilebilir kaynak genişliği.
 EN_AZ_GENISLIK = 900
 # Kapak görseli LCP öğesi; 3G'de 300 KB'lık bir kapak sayfayı saniyelerce bekletiyor.
-BUTCE = {"lg": 150_000, "sm": 45_000}
-IST_BIAS = "circle:40000@41.02,28.98"
+BUTCE = {"lg": 150_000, "sm": 45_000, "og": 110_000}
 LOGO_RE = re.compile(r"logo|seal|amblem|emblem|arma|coat|flag|bayrak|_map|harita|icon|afi[sş]|"
                      r"poster|banner|plan|kroki|tabela", re.I)
 TR = str.maketrans("çğıöşüâîûÇĞİÖŞÜÂÎÛI", "cgiosuaiucgiosuaiui")
@@ -277,53 +280,135 @@ def commons_bul(m: dict) -> dict | None:
     return None
 
 
-# ------------------------------------------------------------------ 3. Google Places
-BASE = "https://maps.googleapis.com/maps/api/place/"
+# ------------------------------------------------------------------ 3. Google Places (New)
+# Eski (legacy) `maps.googleapis.com/maps/api/place/*` uçları yeni projelerde
+# kapalı: "You're calling a legacy API, which is not enabled for your project."
+# Places API (New) tek çağrıda arama + fotoğraf üstverisi veriyor; alanlar
+# X-Goog-FieldMask ile açıkça isteniyor (istenmeyen alan faturaya girmiyor).
+YENI_BASE = "https://places.googleapis.com/v1/"
+ARAMA_ALANLARI = ("places.id,places.displayName,places.formattedAddress,"
+                  "places.location,places.googleMapsUri,places.photos")
 
 
-def _gjson(anahtar: str, yol: str, par: dict) -> dict:
-    par["key"] = anahtar
-    with urllib.request.urlopen(urllib.request.Request(BASE + yol + "?" + urllib.parse.urlencode(par),
-                                                       headers=UA), timeout=40) as r:
+def _gpost(anahtar: str, yol: str, govde: dict, alanlar: str) -> dict:
+    istek = urllib.request.Request(
+        YENI_BASE + yol, data=json.dumps(govde).encode("utf-8"),
+        headers={"Content-Type": "application/json", "X-Goog-Api-Key": anahtar,
+                 "X-Goog-FieldMask": alanlar, **UA})
+    with urllib.request.urlopen(istek, timeout=40) as r:
         return json.load(r)
 
 
+def _gyazar(foto: dict) -> str:
+    """Fotoğrafın kime ait olduğu. Google, künye gösterimini şart koşuyor."""
+    for a in foto.get("authorAttributions") or []:
+        if a.get("displayName"):
+            return a["displayName"]
+    return "Google Haritalar kullanıcısı"
+
+
 def places_cek(m: dict, anahtar: str) -> tuple[dict | None, str]:
-    par = {"input": f"{_cekirdek(m['ad'])} {m['ilce']} İstanbul", "inputtype": "textquery",
-           "fields": "place_id,name",
-           "locationbias": f"point:{m['lat']},{m['lng']}" if m.get("lat") else IST_BIAS}
-    d = _gjson(anahtar, "findplacefromtext/json", par)
-    if d.get("status") != "OK" or not d.get("candidates"):
-        return None, d.get("status", "?")
-    c = d["candidates"][0]
-    ortak = _norm(m["ad"]) & _norm(c.get("name", ""))
-    if not any(len(t) >= 4 for t in ortak):
-        return None, f"AD-UYUŞMAZ({c.get('name', '')[:24]})"
-    dd = _gjson(anahtar, "details/json", {"place_id": c["place_id"], "fields": "name,photos,url"})
-    if dd.get("status") != "OK":
-        return None, "DETAILS-" + dd.get("status", "?")
-    res = dd.get("result", {})
-    fotolar = res.get("photos") or []
-    manzara = [p for p in fotolar if p.get("width", 0) >= p.get("height", 1) * 1.2]
-    p = (manzara or fotolar or [None])[0]
-    if not p:
-        return None, "FOTO-YOK"
-    attr = re.sub("<[^>]+>", "", (p.get("html_attributions") or ["Google"])[0]).strip() or "Google"
-    q = urllib.parse.urlencode({"maxwidth": "1600", "photo_reference": p["photo_reference"], "key": anahtar})
-    ham = _indir(BASE + "photo?" + q)
-    if not (ham[:3] == b"\xff\xd8\xff" or ham[:4] == b"\x89PNG" or ham[:4] == b"RIFF"):
-        return None, "GÖRSEL-DEĞİL"
-    return {"ham": ham, "yazar": attr, "lisans": "Google", "lisans_url": "",
-            "sayfa": res.get("url") or "", "kaynak": "google", "wiki": ""}, "OK"
+    govde: dict = {"textQuery": f"{_cekirdek(m['ad'])} {m['ilce']} İstanbul",
+                   "languageCode": "tr", "maxResultCount": 3}
+    if m.get("lat") and m.get("lng"):
+        govde["locationBias"] = {"circle": {"center": {"latitude": m["lat"],
+                                                       "longitude": m["lng"]},
+                                            "radius": 3000.0}}
+    else:
+        govde["locationBias"] = {"circle": {"center": {"latitude": 41.02, "longitude": 28.98},
+                                            "radius": 40000.0}}
+    try:
+        d = _gpost(anahtar, "places:searchText", govde, ARAMA_ALANLARI)
+    except urllib.error.HTTPError as e:
+        try:
+            ileti = json.loads(e.read().decode()).get("error", {}).get("message", "")
+        except Exception:  # noqa: BLE001
+            ileti = ""
+        return None, f"HTTP{e.code}-{ileti[:60]}"
+    yerler = d.get("places") or []
+    if not yerler:
+        return None, "SONUÇ-YOK"
+
+    # Ad denetimi Commons kademesindekiyle aynı ilkede: ortak ayırt edici sözcük
+    # yoksa başka bir işletmenin fotoğrafını koymaktansa boş bırak.
+    tur_sozcukleri = {k for aile in TUR_AILE.values() for k in aile}
+    vtok = _norm(m["ad"])
+    nedenler: list[str] = []
+    for c in yerler:
+        gad = (c.get("displayName") or {}).get("text", "")
+        gtok = _norm(gad)
+        if not any(len(t) >= 4 for t in vtok & gtok):
+            nedenler.append(f"AD-UYUŞMAZ({gad[:22]})")
+            continue
+        # Google, mekânın İÇİNDEKİ başka bir noktayı döndürebiliyor: "15 Temmuz Kent
+        # Ormanı 3. Etap" için "… Şehir Tuvaleti". Ayırt edici sözcüklerin hepsi STOP
+        # listesinde olduğundan ortak token sınavını geçiyordu. Kural baslik_uygun'daki
+        # ile aynı: mekân adında olmayan ayırt edici sözcük eklenmişse başka bir varlıktır.
+        fazla = {t for t in (gtok - vtok) if len(t) >= 4 and not t.isdigit()} - tur_sozcukleri
+        if fazla and len(vtok) <= 2:
+            nedenler.append(f"BAŞKA-YER({gad[:22]})")
+            continue
+        fotolar = c.get("photos") or []
+        manzara = [p for p in fotolar if p.get("widthPx", 0) >= p.get("heightPx", 1) * 1.2]
+        p = next(iter(manzara or fotolar), None)
+        if not p:
+            nedenler.append("FOTO-YOK")
+            continue
+        # skipHttpRedirect: yönlendirme yerine photoUri'yi JSON olarak verir.
+        url = (YENI_BASE + p["name"] + "/media?maxWidthPx=1600&skipHttpRedirect=true"
+               + "&key=" + urllib.parse.quote(anahtar))
+        try:
+            uri = _get(url).get("photoUri")
+            ham = _indir(uri) if uri else b""
+        except Exception as e:  # noqa: BLE001
+            return None, f"FOTO-HATA-{str(e)[:30]}"
+        if not (ham[:3] == b"\xff\xd8\xff" or ham[:4] == b"\x89PNG" or ham[:4] == b"RIFF"):
+            return None, "GÖRSEL-DEĞİL"
+        # `wiki` alanı eşleşmenin KAYNAK ADI: Wikipedia kademesinde madde adı,
+        # burada Google'ın döndürdüğü işletme adı. Sonradan "hangi mekân neye
+        # eşleşmiş" diye denetlemenin tek yolu bu.
+        return {"ham": ham, "yazar": _gyazar(p), "lisans": "Google", "lisans_url": "",
+                "sayfa": c.get("googleMapsUri") or "", "kaynak": "google", "wiki": gad}, "OK"
+    # Her adayın kendi elenme nedeni raporlanır: hepsini "AD-UYUŞMAZ" saymak,
+    # adı doğru ama fotoğrafı olmayan mekânları yanlış teşhis ediyordu.
+    return None, " | ".join(dict.fromkeys(nedenler)) or "ADAY-YOK"
 
 
 # ------------------------------------------------------------------ kaydetme
-def dosya_tekille(sonuc: dict, at) -> int:
-    """Aynı Commons dosyasını iki mekân kullanıyorsa ikisini de at.
+def _km(a: dict, b: dict) -> float:
+    p1, p2 = math.radians(a["lat"]), math.radians(b["lat"])
+    dp, dl = p2 - p1, math.radians(b["lng"] - a["lng"])
+    h = math.sin(dp / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dl / 2) ** 2
+    return 2 * 6371.0 * math.asin(math.sqrt(h))
 
-    Hangisinin doğru olduğunu bilemeyiz: Büyük ve Küçük Çamlıca Korusu (4,7 km uzakta
-    iki ayrı tepe) aynı "Çamlıca_Tepesi.jpg"yi almıştı. Yanlış olanı yayımlamaktansa
-    ikisini de boş bırakmak doğru.
+
+def ayni_yer(a: str, b: str, mekanlar: dict) -> bool:
+    """İki kayıt fiziksel olarak aynı yerin birimleri mi?
+
+    Koordinat varsa mesafe karar verir. Yoksa ada bakılır: ayırt edici sözcükler
+    biri diğerini kapsıyorsa aynı binanın iki birimidir ("Turhan Selçuk
+    Kütüphanesi" / "Turhan Selçuk Müzesi", "Habitat Sanat" / "Habitat Yaşam
+    Merkezi"). Ayırt edici sözcükler farklıysa iki ayrı yerdir ("Belgradkapı" /
+    "Mevlanakapı Kara Surları Ziyaretçi Merkezi").
+    """
+    A, B = mekanlar.get(a), mekanlar.get(b)
+    if A and B and A.get("lat") and B.get("lat"):
+        return _km(A, B) <= 0.2
+    ta, tb = _norm(a), _norm(b)
+    return bool(ta and tb) and (ta <= tb or tb <= ta)
+
+
+def dosya_tekille(sonuc: dict, at, mekanlar: dict) -> int:
+    """Aynı görseli iki AYRI yer kullanıyorsa ikisini de at.
+
+    Commons kademesinde bu hep hataydı: Büyük ve Küçük Çamlıca Korusu (1 km
+    arayla iki ayrı tepe) aynı "Çamlıca_Tepesi.jpg"yi almıştı; hangisinin doğru
+    olduğu bilinemez, ikisini de boş bırakmak doğru.
+
+    Google kademesinde ise aynı kaydı paylaşmak çoğu zaman HATA DEĞİL: aynı
+    binadaki kütüphane ile müzenin tek bir Google işletme kaydı var. Kör
+    tekilleme 20 kaydın 16'sını haksız yere atıyordu. Bu yüzden önce mekânların
+    gerçekten ayrı yerler olup olmadığına bakılıyor.
     """
     sayfalar: dict[str, list[str]] = {}
     for ad, v in sonuc.items():
@@ -331,10 +416,15 @@ def dosya_tekille(sonuc: dict, at) -> int:
             sayfalar.setdefault(v["sayfa"], []).append(ad)
     n = 0
     for adlar in sayfalar.values():
-        if len(adlar) > 1:
-            for ad in adlar:
-                at(ad, sonuc[ad], "aynı dosya")
-                n += 1
+        if len(adlar) < 2:
+            continue
+        # Grubun tamamı aynı yerin birimleriyse foto hepsinde doğru; bırak.
+        if all(ayni_yer(a, b, mekanlar)
+               for i, a in enumerate(adlar) for b in adlar[i + 1:]):
+            continue
+        for ad in adlar:
+            at(ad, sonuc[ad], "ayrı yerler aynı görseli aldı")
+            n += 1
     return n
 
 
@@ -374,10 +464,15 @@ def kirp_kaydet(veri: bytes, ad_slug: str) -> dict | None:
                 break
         out[et] = yol.name
     # Paylaşım kartı için JPEG kopya: X ve WhatsApp WebP og:image'ı güvenilir
-    # biçimde basmıyor, kart boş çıkıyor. Sayfada kullanılmaz, yalnız og:image.
+    # biçimde basmıyor, kart boş çıkıyor. Sayfada HİÇ gösterilmiyor, yalnız sosyal
+    # medya tarayıcısı çekiyor — bu yüzden kapaktan daha sıkı bir bütçesi var.
+    # Bütçesiz haliyle ortalama 187 KB'tı; 280 mekânda 52 MB ölü ağırlık demek.
     og = IMG / f"{ad_slug}-og.jpg"
-    im.resize(BOYUTLAR["lg"], Image.LANCZOS).convert("RGB").save(
-        og, "JPEG", quality=82, optimize=True)
+    ogim = im.resize(BOYUTLAR["lg"], Image.LANCZOS).convert("RGB")
+    for kalite in (78, 70, 62, 54):
+        ogim.save(og, "JPEG", quality=kalite, optimize=True, progressive=True)
+        if og.stat().st_size <= BUTCE["og"]:
+            break
     out["og"] = og.name
     return out
 
@@ -386,6 +481,7 @@ def main() -> int:
     sadece_google = "--sadece-google" in sys.argv
     yenile = "--yenile" in sys.argv
     mekanlar = json.loads((KOK / "data" / "mekanlar.json").read_text("utf-8"))
+    mek_dizin = {m["ad"]: m for m in mekanlar}
     IMG.mkdir(parents=True, exist_ok=True)
     sonuc = {} if yenile or not HEDEF.exists() else json.loads(HEDEF.read_text("utf-8"))
 
@@ -394,8 +490,9 @@ def main() -> int:
     if "--yeniden-dogrula" in sys.argv:
         atilan = 0
         def at(ad, v, neden):
-            for et in ("lg", "sm"):
-                (IMG / v[et]).unlink(missing_ok=True)
+            for et in ("lg", "sm", "og"):
+                if v.get(et):
+                    (IMG / v[et]).unlink(missing_ok=True)
             sonuc[ad] = None
             print(f"  ✗ atıldı: {ad[:36]:38} ({neden}: {v.get('wiki','')[:30]})")
 
@@ -408,7 +505,7 @@ def main() -> int:
                 at(ad, v, "madde"); atilan += 1
             elif v.get("kaynak") == "commons" and not dosya_uygun(ad, v.get("wiki", "")):
                 at(ad, v, "dosya"); atilan += 1
-        atilan += dosya_tekille(sonuc, at)
+        atilan += dosya_tekille(sonuc, at, mek_dizin)
         print(f"yeniden doğrulama: {atilan} kayıt atıldı")
         print()
         # Reddedilen mekânlar aşağıda 'None' olduğu için yeniden denenecek.
@@ -443,12 +540,13 @@ def main() -> int:
                 kaydet()
             time.sleep(0.3)
         def _at(ad, v, neden):
-            for et in ("lg", "sm"):
-                (IMG / v[et]).unlink(missing_ok=True)
+            for et in ("lg", "sm", "og"):
+                if v.get(et):
+                    (IMG / v[et]).unlink(missing_ok=True)
             sonuc[ad] = None
             print(f"  x atildi: {ad[:36]:38} ({neden}: {v.get('wiki', '')[:30]})")
         # Getirme döngüsü yeni çiftler yaratmış olabilir; tekilleme burada da çalışır.
-        dosya_tekille(sonuc, _at)
+        dosya_tekille(sonuc, _at, mek_dizin)
         kaydet()
         print(f"\nWikipedia {sayac['wikipedia']} + Commons {sayac['commons']} = "
               f"{sum(1 for v in sonuc.values() if v)}/{len(mekanlar)} gerçek foto")
@@ -475,12 +573,14 @@ def main() -> int:
             kaydet()
         time.sleep(0.12)
     def _at2(ad, v, neden):
-        for et in ("lg", "sm"):
-            (IMG / v[et]).unlink(missing_ok=True)
+        # og (paylaşım JPEG'i) de silinmeli; yoksa artık dosya kalıyor.
+        for et in ("lg", "sm", "og"):
+            if v.get(et):
+                (IMG / v[et]).unlink(missing_ok=True)
         sonuc[ad] = None
         print(f"  x atildi: {ad[:36]:38} ({neden}: {v.get('wiki', '')[:30]})")
     # Google kademesi de yeni çift yaratabilir; son bir tekilleme.
-    dosya_tekille(sonuc, _at2)
+    dosya_tekille(sonuc, _at2, mek_dizin)
     kaydet()
     print(f"\nGoogle +{sayac['google']}. Toplam gerçek foto: "
           f"{sum(1 for v in sonuc.values() if v)}/{len(mekanlar)}")

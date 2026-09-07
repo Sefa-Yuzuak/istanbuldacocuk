@@ -36,6 +36,14 @@ def main() -> None:
     yesil = json.loads((DATA / "yesil_alanlar.json").read_text(encoding="utf-8"))
     site = json.loads((DATA / "site.json").read_text(encoding="utf-8"))
 
+    # Fotoğraf kaynakları da sayfada sayıyla anlatılıyor; sayılar veriden gelsin ki
+    # foto hattı her çalıştığında metin kendiliğinden güncellensin.
+    fyol = DATA / "foto.json"
+    fotolar = [v for v in json.loads(fyol.read_text(encoding="utf-8")).values() if v] \
+        if fyol.exists() else []
+    foto_say = {k: sum(1 for f in fotolar if f.get("kaynak") == k)
+                for k in ("wikipedia", "commons", "google")}
+
     tiyatro = sorted([m for m in mekanlar if m["kategori"] == "tiyatro"],
                      key=lambda m: -m["cocuk_seans"])
     kutuphane = [m for m in mekanlar if m["kategori"] == "kutuphane"]
@@ -404,6 +412,25 @@ def main() -> None:
                              "ilçe bilgisi buradan tamamlandı"},
                      {"ad": "İBB Şehir Tiyatroları — güncel program ve bilet",
                       "url": SEHIR_TIYATROLARI, "not": "Açık veri güncel takvim içermiyor"},
+                 ]},
+                {"baslik": "Fotoğraflar",
+                 "paragraflar": [
+                     f"{len(mekanlar)} mekânın {len(fotolar)} tanesinde gerçek fotoğraf var. "
+                     f"Stok görsel ya da temsilî fotoğraf kullanmıyoruz: eşleşmeden emin "
+                     f"olamadığımız mekân, fotoğraf yerine tür simgesiyle kalıyor.",
+                     f"Kaynak dağılımı: Google Haritalar {foto_say['google']}, "
+                     f"Wikimedia Commons {foto_say['commons']}, "
+                     f"Wikipedia {foto_say['wikipedia']}. Her fotoğrafın altında çekenin adı, "
+                     f"lisansı ve kaynak bağlantısı yazılıdır.",
+                 ],
+                 "baglar": [
+                     {"ad": "Google Haritalar kullanım koşulları",
+                      "url": "https://www.google.com/intl/tr/help/terms_maps/",
+                      "not": "Google Haritalar fotoğrafları, çeken kişinin adıyla birlikte "
+                             "ve kaynağına bağlantı verilerek gösteriliyor"},
+                     {"ad": "Wikimedia Commons — yeniden kullanım",
+                      "url": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia",
+                      "not": "Commons görselleri kendi lisanslarıyla, yazar adı belirtilerek kullanılıyor"},
                  ]},
                 {"baslik": "Bu sitenin verisi",
                  "paragraflar": [
