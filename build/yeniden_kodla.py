@@ -52,7 +52,16 @@ def main() -> int:
         if not veri:
             continue
         slug = f["lg"].rsplit("-lg.webp", 1)[0]
-        f.update(kirp_kaydet(veri, slug))   # 'og' (paylaşım JPEG'i) dahil
+        boy = kirp_kaydet(veri, slug)       # 'og' ve gerçek genişlikler dahil
+        if not boy:
+            # Kaynak kapak için fazla küçük; foto düşer, mekân emoji kapakla kalır.
+            for eski in IMG.glob(f"{slug}-*"):
+                eski.unlink()
+            kayitlar[ad] = None
+            print(f"  {i:>2}/{len(hedefler)} ✗ kaynak çok küçük, foto düştü  {ad}")
+            HEDEF.write_text(json.dumps(kayitlar, ensure_ascii=False, indent=1), "utf-8")
+            continue
+        f.update(boy)
         HEDEF.write_text(json.dumps(kayitlar, ensure_ascii=False, indent=1), "utf-8")
         yeni = sum((IMG / f[e]).stat().st_size for e in ("lg", "sm"))
         onceki += eski

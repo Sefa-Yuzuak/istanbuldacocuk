@@ -8,7 +8,11 @@
   "lisans_url": "",
   "lg": "yildiz-korusu-lg.webp",
   "sm": "yildiz-korusu-sm.webp",
-  "og": "yildiz-korusu-og.jpg"
+  "og": "yildiz-korusu-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "Rahmi Demir Kent Ormanı": {
   "wiki": "Rahmi Demir Kent Ormanı.jpg",
@@ -19,7 +23,11 @@
   "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "lg": "rahmi-demir-kent-ormani-lg.webp",
   "sm": "rahmi-demir-kent-ormani-sm.webp",
-  "og": "rahmi-demir-kent-ormani-og.jpg"
+  "og": "rahmi-demir-kent-ormani-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "Büyükdere Atatürk Fidanlığı": {
   "wiki": "Büyükdere Atatürk Fidanlığı",
@@ -30,7 +38,11 @@
   "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "lg": "buyukdere-ataturk-fidanligi-lg.webp",
   "sm": "buyukdere-ataturk-fidanligi-sm.webp",
-  "og": "buyukdere-ataturk-fidanligi-og.jpg"
+  "og": "buyukdere-ataturk-fidanligi-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "Maçka Demokrasi Parkı": {
   "wiki": "Maçka Demokrasi Parkı",
@@ -41,7 +53,11 @@
   "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "lg": "macka-demokrasi-parki-lg.webp",
   "sm": "macka-demokrasi-parki-sm.webp",
-  "og": "macka-demokrasi-parki-og.jpg"
+  "og": "macka-demokrasi-parki-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "Fethipaşa Korusu": {
   "wiki": "Fethipaşa Korusu",
@@ -52,7 +68,11 @@
   "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "lg": "fethipasa-korusu-lg.webp",
   "sm": "fethipasa-korusu-sm.webp",
-  "og": "fethipasa-korusu-og.jpg"
+  "og": "fethipasa-korusu-og.jpg",
+  "lg_en": 1030,
+  "lg_boy": 579,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "Gürpınar Piri Reis Sahil Parkı": {
   "wiki": "Beylikdüzü Sahil Bölgesi Gürpınar Mahallesi Mayıs 2014.JPG",
@@ -63,7 +83,11 @@
   "lisans_url": "https://creativecommons.org/licenses/by-sa/3.0",
   "lg": "gurpinar-piri-reis-sahil-parki-lg.webp",
   "sm": "gurpinar-piri-reis-sahil-parki-sm.webp",
-  "og": "gurpinar-piri-reis-sahil-parki-og.jpg"
+  "og": "gurpinar-piri-reis-sahil-parki-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "Göztepe 60. Yıl Parkı": {
   "wiki": "Göztepe 60. Yıl Parkı",
@@ -74,19 +98,13 @@
   "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "lg": "goztepe-60-yil-parki-lg.webp",
   "sm": "goztepe-60-yil-parki-sm.webp",
-  "og": "goztepe-60-yil-parki-og.jpg"
+  "og": "goztepe-60-yil-parki-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
- "Taksim Gezi Parkı": {
-  "wiki": "Taksim Gezi Parkı",
-  "kaynak": "wikipedia",
-  "sayfa": "https://commons.wikimedia.org/wiki/File:Sky_view_from_Taksim_Gezi_Park,_Istambul,_Turkey..jpg",
-  "yazar": "Yinyerale",
-  "lisans": "CC BY-SA 3.0",
-  "lisans_url": "https://creativecommons.org/licenses/by-sa/3.0",
-  "lg": "taksim-gezi-parki-lg.webp",
-  "sm": "taksim-gezi-parki-sm.webp",
-  "og": "taksim-gezi-parki-og.jpg"
- },
+ "Taksim Gezi Parkı": null,
  "Garipçe 15 Temmuz Şehitleri Hatıra Ormanı": {
   "wiki": "15-Temmuz şehitleri ormanı ve anıtı.jpg",
   "kaynak": "commons",
@@ -96,7 +114,11 @@
   "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "lg": "garipce-15-temmuz-sehitleri-hatira-ormani-lg.webp",
   "sm": "garipce-15-temmuz-sehitleri-hatira-ormani-sm.webp",
-  "og": "garipce-15-temmuz-sehitleri-hatira-ormani-og.jpg"
+  "og": "garipce-15-temmuz-sehitleri-hatira-ormani-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "Anadolu Hisarı Müzesi": {
   "wiki": "Anadolu Hisarı",
@@ -107,7 +129,11 @@
   "lisans_url": "https://creativecommons.org/licenses/by/2.0",
   "lg": "anadolu-hisari-muzesi-lg.webp",
   "sm": "anadolu-hisari-muzesi-sm.webp",
-  "og": "anadolu-hisari-muzesi-og.jpg"
+  "og": "anadolu-hisari-muzesi-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "Atatürk Kitaplığı (Merkez Kütüphane)": {
   "wiki": "Atatürk Kitaplığı",
@@ -118,7 +144,11 @@
   "lisans_url": "https://creativecommons.org/licenses/by-sa/3.0",
   "lg": "ataturk-kitapligi-merkez-kutuphane-lg.webp",
   "sm": "ataturk-kitapligi-merkez-kutuphane-sm.webp",
-  "og": "ataturk-kitapligi-merkez-kutuphane-og.jpg"
+  "og": "ataturk-kitapligi-merkez-kutuphane-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "Cumhuriyet Müzesi": {
   "wiki": "Cumhuriyet Müzesi (İstanbul)",
@@ -129,7 +159,11 @@
   "lisans_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
   "lg": "cumhuriyet-muzesi-lg.webp",
   "sm": "cumhuriyet-muzesi-sm.webp",
-  "og": "cumhuriyet-muzesi-og.jpg"
+  "og": "cumhuriyet-muzesi-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "Aşiyan Müzesi": {
   "wiki": "Aşiyan Müzesi",
@@ -140,7 +174,11 @@
   "lisans_url": "https://creativecommons.org/licenses/by/4.0",
   "lg": "asiyan-muzesi-lg.webp",
   "sm": "asiyan-muzesi-sm.webp",
-  "og": "asiyan-muzesi-og.jpg"
+  "og": "asiyan-muzesi-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "İtfaiye Müzesi": {
   "wiki": "Itfaiye müzesi.jpg",
@@ -151,7 +189,11 @@
   "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "lg": "itfaiye-muzesi-lg.webp",
   "sm": "itfaiye-muzesi-sm.webp",
-  "og": "itfaiye-muzesi-og.jpg"
+  "og": "itfaiye-muzesi-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "Kadın Eserleri Kütüphanesi": {
   "wiki": "Kadın Eserleri Kütüphanesi Vikimaraton 2017.jpg",
@@ -162,7 +204,11 @@
   "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "lg": "kadin-eserleri-kutuphanesi-lg.webp",
   "sm": "kadin-eserleri-kutuphanesi-sm.webp",
-  "og": "kadin-eserleri-kutuphanesi-og.jpg"
+  "og": "kadin-eserleri-kutuphanesi-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "Kütüphane Troleybüs": {
   "wiki": "Kütüphane Troleybüs",
@@ -173,19 +219,13 @@
   "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "lg": "kutuphane-troleybus-lg.webp",
   "sm": "kutuphane-troleybus-sm.webp",
-  "og": "kutuphane-troleybus-og.jpg"
+  "og": "kutuphane-troleybus-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
- "Bukoleon Sarayı": {
-  "wiki": "Bukoleon Sarayı",
-  "kaynak": "wikipedia",
-  "sayfa": "https://commons.wikimedia.org/wiki/File:Bucoleon_March_2008_(3).JPG",
-  "yazar": "Gryffindor",
-  "lisans": "CC BY-SA 4.0",
-  "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "lg": "bukoleon-sarayi-lg.webp",
-  "sm": "bukoleon-sarayi-sm.webp",
-  "og": "bukoleon-sarayi-og.jpg"
- },
+ "Bukoleon Sarayı": null,
  "Tekfur Sarayı Müzesi": {
   "wiki": "Tekfur Sarayı",
   "kaynak": "wikipedia",
@@ -195,7 +235,11 @@
   "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "lg": "tekfur-sarayi-muzesi-lg.webp",
   "sm": "tekfur-sarayi-muzesi-sm.webp",
-  "og": "tekfur-sarayi-muzesi-og.jpg"
+  "og": "tekfur-sarayi-muzesi-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "Yerebatan Sarnıcı Müzesi": {
   "wiki": "Yerebatan Sarnıcı",
@@ -206,7 +250,11 @@
   "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "lg": "yerebatan-sarnici-muzesi-lg.webp",
   "sm": "yerebatan-sarnici-muzesi-sm.webp",
-  "og": "yerebatan-sarnici-muzesi-og.jpg"
+  "og": "yerebatan-sarnici-muzesi-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "Kemal Sunal Müzesi": {
   "wiki": "Kemal Sunal Müzesi",
@@ -217,7 +265,11 @@
   "lisans_url": "https://creativecommons.org/licenses/by/4.0",
   "lg": "kemal-sunal-muzesi-lg.webp",
   "sm": "kemal-sunal-muzesi-sm.webp",
-  "og": "kemal-sunal-muzesi-og.jpg"
+  "og": "kemal-sunal-muzesi-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "Cendere Sanat Müzesi": {
   "wiki": "Cendere Sanat Müzesi",
@@ -228,7 +280,11 @@
   "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "lg": "cendere-sanat-muzesi-lg.webp",
   "sm": "cendere-sanat-muzesi-sm.webp",
-  "og": "cendere-sanat-muzesi-og.jpg"
+  "og": "cendere-sanat-muzesi-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "Harbiye Muhsin Ertuğrul Sahnesi": {
   "wiki": "Harbiye Muhsin Ertuğrul Sahnesi",
@@ -239,7 +295,11 @@
   "lisans_url": "https://creativecommons.org/licenses/by-sa/3.0",
   "lg": "harbiye-muhsin-ertugrul-sahnesi-lg.webp",
   "sm": "harbiye-muhsin-ertugrul-sahnesi-sm.webp",
-  "og": "harbiye-muhsin-ertugrul-sahnesi-og.jpg"
+  "og": "harbiye-muhsin-ertugrul-sahnesi-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "Kadıköy Haldun Taner Sahnesi": {
   "wiki": "Kadıköy Haldun Taner Sahnesi",
@@ -250,7 +310,11 @@
   "lisans_url": "https://creativecommons.org/licenses/by/3.0",
   "lg": "kadikoy-haldun-taner-sahnesi-lg.webp",
   "sm": "kadikoy-haldun-taner-sahnesi-sm.webp",
-  "og": "kadikoy-haldun-taner-sahnesi-og.jpg"
+  "og": "kadikoy-haldun-taner-sahnesi-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "Müze Gazhane Prof. Dr. Sevda Şener Sahnesi": {
   "wiki": "Sevda Şener Sahnesi.jpg",
@@ -261,19 +325,13 @@
   "lisans_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
   "lg": "muze-gazhane-prof-dr-sevda-sener-sahnesi-lg.webp",
   "sm": "muze-gazhane-prof-dr-sevda-sener-sahnesi-sm.webp",
-  "og": "muze-gazhane-prof-dr-sevda-sener-sahnesi-og.jpg"
+  "og": "muze-gazhane-prof-dr-sevda-sener-sahnesi-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
- "Emirgan Korusu": {
-  "wiki": "Emirgan Korusu.jpg",
-  "kaynak": "commons",
-  "sayfa": "https://commons.wikimedia.org/wiki/File:Emirgan_Korusu.jpg",
-  "yazar": "Tarkan Karabel",
-  "lisans": "CC BY-SA 4.0",
-  "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "lg": "emirgan-korusu-lg.webp",
-  "sm": "emirgan-korusu-sm.webp",
-  "og": "emirgan-korusu-og.jpg"
- },
+ "Emirgan Korusu": null,
  "Büyükçekmece Doğal Yaşam Parkı": {
   "wiki": "İBB Büyükçekmece Gölü Doğal Yaşam Parkı 12.jpg",
   "kaynak": "commons",
@@ -283,7 +341,11 @@
   "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "lg": "buyukcekmece-dogal-yasam-parki-lg.webp",
   "sm": "buyukcekmece-dogal-yasam-parki-sm.webp",
-  "og": "buyukcekmece-dogal-yasam-parki-og.jpg"
+  "og": "buyukcekmece-dogal-yasam-parki-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "Artİstanbul Feshane": {
   "wiki": "Istanbul Feshane Artİstanbul exterior in october 2023 5156.jpg",
@@ -294,7 +356,11 @@
   "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "lg": "artistanbul-feshane-lg.webp",
   "sm": "artistanbul-feshane-sm.webp",
-  "og": "artistanbul-feshane-og.jpg"
+  "og": "artistanbul-feshane-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "Kartal Bülent Ecevit Kültür Merkezi": {
   "wiki": "İBB Bülent Ecevit Kültür Merkezi.jpg",
@@ -305,7 +371,11 @@
   "lisans_url": "https://creativecommons.org/licenses/by/3.0",
   "lg": "kartal-bulent-ecevit-kultur-merkezi-lg.webp",
   "sm": "kartal-bulent-ecevit-kultur-merkezi-sm.webp",
-  "og": "kartal-bulent-ecevit-kultur-merkezi-og.jpg"
+  "og": "kartal-bulent-ecevit-kultur-merkezi-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "Gülhane Korusu": {
   "wiki": "Gülhane Parkı",
@@ -316,7 +386,11 @@
   "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "lg": "gulhane-korusu-lg.webp",
   "sm": "gulhane-korusu-sm.webp",
-  "og": "gulhane-korusu-og.jpg"
+  "og": "gulhane-korusu-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "Taş Mektep Kütüphanesi": {
   "wiki": "Taş Mektep Kütüphane.jpg",
@@ -327,7 +401,11 @@
   "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "lg": "tas-mektep-kutuphanesi-lg.webp",
   "sm": "tas-mektep-kutuphanesi-sm.webp",
-  "og": "tas-mektep-kutuphanesi-og.jpg"
+  "og": "tas-mektep-kutuphanesi-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "Sevgi Soysal Kütüphanesi": {
   "wiki": "Sevgi Soysal Library.jpg",
@@ -338,7 +416,11 @@
   "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "lg": "sevgi-soysal-kutuphanesi-lg.webp",
   "sm": "sevgi-soysal-kutuphanesi-sm.webp",
-  "og": "sevgi-soysal-kutuphanesi-og.jpg"
+  "og": "sevgi-soysal-kutuphanesi-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "Afife Batur Kütüphanesi": {
   "wiki": "Afife Batur Kütüphanesi (2).jpg",
@@ -349,7 +431,11 @@
   "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "lg": "afife-batur-kutuphanesi-lg.webp",
   "sm": "afife-batur-kutuphanesi-sm.webp",
-  "og": "afife-batur-kutuphanesi-og.jpg"
+  "og": "afife-batur-kutuphanesi-og.jpg",
+  "lg_en": 1200,
+  "lg_boy": 675,
+  "sm_en": 640,
+  "sm_boy": 360
  },
  "15 Temmuz Kent Ormanı 3. Etap": null,
  "15 Temmuz Kent Ormanı 2. Etap": null,

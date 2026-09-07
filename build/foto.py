@@ -39,6 +39,8 @@ UA = {"User-Agent": "istanbuldacocuk.com/1.0 (https://istanbuldacocuk.com; merha
 BOYUTLAR = {"lg": (1200, 675), "sm": (640, 360)}
 KALITE = 72
 TABAN_KALITE = 48
+# 16:9'a kırpıldıktan sonraki en küçük kabul edilebilir kaynak genişliği.
+EN_AZ_GENISLIK = 900
 # Kapak görseli LCP öğesi; 3G'de 300 KB'lık bir kapak sayfayı saniyelerce bekletiyor.
 BUTCE = {"lg": 150_000, "sm": 45_000}
 IST_BIAS = "circle:40000@41.02,28.98"
@@ -336,7 +338,8 @@ def dosya_tekille(sonuc: dict, at) -> int:
     return n
 
 
-def kirp_kaydet(veri: bytes, ad_slug: str) -> dict:
+def kirp_kaydet(veri: bytes, ad_slug: str) -> dict | None:
+    """Kapak görsellerini üretir. Kaynak çok küçükse None döner (foto konmaz)."""
     im = Image.open(io.BytesIO(veri))
     if im.mode not in ("RGB", "L"):
         im = im.convert("RGB")
@@ -350,13 +353,18 @@ def kirp_kaydet(veri: bytes, ad_slug: str) -> dict:
         yy = int(g / istenen)
         ust = int((y - yy) * 0.32)
         im = im.crop((0, ust, g, ust + yy))
-    out = {}
+    # Kapak masaüstünde 1120 piksel geniş basılıyor. 333 pikselik bir kaynak
+    # (Gezi Parkı böyleydi) orada bulanık bir leke oluyor — emoji kapak daha iyi.
+    if im.width < EN_AZ_GENISLIK:
+        return None
+    out: dict = {}
     for et, (bg, by) in BOYUTLAR.items():
         yol = IMG / f"{ad_slug}-{et}.webp"
         # Kaynaktan büyütme yok: 1200'e şişirilen küçük görsel hem bulanık oluyor
         # hem de dosyayı büyütüyor. Oran zaten 16:9'a kırpıldı.
         if im.width < bg:
             bg, by = im.width, im.height
+        out[f"{et}_en"], out[f"{et}_boy"] = bg, by
         kucuk = im.resize((bg, by), Image.LANCZOS)
         # Yoğun yapraklı park fotoğrafları sabit kalitede 300 KB'ı geçiyordu.
         # Bütçeye inene kadar kaliteyi düşür; taban kaliteden aşağı inme.
@@ -422,7 +430,8 @@ def main() -> int:
                 g = wiki_bul(m) or commons_bul(m)
                 if g:
                     ham = _indir(g.pop("indir"))
-                    sonuc[ad] = {**g, **kirp_kaydet(ham, slugify(ad))}
+                    boy = kirp_kaydet(ham, slugify(ad))
+                    sonuc[ad] = {**g, **boy} if boy else None
                     sayac[g["kaynak"]] += 1
                     print(f"{i:3}/{len(mekanlar)} ✓ {ad[:38]:38} <- {g['wiki'][:30]} [{g['lisans'][:14]}]")
                 else:
@@ -456,7 +465,8 @@ def main() -> int:
             if not g:
                 print(f"{i:3}/{len(hedefler)} - {ad[:38]:38} [{durum}]")
                 continue
-            sonuc[ad] = {**g, **kirp_kaydet(g.pop("ham"), slugify(ad))}
+            boy = kirp_kaydet(g.pop("ham"), slugify(ad))
+            sonuc[ad] = {**g, **boy} if boy else None
             sayac["google"] += 1
             print(f"{i:3}/{len(hedefler)} ✓ {ad[:38]:38} <- {g['yazar'][:26]}")
         except Exception as ex:

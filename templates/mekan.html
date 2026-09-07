@@ -8,8 +8,12 @@
 
   {% if m.foto %}
   <figure class="kapak">
-    <img src="/static/img/mekan/{{ m.foto.lg }}" srcset="/static/img/mekan/{{ m.foto.sm }} 640w, /static/img/mekan/{{ m.foto.lg }} 1200w"
-         sizes="(max-width: 700px) 100vw, 1120px" width="1200" height="675"
+    {# Genişlikler foto.json'dan: kaynağı 1200'den dar olan görselleri büyütmüyoruz,
+       srcset'te 1200w yazmak tarayıcıya yanlış dosya seçtirir. #}
+    <img src="/static/img/mekan/{{ m.foto.lg }}"
+         srcset="/static/img/mekan/{{ m.foto.sm }} {{ m.foto.sm_en }}w, /static/img/mekan/{{ m.foto.lg }} {{ m.foto.lg_en }}w"
+         sizes="(max-width: 700px) 100vw, 1120px"
+         width="{{ m.foto.lg_en }}" height="{{ m.foto.lg_boy }}"
          alt="{{ m.ad }}, {{ m.ilce }}" fetchpriority="high">
     <figcaption class="foto-kunye">
       {% if m.foto.kaynak == "google" %}
