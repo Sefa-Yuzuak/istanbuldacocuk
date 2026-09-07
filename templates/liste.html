@@ -18,6 +18,17 @@
 </section>
 {% endif %}
 
+{% if capraz_baglar %}
+<section class="bolum">
+  <h2>{{ capraz_baslik }}</h2>
+  <ul class="cip-liste">
+    {% for b in capraz_baglar %}
+    <li><a class="cip" href="{{ b.url }}">{{ b.ad }}{% if b.sayi %} <span class="cip-sayi">{{ b.sayi }}</span>{% endif %}</a></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
 {% if liste %}
 <section class="bolum">
   <h2>{{ liste_basligi }}</h2>
@@ -51,6 +62,17 @@
     </table>
   </div>
   <p><a class="dugme ikincil" href="{{ onizleme_url }}">{{ onizleme_toplam }} yeşil alanın tamamı →</a></p>
+</section>
+{% endif %}
+
+{% if ilgili_rehberler %}
+<section class="bolum">
+  <h2>İlgili rehberler</h2>
+  <ul class="madde">
+    {% for r in ilgili_rehberler %}
+    <li><a href="{{ r.url }}">{{ r.baslik }}</a> — {{ r.ozet }}</li>
+    {% endfor %}
+  </ul>
 </section>
 {% endif %}
 

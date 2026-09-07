@@ -97,6 +97,14 @@ def main() -> int:
         for bag in re.findall(r'href="(/[^"#?]*)"', h):
             ic_baglar[bag].add(u)
 
+        # Kaynaktaki telefon alanı iki numarayı ayraçsız yapıştırıyordu; 55 sayfada
+        # "0 (212) 249 95 65 0 (212) 249 09 45 Dahili:663865" ham haliyle görünüyordu.
+        for tel in re.findall(r"<th scope=\"row\">Telefon</th>\s*<td>(.*?)</td>", h, re.S):
+            duz = " ".join(re.sub(r"(?s)<[^>]+>", " ", html.unescape(tel)).split())
+            if not re.fullmatch(r"0\d{3} \d{3} \d{2} \d{2}( \(dahili [\d, ]+\))?"
+                                r"( · 0\d{3} \d{3} \d{2} \d{2})*", duz):
+                sorunlar.append(f"{u}: telefon biçimi bozuk -> {duz[:60]}")
+
     for b, yerler in basliklar.items():
         if len(yerler) > 1:
             sorunlar.append(f"ÇİFT BAŞLIK ({len(yerler)}): {b[:60]} -> {', '.join(yerler[:4])}")
@@ -111,6 +119,16 @@ def main() -> int:
     for bag, nereden in sorted(ic_baglar.items()):
         if bag not in varlik and bag.rstrip("/") + "/" not in varlik:
             sorunlar.append(f"KIRIK BAĞ: {bag} (örn. {sorted(nereden)[0]})")
+
+    # Yetim sayfa: sitemap'te var ama hiçbir sayfadan bağlanmıyor. Yaka×kategori
+    # sayfaları (12 adet) tam bu durumdaydı — sitemap onları bildiriyordu ama
+    # tarayıcı gezinerek ulaşamıyordu, iç bağlantı değeri de sıfırdı.
+    for u in sorted(varlik):
+        if not u.endswith("/"):
+            continue
+        gelen = ic_baglar.get(u, set()) - {u}
+        if not gelen and u != "/":
+            sorunlar.append(f"YETİM SAYFA (hiç iç bağlantı yok): {u}")
 
     sm = (DIST / "sitemap.xml").read_text(encoding="utf-8")
     sm_urls = re.findall(r"<loc>(.*?)</loc>", sm)

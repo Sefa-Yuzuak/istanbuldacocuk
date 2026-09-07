@@ -138,6 +138,48 @@ def adres_onar(adres: str) -> str:
     return a.rstrip(" .,;/")
 
 
+ALAN_KODU = ("212", "216")
+
+
+def telefon_onar(ham: str) -> str:
+    """Kütüphane kaynağındaki telefon alanını okunur hale getirir.
+
+    Alan tek numara değil; santralin iki hattı ayraçsız yapıştırılmış:
+    `0 (212) 249 95 65 0 (212) 249 09 45 Dahili:663827`. Dahili kimi kayıtta
+    "Dahili:" ile geliyor, kimisinde ilk numaraya tireyle bağlı
+    (`… 95 65-663826`). Bir kayıtta baştaki 0 yerine 2 yazılmış.
+
+    Çıktı: `0212 249 95 65 (dahili 663826) · 0212 249 09 45`
+    """
+    m = " ".join((ham or "").split())
+    if not m:
+        return ""
+    dahili: list[str] = []
+    for kalip in (r"(?i)\bdahili\s*:?\s*(\d{3,6})", r"(?<=\d)\s*-\s*(\d{3,6})\b"):
+        dahili += re.findall(kalip, m)
+        m = re.sub(kalip, " ", m)
+
+    haneler = re.sub(r"\D", "", m)
+    numaralar: list[str] = []
+    while len(haneler) >= 10:
+        if haneler[0] == "0" and haneler[1:4] in ALAN_KODU:
+            numaralar.append(haneler[:11])
+            haneler = haneler[11:]
+        elif haneler[:3] in ALAN_KODU:
+            numaralar.append("0" + haneler[:10])
+            haneler = haneler[10:]
+        else:
+            # Kaynak hatasından gelen fazladan hane; birini atıp yeniden dene.
+            haneler = haneler[1:]
+    if not numaralar:
+        return ""
+
+    yazi = [f"{n[:4]} {n[4:7]} {n[7:9]} {n[9:]}" for n in dict.fromkeys(numaralar)]
+    if dahili:
+        yazi[0] += f" (dahili {', '.join(dict.fromkeys(dahili))})"
+    return " · ".join(yazi)
+
+
 def tr_alt(s: str) -> str:
     """Türkçe küçük harf: I->ı, İ->i. Python'un lower()'ı ikisini de bozar."""
     return s.replace("I", "ı").replace("İ", "i").lower()
@@ -287,17 +329,59 @@ def ilce_karar(kayitlar: list[dict], osm: dict) -> int:
     return duzeltilen
 
 
-def osm_ortusuyor(ad: str, osm_ad: str) -> bool:
+# Örtüşme sayılmayan sözcükler: her iki adda da geçmesi doğal olan tür ve yer
+# sözcükleri. Bunlar sayılınca "Mecidiyeköy Sanat Galerisi" ile "Mecidiyeköy
+# Meydanı" eşleşiyordu.
+GENEL_SOZCUK = frozenset({
+    "istanbul", "kültür", "merkez", "merkezi", "müze", "müzesi", "kütüphane",
+    "kütüphanesi", "park", "parkı", "sanat", "galeri", "galerisi", "mahalle",
+    "mahallesi", "cadde", "caddesi", "sokak", "sokağı", "bulvar", "bulvarı",
+    "belediye", "belediyesi", "büyükşehir", "sahne", "sahnesi", "tiyatro",
+    "tiyatrosu", "spor", "kompleks", "kompleksi", "sosyal", "tesis", "tesisi",
+    "çocuk", "hangar", "ziyaretçi", "surları",
+})
+
+
+def osm_ortusuyor(ad: str, osm_ad: str, adres: str = "") -> bool:
     """OSM sonucu gerçekten bu mekân mı, yoksa yakındaki başka bir yer mi?
 
-    Adres tabanlı yedek sorgu bazen çevredeki rastgele bir POI'yi döndürüyor:
-    "Dudullu Ödünç Kütüphanesi" için yağlama cihazları mağazası, "Baruthane Galeri"
-    için Hyatt Regency oteli. Ortak ayırt edici sözcük yoksa koordinat kullanılmaz —
-    yaklaşık konum göstermektense hiç göstermemek doğru.
+    Adres tabanlı yedek sorgu çevredeki rastgele bir POI'yi döndürüyor:
+    "Dudullu Ödünç Kütüphanesi" için yağlama cihazları mağazası, "Baruthane
+    Galeri" için Hyatt Regency oteli.
+
+    "Bir ortak sözcük yeter" ölçütü zayıf çıktı: ortak sözcük mekânın adı değil
+    SEMTİ olabiliyor. Mevlanakapı Ziyaretçi Merkezi "Holiday Inn"e, İstanbul
+    Tasarım Müzesi "Süleymaniye hamamı"na, Yenibosna Kültür Merkezi "Vizyon Park
+    Ofis Blokları"na bu yüzden bağlanmıştı — hepsinde ortak sözcük semt adıydı.
+
+    Ölçüt: mekânın kendi adresinde ya da genel sözcük listesinde GEÇMEYEN bir
+    ortak sözcük olmalı; yoksa en az iki ortak sözcük ("Şile Kültür Merkezi"
+    gibi adı zaten yer + tür sözcüklerinden kurulu mekânlar için).
     """
-    a = {t for t in re.findall(r"[a-z]{4,}", katla(ad))}
-    o = {t for t in re.findall(r"[a-z]{4,}", katla(osm_ad))}
-    return bool(a & o)
+    def sozcuk(s: str) -> set[str]:
+        return set(re.findall(r"[a-zçğıöşü]{4,}", katla(s)))
+
+    ortak = sozcuk(ad) & sozcuk(osm_ad)
+    if not ortak:
+        return False
+    ayirt = ortak - GENEL_SOZCUK - {katla(i) for i in ILCELER} - sozcuk(adres)
+    return bool(ayirt) or len(ortak) >= 2
+
+
+def koordinat_al(c: dict | None, ad: str, adres: str = "") -> tuple[float, float, str] | tuple[None, None, None]:
+    """Geocoder sonucunu kabul eder ya da eler.
+
+    Ad örtüşmesi HER YOL için aranır — adresten bulunanlar için de. Bir kez
+    gevşetip "adresten geldi, ilçesi doğruysa yeter" denendi ve üç sonucun üçü de
+    başka binaydı: Casa Botter Galerisi yerine İstanbul Araştırmaları Enstitüsü,
+    Gazhane Sesli Kütüphane yerine Hackerspace İstanbul. Nominatim adresi tam
+    çözemediğinde en yakın ADLI noktayı döndürüyor; ilçe doğru çıkıyor ama bina
+    yanlış. Yanlış konum göstermektense hiç göstermemek doğru.
+    """
+    if (c and ist_ici(c.get("lat"), c.get("lng"))
+            and osm_ortusuyor(ad, c.get("osm_ad", ""), adres)):
+        return c["lat"], c["lng"], c["kaynak"]
+    return None, None, None
 
 
 def _yesil_kayit(g: list[dict], ilce: str, tur: str, ad: str) -> dict:
@@ -420,13 +504,11 @@ def muze_kutuphane(kayitlar: list[dict], koordinat: dict) -> list[dict]:
             continue
         ilce = ILCE_DUZELT.get(k["ilce"], k["ilce"])
         c = koordinat.get(f"{k['tur']}|{k['ad']}|{k['ilce']}")
-        lat = lng = kkaynak = None
-        if c and ist_ici(c["lat"], c["lng"]) and osm_ortusuyor(k["ad"], c.get("osm_ad", "")):
-            lat, lng, kkaynak = c["lat"], c["lng"], c["kaynak"]
+        lat, lng, kkaynak = koordinat_al(c, k["ad"], k.get("adres") or "")
         out.append({
             "ad": ad_onar(temiz_ad(k["ad"])), "tur": k["tur"], "kategori": k["tur"], "ilce": ilce,
             "adres": adres_onar(k.get("adres")),
-            "telefon": " ".join((k.get("telefon") or "").split()),
+            "telefon": telefon_onar(k.get("telefon")),
             "saat": (k.get("saat") or "").strip(), "gun": gun_onar(k.get("gun")),
             "acilis_yili": str(k.get("acilis_yili") or "").strip(),
             "lat": lat, "lng": lng, "koordinat_kaynak": kkaynak, "alan_m2": None,
@@ -439,7 +521,10 @@ def muze_kutuphane(kayitlar: list[dict], koordinat: dict) -> list[dict]:
 
 
 # ------------------------------------------------------------------ kültür merkezleri
-def kultur_merkezleri() -> list[dict]:
+def kultur_merkezleri(koordinat: dict | None = None) -> list[dict]:
+    """Kültür merkezleri. `koordinat` verilmezse kayıtlar koordinatsız döner —
+    `koordinat.py` hedef listesini kurarken bu biçimde çağırıyor."""
+    koordinat = koordinat or {}
     ws = load_workbook(HAM / "kultur_merkezleri.xlsx", read_only=True, data_only=True).active
     out = []
     for s in list(ws.iter_rows(values_only=True))[1:]:
@@ -452,11 +537,13 @@ def kultur_merkezleri() -> list[dict]:
             continue
         saat = str(s[2] or "").strip().replace(".", ":")
         cocuk = str(s[3] or "").strip().upper()
+        temiz = temiz_ad(tr_baslik(ad)).replace(" Ve ", " ve ")
+        lat, lng, kkaynak = koordinat_al(koordinat.get(f"kultur|{temiz}|{ilce}"), temiz, adres)
         out.append({
-            "ad": temiz_ad(tr_baslik(ad)).replace(" Ve ", " ve "),
+            "ad": temiz,
             "tur": "kultur", "kategori": "kultur", "ilce": ilce, "adres": adres,
             "telefon": "", "saat": saat, "gun": "", "acilis_yili": "",
-            "lat": None, "lng": None, "koordinat_kaynak": None, "alan_m2": None,
+            "lat": lat, "lng": lng, "koordinat_kaynak": kkaynak, "alan_m2": None,
             "kapali": True, "ucretsiz": None,
             "cocuk_birimi": True if cocuk == "VAR" else (False if cocuk == "YOK" else None),
             "kaynak_ad": KAYNAK["kultur"][0], "kaynak_url": KAYNAK["kultur"][1],
@@ -639,7 +726,7 @@ def main() -> None:
 
     yesil, y_ozet = yesil_alanlar(kayitlar)
     mk = muze_kutuphane(kayitlar, koordinat)
-    kultur = kultur_merkezleri()
+    kultur = kultur_merkezleri(koordinat)
     tesis = sosyal_tesisler()
 
     # Tiyatro sahnesinin ilçesi kaynakta yok. Sahne adında ilçe geçiyorsa onu kullan;

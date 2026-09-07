@@ -12,6 +12,7 @@ Kullanım:  python build/koordinat.py [--yenile]
 from __future__ import annotations
 
 import json
+import re
 import sys
 import time
 import urllib.parse
@@ -47,19 +48,51 @@ def sorgula(q: str) -> tuple[float, float, str] | None:
     return None
 
 
-def ara(ad: str, ilce: str, adres: str) -> tuple[float, float, str] | None:
-    """Adı en dar kalıptan en genişe doğru dener; ilk İstanbul içi sonuç kazanır."""
-    denemeler = [f"İBB {ad}, {ilce}, İstanbul", f"{ad}, {ilce}, İstanbul"]
+# Nominatim Türkçe adres kısaltmalarını çözemiyor: "Çubuklu Mah. Şehit Ersin
+# Güner Cad." boş dönerken açılmış hali eşleşiyor. 47 kayıt bu yüzden koordinatsızdı.
+ADRES_KISALTMA = [
+    (r"(?i)\bmah(?:\.|allesi)?(?=\s|,|$)", "Mahallesi"),
+    (r"(?i)\bcad(?:\.|desi)?(?=\s|,|$)", "Caddesi"),
+    (r"(?i)\bcd\.?(?=\s|,|$)", "Caddesi"),
+    (r"(?i)\bsok(?:\.|ak|ağı)?(?=\s|,|$)", "Sokak"),
+    (r"(?i)\bsk\.?(?=\s|,|$)", "Sokak"),
+    (r"(?i)\bbul(?:\.|var[ıi])?(?=\s|,|$)", "Bulvarı"),
+    (r"(?i)\bblv\.?(?=\s|,|$)", "Bulvarı"),
+    (r"(?i)\bno\s*:?\s*[\d/\-]+\w*", ""),   # kapı numarası Nominatim'i şaşırtıyor
+    (r"(?i)\bkat\s*:?\s*[\d/\-]+", ""),
+]
+
+
+def adres_ac(adres: str) -> str:
+    """Kısaltmaları açar, kapı/kat bilgisini atar."""
+    a = (adres or "").replace("/", ", ")
+    for kalip, yerine in ADRES_KISALTMA:
+        a = re.sub(kalip, yerine, a)
+    a = re.sub(r"\s+", " ", a)
+    return re.sub(r"\s*,\s*", ", ", a).strip(" ,.")
+
+
+def ara(ad: str, ilce: str, adres: str) -> tuple[float, float, str, str] | None:
+    """En dar kalıptan en genişe dener; ilk İstanbul içi sonuç kazanır.
+
+    Dördüncü değer sonucun HANGİ YOLLA bulunduğu: "ad" ya da "adres". `veri.py`
+    ikisini farklı denetler — ad eşleşmesinde OSM adının mekân adıyla örtüşmesi,
+    adres eşleşmesinde sonucun ilçeye düşmesi aranır. Tek bir ölçüt ikisine de
+    uymuyor: adresten bulunan nokta mekân adını taşımaz, bu doğaldır.
+    """
+    denemeler = [(f"İBB {ad}, {ilce}, İstanbul", "ad"), (f"{ad}, {ilce}, İstanbul", "ad")]
     if adres:
-        # Adresin ilk iki bileşeni (mahalle + cadde) genelde yeter.
-        parca = ", ".join(p.strip() for p in adres.replace("/", ",").split(",")[:2] if p.strip())
-        if parca:
-            denemeler.append(f"{parca}, {ilce}, İstanbul")
-    for q in denemeler:
+        acik = adres_ac(adres)
+        parca = [p.strip() for p in acik.split(",") if p.strip()]
+        if len(parca) >= 2:
+            denemeler.append((f"{', '.join(parca[:2])}, {ilce}, İstanbul", "adres"))
+        if acik:
+            denemeler.append((f"{acik}, İstanbul", "adres"))
+    for q, yol in denemeler:
         s = sorgula(q)
         time.sleep(BEKLE)
         if s:
-            return s
+            return s[0], s[1], s[2], yol
     return None
 
 
@@ -92,21 +125,37 @@ def ters_toplu(noktalar: list[tuple[str, float, float]]) -> dict:
     return {a: onbellek.get(f"ters|{a}") for a, _, _ in noktalar}
 
 
+def hedefler() -> list[dict]:
+    """Koordinatı olmayan müze, kütüphane ve kültür merkezleri.
+
+    Kültür merkezleri ayrı bir xlsx'ten geliyor ve hiç sorgulanmamıştı; 16'sının
+    da koordinatı yoktu. Anahtarları `veri.py`'nin kullandığı temizlenmiş adla
+    kurulur, ham adla değil.
+    """
+    sys.path.insert(0, str(KOK / "build"))
+    from veri import kultur_merkezleri  # noqa: PLC0415  (döngüsel içe aktarımı önler)
+
+    kayitlar = json.loads((DATA / "ibb_mekanlar.json").read_text(encoding="utf-8"))
+    out = [k for k in kayitlar if k["tur"] in ("muze", "kutuphane") and not k.get("lat")]
+    out += [k for k in kultur_merkezleri() if not k.get("lat")]
+    return out
+
+
 def main():
     yenile = "--yenile" in sys.argv
-    kayitlar = json.loads((DATA / "ibb_mekanlar.json").read_text(encoding="utf-8"))
-    hedef = [k for k in kayitlar if k["tur"] in ("muze", "kutuphane") and not k.get("lat")]
+    hedef = hedefler()
     onbellek = {} if yenile or not ONBELLEK.exists() else json.loads(ONBELLEK.read_text(encoding="utf-8"))
 
     bulundu = eksik = 0
     for i, k in enumerate(hedef, 1):
         anahtar = f"{k['tur']}|{k['ad']}|{k['ilce']}"
-        if anahtar in onbellek:
-            continue
+        if onbellek.get(anahtar):
+            continue          # boş (None) kayıtlar yeni adres kalıbıyla yeniden denenir
         s = ara(k["ad"], k["ilce"], k.get("adres") or "")
         if s:
             onbellek[anahtar] = {"lat": round(s[0], 6), "lng": round(s[1], 6),
-                                 "kaynak": "OpenStreetMap (Nominatim)", "osm_ad": s[2][:90]}
+                                 "kaynak": "OpenStreetMap (Nominatim)", "osm_ad": s[2][:90],
+                                 "yol": s[3]}
             bulundu += 1
         else:
             onbellek[anahtar] = None

@@ -33,12 +33,32 @@
   </section>
   {% endfor %}
 
+  {% if ilgili %}
+  <section class="bolum">
+    <h2>Bu rehberdeki yerlerin tam listesi</h2>
+    <ul class="cip-liste">
+      {% for b in ilgili %}
+      <li><a class="cip" href="{{ b.url }}">{{ b.ad }} <span class="cip-sayi">{{ b.sayi }}</span></a></li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
   {% if r.sss %}
   <section class="bolum sss">
     <h2>Sık sorulanlar</h2>
     {% for s in r.sss %}
     <details{% if loop.first %} open{% endif %}><summary>{{ s.s }}</summary><p>{{ s.c }}</p></details>
     {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if diger %}
+  <section class="bolum">
+    <h2>Diğer rehberler</h2>
+    <ul class="madde">
+      {% for o in diger %}<li><a href="{{ o.url }}">{{ o.baslik }}</a></li>{% endfor %}
+    </ul>
   </section>
   {% endif %}
 

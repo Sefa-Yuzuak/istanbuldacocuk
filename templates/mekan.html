@@ -31,7 +31,16 @@
         <tr><th scope="row">Tür</th><td>{{ m.tur_ad }}</td></tr>
         <tr><th scope="row">İlçe</th><td><a href="/ilce/{{ m.ilce_slug }}/">{{ m.ilce }}</a> ({{ m.yaka_bilgi.ad }})</td></tr>
         {% if m.adres %}<tr><th scope="row">Adres</th><td>{{ m.adres }}</td></tr>{% endif %}
-        {% if m.telefon %}<tr><th scope="row">Telefon</th><td>{{ m.telefon }}</td></tr>{% endif %}
+        {% if m.telefon %}
+        <tr><th scope="row">Telefon</th>
+          <td>
+            {% for n in m.telefon|numaralar %}
+              {% if not loop.first %} · {% endif %}<a href="tel:{{ n.tel }}">{{ n.yazi }}</a>
+            {% else %}
+              {{ m.telefon }}
+            {% endfor %}
+          </td></tr>
+        {% endif %}
         {% if m.gun %}<tr><th scope="row">Açık günler</th><td>{{ m.gun }}</td></tr>{% endif %}
         {% if m.saat %}<tr><th scope="row">Saat</th><td>{{ m.saat }}</td></tr>{% endif %}
         {% if m.acilis_yili %}<tr><th scope="row">Açılış yılı</th><td>{{ m.acilis_yili }}</td></tr>{% endif %}

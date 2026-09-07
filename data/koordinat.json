@@ -134,7 +134,13 @@
   "osm_ad": "İBB Sevgi Soysal Kütüphanesi, 2, Aydede Caddesi, Talimhane, Kocatepe Mahallesi, Beyoğlu, İ"
  },
  "muze|Atatürk Kitaplığı Sanat Galerisi|Beyoğlu": null,
- "muze|Casa Botter Sanat Galerisi|Beyoğlu": null,
+ "muze|Casa Botter Sanat Galerisi|Beyoğlu": {
+  "lat": 41.032835,
+  "lng": 28.975179,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "Istanbul Araştırmaları Enstitüsü, Meşrutiyet Caddesi, İstiklal, Asmalı Mescit, Asmalı Mesc",
+  "yol": "adres"
+ },
  "muze|Cumhuriyet Müzesi|Beyoğlu": null,
  "muze|Kuyumcular Hanı Müzesi|Beyoğlu": null,
  "muze|Metrohan|Beyoğlu": {
@@ -324,7 +330,13 @@
   "kaynak": "OpenStreetMap (Nominatim)",
   "osm_ad": "İBB Moda İskelesi Kütüphanesi, Moda Caddesi, Moda, Caferağa Mahallesi, Kadıköy, İstanbul, "
  },
- "kutuphane|Müze Gazhane Sesli Kütüphane|Kadıköy": null,
+ "kutuphane|Müze Gazhane Sesli Kütüphane|Kadıköy": {
+  "lat": 40.994357,
+  "lng": 29.037313,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "Hackerspace İstanbul, 61/4, Kurbağalıdere Caddesi, Hasanpaşa Mahallesi, Kadıköy, İstanbul,",
+  "yol": "adres"
+ },
  "kutuphane|Turhan Selçuk Kütüphanesi|Kadıköy": null,
  "kutuphane|Özgen Berkol Doğan Kütüphanesi|Kadıköy": {
   "lat": 40.984096,
@@ -488,5 +500,39 @@
  "ters|Harbiye Cemil Topuzlu Açıkhava Tiyatrosu": "Şişli",
  "ters|Müze Gazhane Prof. Dr. Sevda Şener Sahnesi": "Kadıköy",
  "ters|Nazım Hikmet Kültür ve Sanat Evi": "Şişli",
- "ters|İBB Yenibosna Dr. Enver Ören Kültür Merkezi": "Yenibosna Merkez Mahallesi"
+ "ters|İBB Yenibosna Dr. Enver Ören Kültür Merkezi": "Yenibosna Merkez Mahallesi",
+ "kultur|(CRR) Cemal Reşit Rey Konser Salonu|Şişli": null,
+ "kultur|Fatih Ali Emiri Efendi Kültür Merkezi|Fatih": null,
+ "kultur|Esenler Prof. Dr. Adem Baştürk Kültür Merkezi|Esenler": null,
+ "kultur|Başakşehir Kültür Merkezi|Başakşehir": {
+  "lat": 41.104675,
+  "lng": 28.785494,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İBB Başakşehir Kültür Merkezi, Ilgaz Sokak, Onurkent, Başakşehir Mahallesi, Başakşehir, İs",
+  "yol": "ad"
+ },
+ "kultur|Bakırköy Cem Karaca Kültür Merkezi|Bakırköy": null,
+ "kultur|Güngören Erdem Beyazıt Kültür Merkezi|Güngören": null,
+ "kultur|Yenibosna Dr. Enver Ören Kültür Merkezi|Bahçelievler": {
+  "lat": 41.002851,
+  "lng": 28.819832,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "İstanbul Vizyon Park Ofis Blokları, 29 Ekim Caddesi, Yenibosna Merkez Mahallesi, Bahçeliev",
+  "yol": "adres"
+ },
+ "kultur|Arnavutköy Kültür Spor Eğitim ve Yaşam Merkezi|Arnavutköy": null,
+ "kultur|Sultangazi Hoca Ahmet Yesevi Kültür Merkezi|Sultangazi": null,
+ "kultur|Kartal Bülent Ecevit Kültür Merkezi|Kartal": null,
+ "kultur|Şile Kültür Merkezi|Şile": {
+  "lat": 41.172439,
+  "lng": 29.615626,
+  "kaynak": "OpenStreetMap (Nominatim)",
+  "osm_ad": "Şile Kültür Merkezi, Atatürk Caddesi, Balibey Mahallesi, Şile, İstanbul, Marmara Bölgesi, ",
+  "yol": "ad"
+ },
+ "kultur|Sancaktepe Eyüp Sultan Kültür ve Spor Kompleksinin Kültür Merkezi Kısmı|Sancaktepe": null,
+ "kultur|Tuzla İdris Güllüce Kültür Merkezi|Tuzla": null,
+ "kultur|Üsküdar Çengelköy Kültür Merkezi|Üsküdar": null,
+ "kultur|Çekmeköy Çocuk Sanat Merkezi|Çekmeköy": null,
+ "kultur|Habitat Yaşam Merkezi|Şişli": null
 }

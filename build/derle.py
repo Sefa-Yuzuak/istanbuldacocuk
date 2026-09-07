@@ -81,6 +81,15 @@ YAKALAR = {
                "aciklama": "Fatih'ten Silivri'ye, boğazın batı kıyısındaki 25 ilçe."},
 }
 
+# Her rehber, anlattığı listeye bağlanır: rehber sayfası tek başına çıkışsız kalmasın.
+# Anahtarlar KATEGORILER ve YAKALAR anahtarlarıdır; derlemede varlıkları doğrulanır.
+REHBER_ILGI = {
+    "istanbulda-cocuk-tiyatrosu": ("tiyatro", "kultur"),
+    "ibb-kutuphaneleri-cocukla": ("kutuphane",),
+    "istanbulun-en-buyuk-parklari": ("park",),
+    "anadolu-mu-avrupa-mi-yesil-alan": ("anadolu", "avrupa", "park"),
+}
+
 TR_ASCII = str.maketrans("çğıöşüâîÇĞİÖŞÜÂÎI", "cgiosuaicgiosuaii")
 
 
@@ -165,6 +174,23 @@ def dokum(mekanlar: list[dict]) -> list[tuple[str, int]]:
 
 def binlik(n) -> str:
     return f"{n:,.0f}".replace(",", ".") if n else ""
+
+
+def numaralar(telefon: str) -> list[dict]:
+    """`veri.py`'nin ürettiği telefon metnini tıklanabilir parçalara ayırır.
+
+    Girdi: "0212 249 95 65 (dahili 663826) · 0212 249 09 45"
+    Çıktı: [{"yazi": "0212 249 95 65 (dahili 663826)", "tel": "+902122499565"}, ...]
+    Dahili numarayı `tel:` bağlantısına koymuyoruz; santral karşılamadan
+    gönderilen ek çoğu hatta çalışmıyor, yazıda görünmesi yeterli.
+    """
+    out = []
+    for parca in (telefon or "").split(" · "):
+        parca = parca.strip()
+        haneler = re.sub(r"\D", "", parca.split("(")[0])
+        if len(haneler) == 11 and haneler.startswith("0"):
+            out.append({"yazi": parca, "tel": "+9" + haneler})
+    return out
 
 
 def alan_yazi(m2) -> str:
@@ -493,11 +519,23 @@ def main() -> None:
     for r in rehberler:
         r["url"] = f"/rehber/{r['slug']}/"
 
+    # REHBER_ILGI'nin tersi: liste sayfası -> onu anlatan rehberler.
+    rehber_ters: dict[str, list[dict]] = {}
+    slugler = {r["slug"] for r in rehberler}
+    if eksik := set(REHBER_ILGI) - slugler:
+        raise SystemExit(f"REHBER_ILGI'de olmayan rehber slug'ı: {sorted(eksik)}")
+    for r in rehberler:
+        for anahtar in REHBER_ILGI.get(r["slug"], ()):
+            if anahtar not in KATEGORILER and anahtar not in YAKALAR:
+                raise SystemExit(f"REHBER_ILGI'de tanınmayan anahtar: {anahtar}")
+            rehber_ters.setdefault(anahtar, []).append(r)
+
     env = Environment(loader=FileSystemLoader(TEMPLATES),
                       autoescape=select_autoescape(["html"]), trim_blocks=True, lstrip_blocks=True)
     env.filters["json"] = lambda v: json.dumps(v, ensure_ascii=False)
     env.filters["binlik"] = binlik
     env.filters["bulunma"] = bulunma
+    env.filters["numaralar"] = numaralar
 
     # ---- gruplar
     ilce_grup: dict[str, list[dict]] = {}
@@ -594,7 +632,20 @@ def main() -> None:
           kapali_sayi=len(kapali), toplam_alan=toplam_alan, tiyatrolar=tiyatrolar[:6])
 
     # ---------------------------------------------------------------- yaka sayfaları
+    yaka_kesisim: dict[str, list[dict]] = {}
     for y in yakalar:
+        # Kesişimler yaka sayfasından ÖNCE hesaplanıyor: aksi halde yaka sayfası
+        # kendi alt sayfalarına bağlanamıyor ve o 12 sayfa sitemap'te olmasına
+        # rağmen hiç iç bağlantı almıyordu (tarayıcı için yetim).
+        kesisimler = []
+        for k in kategoriler:
+            uyeler = [m for m in y["mekanlar"] if m["kategori"] == k["anahtar"]]
+            if len(uyeler) >= 5:
+                url = f"{y['url']}{k['slug']}/"
+                kesisimler.append((k, uyeler, url))
+                yaka_kesisim.setdefault(k["anahtar"], []).append(
+                    {"ad": f"{y['ad']} {k['ad']}", "url": url, "sayi": len(uyeler)})
+
         sayfa(y["url"], "liste.html",
               f"{y['ad']}'nda Çocukla Gidilecek Yerler",
               f"İstanbul {y['ad']}'ndaki {len(y['ilceler'])} ilçede çocukla gidilebilecek "
@@ -609,14 +660,15 @@ def main() -> None:
               sss=liste_sss(f"{y['ad']} mekânları", y["mekanlar"]),
               alt_baglar=[{"ad": i["ad"], "url": i["url"], "sayi": len(i["mekanlar"])}
                           for i in y["ilceler"]],
-              alt_baslik="İlçeler", kirinti=[(y["ad"], y["url"])])
+              alt_baslik="İlçeler",
+              capraz_baslik=f"{y['ad']} — türe göre",
+              capraz_baglar=[{"ad": k["ad"], "url": u, "sayi": len(uy)}
+                             for k, uy, u in kesisimler],
+              ilgili_rehberler=rehber_ters.get(y["anahtar"], []),
+              kirinti=[(y["ad"], y["url"])])
 
         # yaka × kategori kesişimleri — "anadolu yakasında müze" gibi uzun kuyruk
-        for k in kategoriler:
-            uyeler = [m for m in y["mekanlar"] if m["kategori"] == k["anahtar"]]
-            if len(uyeler) < 5:
-                continue
-            url = f"{y['url']}{k['slug']}/"
+        for k, uyeler, url in kesisimler:
             sayfa(url, "liste.html",
                   f"{y['ad']} {k['ad']}: {len(uyeler)} Yer",
                   f"İstanbul {y['ad']}'nda {k['cumle']}: {len(uyeler)} kayıt, "
@@ -643,6 +695,16 @@ def main() -> None:
                kirintilar(site, (k["ad"], k["url"]))],
               oncelik="0.9", liste=k["mekanlar"], liste_basligi=k["ad"], giris=k["aciklama"],
               sss=liste_sss(f"İstanbul'daki {k['cumle']}", k["mekanlar"]),
+              capraz_baslik="Yakaya göre", capraz_baglar=yaka_kesisim.get(k["anahtar"], []),
+              ilgili_rehberler=rehber_ters.get(k["anahtar"], []),
+              # Sayı bu türe ait; başlık bunu söylemezse "Kadıköy 12" ilçedeki
+              # TÜM mekânlar sanılıyor.
+              alt_baslik=f"İlçeye göre {k['cumle']}",
+              alt_baglar=[{"ad": i["ad"], "url": i["url"],
+                           "sayi": sum(1 for m in i["mekanlar"]
+                                       if m["kategori"] == k["anahtar"])}
+                          for i in ilceler
+                          if any(m["kategori"] == k["anahtar"] for m in i["mekanlar"])],
               kirinti=[(k["ad"], k["url"])])
 
     # ---------------------------------------------------------------- ilçe sayfaları
@@ -785,6 +847,12 @@ def main() -> None:
               [kirintilar(site, ("Rehberler", "/rehber/"))], oncelik="0.8",
               kirinti=[("Rehberler", "/rehber/")])
     for r in rehberler:
+        # Rehberde yalnız dış kaynak bağlantısı vardı: hem okuyucu hem tarayıcı
+        # için çıkışsız sayfaydı. Rehberi anlattığı listeye ve diğer rehberlere bağla.
+        ilgili = [{"ad": k["ad"], "url": k["url"], "sayi": len(k["mekanlar"])}
+                  for k in kategoriler if k["anahtar"] in REHBER_ILGI.get(r["slug"], ())]
+        ilgili += [{"ad": y["ad"], "url": y["url"], "sayi": len(y["mekanlar"])}
+                   for y in yakalar if y["anahtar"] in REHBER_ILGI.get(r["slug"], ())]
         sayfa(r["url"], "rehber.html", r["baslik"], r["ozet"],
               [sss_schema(r.get("sss", [])),
                {"@context": "https://schema.org", "@type": "Article", "headline": r["baslik"],
@@ -792,7 +860,9 @@ def main() -> None:
                 "inLanguage": "tr-TR", "url": site["url"] + r["url"],
                 "author": {"@type": "Organization", "name": site["ad"]}},
                kirintilar(site, ("Rehberler", "/rehber/"), (r["baslik"], r["url"]))],
-              oncelik="0.8", r=r, kirinti=[("Rehberler", "/rehber/"), (r["baslik"], r["url"])])
+              oncelik="0.8", r=r, ilgili=ilgili,
+              diger=[o for o in rehberler if o["slug"] != r["slug"]],
+              kirinti=[("Rehberler", "/rehber/"), (r["baslik"], r["url"])])
 
     # ---------------------------------------------------------------- düz sayfalar
     for p in sayfalar:

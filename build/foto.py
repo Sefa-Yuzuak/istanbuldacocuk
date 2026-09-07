@@ -38,6 +38,9 @@ ANAHTAR = KOK / "build" / ".places.key"
 UA = {"User-Agent": "istanbuldacocuk.com/1.0 (https://istanbuldacocuk.com; merhaba@istanbuldacocuk.com)"}
 BOYUTLAR = {"lg": (1200, 675), "sm": (640, 360)}
 KALITE = 72
+TABAN_KALITE = 48
+# Kapak görseli LCP öğesi; 3G'de 300 KB'lık bir kapak sayfayı saniyelerce bekletiyor.
+BUTCE = {"lg": 150_000, "sm": 45_000}
 IST_BIAS = "circle:40000@41.02,28.98"
 LOGO_RE = re.compile(r"logo|seal|amblem|emblem|arma|coat|flag|bayrak|_map|harita|icon|afi[sş]|"
                      r"poster|banner|plan|kroki|tabela", re.I)
@@ -350,7 +353,17 @@ def kirp_kaydet(veri: bytes, ad_slug: str) -> dict:
     out = {}
     for et, (bg, by) in BOYUTLAR.items():
         yol = IMG / f"{ad_slug}-{et}.webp"
-        im.resize((bg, by), Image.LANCZOS).save(yol, "WEBP", quality=KALITE, method=6)
+        # Kaynaktan büyütme yok: 1200'e şişirilen küçük görsel hem bulanık oluyor
+        # hem de dosyayı büyütüyor. Oran zaten 16:9'a kırpıldı.
+        if im.width < bg:
+            bg, by = im.width, im.height
+        kucuk = im.resize((bg, by), Image.LANCZOS)
+        # Yoğun yapraklı park fotoğrafları sabit kalitede 300 KB'ı geçiyordu.
+        # Bütçeye inene kadar kaliteyi düşür; taban kaliteden aşağı inme.
+        for kalite in range(KALITE, TABAN_KALITE - 1, -6):
+            kucuk.save(yol, "WEBP", quality=kalite, method=6)
+            if yol.stat().st_size <= BUTCE[et]:
+                break
         out[et] = yol.name
     return out
 
