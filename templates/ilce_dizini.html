@@ -19,10 +19,10 @@
       <tbody>
         {% for i in y.ilceler %}
         <tr>
-          <td><a href="{{ i.url }}">{{ i.ad }}</a></td>
-          <td class="sag">{{ i.mekanlar|length }}</td>
-          <td class="sag"><a href="{{ i.url }}parklar/">{{ i.yesil|length }}</a></td>
-          <td class="sag">{{ i.yesil_m2|binlik }} m²</td>
+          <td data-etiket="İlçe"><a href="{{ i.url }}">{{ i.ad }}</a></td>
+          <td class="sag" data-etiket="Mekân sayfası">{{ i.mekanlar|length }}</td>
+          <td class="sag" data-etiket="Park ve koru"><a href="{{ i.url }}parklar/">{{ i.yesil|length }}</a></td>
+          <td class="sag" data-etiket="Toplam yeşil alan">{{ i.yesil_m2|binlik }} m²</td>
         </tr>
         {% endfor %}
       </tbody>

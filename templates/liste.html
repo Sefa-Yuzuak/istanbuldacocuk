@@ -52,10 +52,10 @@
       <tbody>
         {% for y in onizleme %}
         <tr>
-          <td>{% if y.url %}<a href="{{ y.url }}">{{ y.ad }}</a>{% else %}{{ y.ad }}{% endif %}</td>
-          <td>{{ y.tur_ad }}</td>
-          <td class="sag">{% if y.alan_m2 %}{{ y.alan_m2|binlik }} m²{% else %}—{% endif %}</td>
-          <td>{% if y.maps_url %}<a href="{{ y.maps_url }}" rel="nofollow noopener" target="_blank">Haritada gör</a>{% else %}—{% endif %}</td>
+          <td data-etiket="Yeşil alan">{% if y.url %}<a href="{{ y.url }}">{{ y.ad }}</a>{% else %}{{ y.ad }}{% endif %}</td>
+          <td data-etiket="Tür">{{ y.tur_ad }}</td>
+          <td class="sag" data-etiket="Büyüklük">{% if y.alan_m2 %}{{ y.alan_m2|binlik }} m²{% else %}—{% endif %}</td>
+          <td data-etiket="Konum">{% if y.maps_url %}<a href="{{ y.maps_url }}" rel="nofollow noopener" target="_blank">Haritada gör</a>{% else %}—{% endif %}</td>
         </tr>
         {% endfor %}
       </tbody>

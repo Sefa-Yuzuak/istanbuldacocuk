@@ -23,7 +23,7 @@
         <thead><tr>{% for h in b.tablo.basliklar %}<th scope="col">{{ h }}</th>{% endfor %}</tr></thead>
         <tbody>
           {% for satir in b.tablo.satirlar %}
-          <tr>{% for h in satir %}<td>{{ h }}</td>{% endfor %}</tr>
+          <tr>{% for h in satir %}<td data-etiket="{{ b.tablo.basliklar[loop.index0] }}">{{ h }}</td>{% endfor %}</tr>
           {% endfor %}
         </tbody>
       </table>
