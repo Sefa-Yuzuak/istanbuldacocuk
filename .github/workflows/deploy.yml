@@ -30,8 +30,17 @@ jobs:
             *\?*)     URL="$DEPLOY_URL&force=true" ;;
             *)        URL="$DEPLOY_URL?force=true" ;;
           esac
-          code=$(curl -sS -o /tmp/y.txt -w "%{http_code}" -X POST "$URL" -H "Authorization: Bearer $TOKEN")
-          echo "HTTP $code"; cat /tmp/y.txt; echo ""
+          # Sunucuya ulasilamamasi gecici olabiliyor: 09.09.2026'da GitHub Actions
+          # 133 saniye boyunca baglanamadi (curl 28), is akisi basarisiz oldu ve
+          # site sessizce eski surumde kaldi. Uc deneme, aralarinda 20 saniye.
+          code="000"
+          for deneme in 1 2 3; do
+            echo "POST (force=true) — deneme $deneme..."
+            code=$(curl -sS --connect-timeout 20 --max-time 90 -o /tmp/y.txt -w "%{http_code}" -X POST "$URL" -H "Authorization: Bearer $TOKEN") || code="000"
+            echo "HTTP $code"; cat /tmp/y.txt; echo ""
+            case "$code" in 2*) break ;; esac
+            if [ "$deneme" -lt 3 ]; then sleep 20; fi
+          done
           case "$code" in
             2*) echo "Deploy tetiklendi ✓" ;;
             401) echo "::error::401 — token geçersiz/revoke. Coolify → Keys & Tokens'tan yenile."; exit 1 ;;
