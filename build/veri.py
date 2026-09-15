@@ -405,7 +405,11 @@ def _yesil_kayit(g: list[dict], ilce: str, tur: str, ad: str) -> dict:
         "koordinat_kaynak": "İBB Açık Veri — poligon ağırlık merkezi" if lat else None,
         "alan_m2": round(alan) if alan else None,
         "parca_sayisi": len(g),
-        "kapali": False, "ucretsiz": True,
+        # Mesire alanlarinda iddia YOK: sitenin kendi SSS'i "bazi mesire
+        # alanlarinda hafta sonu uygulamalari ucretli olabilir" diyor.
+        # Digerleri (park, koru, kent/hatira ormani) halka acik alanlar.
+        "kapali": False, "ucretsiz": None if tur == "mesire" else True,
+        "ucret_dayanak": None if tur == "mesire" else "halka açık alan",
         "kaynak_ad": KAYNAK["yesil"][0], "kaynak_url": KAYNAK["yesil"][1],
     }
 
@@ -515,6 +519,7 @@ def muze_kutuphane(kayitlar: list[dict], koordinat: dict) -> list[dict]:
             "kapali": True,
             # Halk kütüphanesine giriş ücretsizdir; müzelerde ücret bilgisi kaynakta yok.
             "ucretsiz": True if k["tur"] == "kutuphane" else None,
+            "ucret_dayanak": "halk kütüphanesi" if k["tur"] == "kutuphane" else None,
             "kaynak_ad": KAYNAK[k["tur"]][0], "kaynak_url": KAYNAK[k["tur"]][1],
         })
     return out

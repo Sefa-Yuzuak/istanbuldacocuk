@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% block ogtip %}place{% endblock %}
 {% from "_kart.html" import kart %}
 {% block icerik %}
 <article>
@@ -50,8 +51,14 @@
         {% if m.acilis_yili %}<tr><th scope="row">Açılış yılı</th><td>{{ m.acilis_yili }}</td></tr>{% endif %}
         {% if m.alan_yazi %}<tr><th scope="row">Büyüklük</th><td>{{ m.alan_yazi }}</td></tr>{% endif %}
         {% if m.ucretsiz is not none %}
-        <tr><th scope="row">Giriş</th><td>{{ "Ücretsiz" if m.ucretsiz else "Ücretli olabilir" }}</td></tr>
+        {# Dayanak gorunur yazilir: IBB veri setinde ucret sutunu yok, iddia
+           alanin niteliginden geliyor. #}
+        <tr><th scope="row">Giriş</th><td>{{ "Ücretsiz" if m.ucretsiz else "Ücretli olabilir" }}{% if m.ucret_dayanak %} <span class="kucuk">({{ m.ucret_dayanak }}; İBB verisinde ücret sütunu yok)</span>{% endif %}</td></tr>
+        {% else %}
+        <tr><th scope="row">Giriş</th><td>İBB açık verisinde ücret bilgisi yok</td></tr>
         {% endif %}
+        {# Yas bilgisi IBB verisinde HIC yok; sorunun cevabi yokluk da olsa yazilir. #}
+        <tr><th scope="row">Yaş aralığı</th><td>İBB açık verisinde yaş bilgisi yok</td></tr>
         {% if m.cocuk_birimi is defined and m.cocuk_birimi is not none %}
         <tr><th scope="row">Çocuk birimi</th>
             <td>{{ "İBB verisinde VAR olarak işaretli" if m.cocuk_birimi else "İBB verisinde YOK olarak işaretli" }}</td></tr>

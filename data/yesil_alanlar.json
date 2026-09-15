@@ -16,6 +16,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -38,6 +39,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -60,6 +62,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -82,6 +85,7 @@
   "parca_sayisi": 4,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -104,6 +108,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -126,6 +131,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -148,6 +154,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -170,6 +177,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -192,6 +200,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -214,6 +223,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -236,6 +246,7 @@
   "parca_sayisi": 2,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -257,7 +268,8 @@
   "alan_m2": 290032,
   "parca_sayisi": 1,
   "kapali": false,
-  "ucretsiz": true,
+  "ucretsiz": null,
+  "ucret_dayanak": null,
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -280,6 +292,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -302,6 +315,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -324,6 +338,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -346,6 +361,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -368,6 +384,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -390,6 +407,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -411,7 +429,8 @@
   "alan_m2": 207425,
   "parca_sayisi": 3,
   "kapali": false,
-  "ucretsiz": true,
+  "ucretsiz": null,
+  "ucret_dayanak": null,
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -434,6 +453,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -456,6 +476,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -478,6 +499,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -500,6 +522,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -522,6 +545,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -544,6 +568,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -566,6 +591,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -588,6 +614,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -610,6 +637,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -632,6 +660,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -653,7 +682,8 @@
   "alan_m2": 145084,
   "parca_sayisi": 1,
   "kapali": false,
-  "ucretsiz": true,
+  "ucretsiz": null,
+  "ucret_dayanak": null,
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -676,6 +706,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -698,6 +729,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -720,6 +752,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -742,6 +775,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -764,6 +798,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "ilce_kaynak_ibb": "Beşiktaş",
@@ -787,6 +822,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -809,6 +845,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -831,6 +868,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -853,6 +891,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -875,6 +914,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -897,6 +937,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -919,6 +960,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -941,6 +983,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -963,6 +1006,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -984,7 +1028,8 @@
   "alan_m2": 119000,
   "parca_sayisi": 1,
   "kapali": false,
-  "ucretsiz": true,
+  "ucretsiz": null,
+  "ucret_dayanak": null,
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -1007,6 +1052,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -1029,6 +1075,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -1051,6 +1098,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -1073,6 +1121,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -1095,6 +1144,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -1117,6 +1167,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -1139,6 +1190,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -1161,6 +1213,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -1183,6 +1236,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -1205,6 +1259,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -1227,6 +1282,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -1249,6 +1305,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -1271,6 +1328,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -1293,6 +1351,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -1315,6 +1374,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -1337,6 +1397,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -1359,6 +1420,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -1381,6 +1443,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -1403,6 +1466,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -1425,6 +1489,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -1447,6 +1512,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -1469,6 +1535,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -1491,6 +1558,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -1512,7 +1580,8 @@
   "alan_m2": 79051,
   "parca_sayisi": 1,
   "kapali": false,
-  "ucretsiz": true,
+  "ucretsiz": null,
+  "ucret_dayanak": null,
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -1535,6 +1604,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -1556,7 +1626,8 @@
   "alan_m2": 78573,
   "parca_sayisi": 1,
   "kapali": false,
-  "ucretsiz": true,
+  "ucretsiz": null,
+  "ucret_dayanak": null,
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -1579,6 +1650,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -1601,6 +1673,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -1623,6 +1696,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -1645,6 +1719,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -1667,6 +1742,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -1688,7 +1764,8 @@
   "alan_m2": 72331,
   "parca_sayisi": 1,
   "kapali": false,
-  "ucretsiz": true,
+  "ucretsiz": null,
+  "ucret_dayanak": null,
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -1711,6 +1788,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -1733,6 +1811,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -1755,6 +1834,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -1777,6 +1857,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -1799,6 +1880,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -1821,6 +1903,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -1843,6 +1926,7 @@
   "parca_sayisi": 2,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -1865,6 +1949,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -1887,6 +1972,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -1909,6 +1995,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -1931,6 +2018,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -1953,6 +2041,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "ilce_kaynak_ibb": "Şişli",
@@ -1976,6 +2065,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -1998,6 +2088,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -2020,6 +2111,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -2042,6 +2134,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -2064,6 +2157,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2085,6 +2179,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -2106,6 +2201,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2127,6 +2223,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -2148,6 +2245,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2168,7 +2266,8 @@
   "alan_m2": 44501,
   "parca_sayisi": 1,
   "kapali": false,
-  "ucretsiz": true,
+  "ucretsiz": null,
+  "ucret_dayanak": null,
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -2191,6 +2290,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2212,6 +2312,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2233,6 +2334,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -2254,6 +2356,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2275,6 +2378,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2296,6 +2400,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -2317,6 +2422,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2338,6 +2444,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2359,6 +2466,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2380,6 +2488,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2401,6 +2510,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2422,6 +2532,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -2443,6 +2554,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -2464,6 +2576,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2485,6 +2598,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -2506,6 +2620,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2527,6 +2642,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2548,6 +2664,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2568,7 +2685,8 @@
   "alan_m2": 33048,
   "parca_sayisi": 1,
   "kapali": false,
-  "ucretsiz": true,
+  "ucretsiz": null,
+  "ucret_dayanak": null,
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -2591,6 +2709,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2612,6 +2731,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2633,6 +2753,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2654,6 +2775,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -2675,6 +2797,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2696,6 +2819,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2717,6 +2841,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2738,6 +2863,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2759,6 +2885,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu",
@@ -2781,6 +2908,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -2802,6 +2930,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2823,6 +2952,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2844,6 +2974,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2864,7 +2995,8 @@
   "alan_m2": 30040,
   "parca_sayisi": 1,
   "kapali": false,
-  "ucretsiz": true,
+  "ucretsiz": null,
+  "ucret_dayanak": null,
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -2886,7 +3018,8 @@
   "alan_m2": 30039,
   "parca_sayisi": 1,
   "kapali": false,
-  "ucretsiz": true,
+  "ucretsiz": null,
+  "ucret_dayanak": null,
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -2908,7 +3041,8 @@
   "alan_m2": 29990,
   "parca_sayisi": 1,
   "kapali": false,
-  "ucretsiz": true,
+  "ucretsiz": null,
+  "ucret_dayanak": null,
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -2931,6 +3065,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2952,6 +3087,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -2973,6 +3109,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -2994,6 +3131,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -3015,6 +3153,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -3037,6 +3176,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3058,6 +3198,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -3079,6 +3220,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3100,6 +3242,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3121,6 +3264,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -3142,6 +3286,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3163,6 +3308,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3184,6 +3330,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3205,6 +3352,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3226,6 +3374,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -3247,6 +3396,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "ilce_kaynak_ibb": "Fatih",
@@ -3269,6 +3419,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -3290,6 +3441,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3311,6 +3463,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3332,6 +3485,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3353,6 +3507,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3373,7 +3528,8 @@
   "alan_m2": 23734,
   "parca_sayisi": 1,
   "kapali": false,
-  "ucretsiz": true,
+  "ucretsiz": null,
+  "ucret_dayanak": null,
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -3396,6 +3552,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3417,6 +3574,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -3438,6 +3596,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3459,6 +3618,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3480,6 +3640,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3501,6 +3662,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -3523,6 +3685,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3544,6 +3707,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -3565,6 +3729,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -3586,6 +3751,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -3607,6 +3773,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3628,6 +3795,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -3649,6 +3817,7 @@
   "parca_sayisi": 2,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -3670,6 +3839,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3691,6 +3861,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3712,6 +3883,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3733,6 +3905,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3754,6 +3927,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -3775,6 +3949,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3796,6 +3971,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3816,7 +3992,8 @@
   "alan_m2": 19181,
   "parca_sayisi": 1,
   "kapali": false,
-  "ucretsiz": true,
+  "ucretsiz": null,
+  "ucret_dayanak": null,
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -3839,6 +4016,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -3860,6 +4038,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -3881,6 +4060,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3902,6 +4082,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -3923,6 +4104,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3944,6 +4126,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -3965,6 +4148,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -3986,6 +4170,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -4007,6 +4192,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -4028,6 +4214,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -4049,6 +4236,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -4070,6 +4258,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -4091,6 +4280,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -4112,6 +4302,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -4134,6 +4325,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -4155,6 +4347,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -4176,6 +4369,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -4197,6 +4391,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -4217,7 +4412,8 @@
   "alan_m2": 14982,
   "parca_sayisi": 1,
   "kapali": false,
-  "ucretsiz": true,
+  "ucretsiz": null,
+  "ucret_dayanak": null,
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -4240,6 +4436,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -4261,6 +4458,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -4282,6 +4480,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -4303,6 +4502,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -4324,6 +4524,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -4345,6 +4546,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -4366,6 +4568,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -4387,6 +4590,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -4408,6 +4612,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -4429,6 +4634,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -4450,6 +4656,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -4471,6 +4678,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -4492,6 +4700,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -4513,6 +4722,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -4534,6 +4744,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -4555,6 +4766,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -4576,6 +4788,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -4597,6 +4810,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -4618,6 +4832,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -4639,6 +4854,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -4660,6 +4876,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -4681,6 +4898,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -4702,6 +4920,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -4722,7 +4941,8 @@
   "alan_m2": 10389,
   "parca_sayisi": 1,
   "kapali": false,
-  "ucretsiz": true,
+  "ucretsiz": null,
+  "ucret_dayanak": null,
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa",
@@ -4745,6 +4965,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -4766,6 +4987,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -4787,6 +5009,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -4808,6 +5031,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -4829,6 +5053,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -4850,6 +5075,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -4871,6 +5097,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -4892,6 +5119,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -4913,6 +5141,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -4934,6 +5163,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -4955,6 +5185,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -4976,6 +5207,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -4997,6 +5229,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5018,6 +5251,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5039,6 +5273,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5060,6 +5295,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -5081,6 +5317,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5102,6 +5339,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5123,6 +5361,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5144,6 +5383,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5165,6 +5405,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5186,6 +5427,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -5207,6 +5449,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -5228,6 +5471,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -5249,6 +5493,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -5270,6 +5515,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -5291,6 +5537,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -5312,6 +5559,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -5333,6 +5581,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5354,6 +5603,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -5375,6 +5625,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5396,6 +5647,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -5417,6 +5669,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5438,6 +5691,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -5459,6 +5713,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5480,6 +5735,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -5501,6 +5757,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -5522,6 +5779,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -5543,6 +5801,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -5564,6 +5823,7 @@
   "parca_sayisi": 2,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -5585,6 +5845,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5606,6 +5867,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5627,6 +5889,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5648,6 +5911,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5669,6 +5933,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -5690,6 +5955,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5711,6 +5977,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -5732,6 +5999,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5753,6 +6021,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -5774,6 +6043,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5795,6 +6065,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5816,6 +6087,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -5837,6 +6109,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5858,6 +6131,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5879,6 +6153,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5900,6 +6175,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5921,6 +6197,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5942,6 +6219,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5963,6 +6241,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -5984,6 +6263,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -6005,6 +6285,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -6026,6 +6307,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -6047,6 +6329,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -6068,6 +6351,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6089,6 +6373,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6110,6 +6395,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -6131,6 +6417,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6152,6 +6439,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -6173,6 +6461,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -6194,6 +6483,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6215,6 +6505,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -6236,6 +6527,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -6257,6 +6549,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6278,6 +6571,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6299,6 +6593,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6320,6 +6615,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6341,6 +6637,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -6362,6 +6659,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6383,6 +6681,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -6404,6 +6703,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -6425,6 +6725,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -6446,6 +6747,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6467,6 +6769,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6488,6 +6791,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6509,6 +6813,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6530,6 +6835,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6551,6 +6857,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -6572,6 +6879,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6593,6 +6901,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -6614,6 +6923,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6635,6 +6945,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6656,6 +6967,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6677,6 +6989,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -6698,6 +7011,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6719,6 +7033,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6740,6 +7055,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6761,6 +7077,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -6782,6 +7099,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -6803,6 +7121,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6824,6 +7143,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6845,6 +7165,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6866,6 +7187,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6887,6 +7209,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6908,6 +7231,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -6929,6 +7253,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6950,6 +7275,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6971,6 +7297,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -6992,6 +7319,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7013,6 +7341,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7034,6 +7363,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7055,6 +7385,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -7076,6 +7407,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -7097,6 +7429,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -7118,6 +7451,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -7139,6 +7473,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7160,6 +7495,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -7181,6 +7517,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -7202,6 +7539,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7223,6 +7561,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7244,6 +7583,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7265,6 +7605,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7286,6 +7627,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7307,6 +7649,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -7328,6 +7671,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -7349,6 +7693,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -7370,6 +7715,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7391,6 +7737,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7412,6 +7759,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -7433,6 +7781,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -7454,6 +7803,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7475,6 +7825,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7496,6 +7847,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7517,6 +7869,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7538,6 +7891,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -7559,6 +7913,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -7580,6 +7935,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7601,6 +7957,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7622,6 +7979,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7643,6 +8001,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -7664,6 +8023,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7685,6 +8045,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7706,6 +8067,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7727,6 +8089,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7748,6 +8111,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -7769,6 +8133,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7790,6 +8155,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -7811,6 +8177,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -7832,6 +8199,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -7853,6 +8221,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7874,6 +8243,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -7895,6 +8265,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7916,6 +8287,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7937,6 +8309,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7958,6 +8331,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -7979,6 +8353,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -8000,6 +8375,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8021,6 +8397,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8042,6 +8419,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8063,6 +8441,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -8084,6 +8463,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8105,6 +8485,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8126,6 +8507,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8147,6 +8529,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8168,6 +8551,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8189,6 +8573,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8210,6 +8595,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -8231,6 +8617,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8252,6 +8639,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8273,6 +8661,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -8294,6 +8683,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8315,6 +8705,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8336,6 +8727,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8357,6 +8749,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8378,6 +8771,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8399,6 +8793,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8420,6 +8815,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8441,6 +8837,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8462,6 +8859,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8483,6 +8881,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8504,6 +8903,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8525,6 +8925,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -8546,6 +8947,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8567,6 +8969,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8588,6 +8991,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8609,6 +9013,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -8630,6 +9035,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8651,6 +9057,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8672,6 +9079,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -8693,6 +9101,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8714,6 +9123,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8735,6 +9145,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -8756,6 +9167,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8777,6 +9189,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -8798,6 +9211,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8819,6 +9233,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -8840,6 +9255,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8861,6 +9277,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -8882,6 +9299,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8903,6 +9321,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -8924,6 +9343,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -8945,6 +9365,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -8966,6 +9387,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -8987,6 +9409,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9008,6 +9431,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -9029,6 +9453,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9050,6 +9475,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -9071,6 +9497,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -9092,6 +9519,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9113,6 +9541,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9134,6 +9563,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9155,6 +9585,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9176,6 +9607,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9197,6 +9629,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9218,6 +9651,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -9239,6 +9673,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9260,6 +9695,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9281,6 +9717,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -9302,6 +9739,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9323,6 +9761,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -9344,6 +9783,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -9365,6 +9805,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9386,6 +9827,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9407,6 +9849,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9428,6 +9871,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9449,6 +9893,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9470,6 +9915,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9491,6 +9937,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -9512,6 +9959,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9533,6 +9981,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9554,6 +10003,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9575,6 +10025,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9596,6 +10047,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9617,6 +10069,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9638,6 +10091,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9659,6 +10113,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9680,6 +10135,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -9701,6 +10157,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9722,6 +10179,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -9743,6 +10201,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9764,6 +10223,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9785,6 +10245,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9806,6 +10267,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9827,6 +10289,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9848,6 +10311,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9869,6 +10333,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9890,6 +10355,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9911,6 +10377,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9932,6 +10399,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9953,6 +10421,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9974,6 +10443,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -9995,6 +10465,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10016,6 +10487,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10037,6 +10509,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10058,6 +10531,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10079,6 +10553,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10100,6 +10575,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10121,6 +10597,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -10142,6 +10619,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -10163,6 +10641,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10184,6 +10663,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10205,6 +10685,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10226,6 +10707,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10247,6 +10729,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10268,6 +10751,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -10289,6 +10773,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10310,6 +10795,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10331,6 +10817,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10352,6 +10839,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -10373,6 +10861,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10394,6 +10883,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10415,6 +10905,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10436,6 +10927,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10457,6 +10949,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10478,6 +10971,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10499,6 +10993,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10520,6 +11015,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10541,6 +11037,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10562,6 +11059,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10583,6 +11081,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10604,6 +11103,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10625,6 +11125,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10646,6 +11147,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10667,6 +11169,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10688,6 +11191,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -10709,6 +11213,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10730,6 +11235,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10751,6 +11257,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10772,6 +11279,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10793,6 +11301,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "avrupa"
@@ -10814,6 +11323,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10835,6 +11345,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10856,6 +11367,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10877,6 +11389,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10898,6 +11411,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10919,6 +11433,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10940,6 +11455,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10961,6 +11477,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -10982,6 +11499,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -11003,6 +11521,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -11024,6 +11543,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -11045,6 +11565,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -11066,6 +11587,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -11087,6 +11609,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -11108,6 +11631,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -11129,6 +11653,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -11150,6 +11675,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -11171,6 +11697,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -11192,6 +11719,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
@@ -11213,6 +11741,7 @@
   "parca_sayisi": 1,
   "kapali": false,
   "ucretsiz": true,
+  "ucret_dayanak": "halka açık alan",
   "kaynak_ad": "İBB Park, Bahçe ve Yeşil Alan Verileri",
   "kaynak_url": "https://data.ibb.gov.tr/dataset/park-bahce-ve-yesil-alanlar-dairesi-baskanligi-verileri",
   "yaka": "anadolu"
