@@ -37,7 +37,8 @@
 
 <header class="ust">
   <div class="kap ust-ic">
-    <a class="logo" href="/" aria-label="{{ site.ad }} ana sayfa">
+    {# aria-label yok: erisilebilir ad gorunen adla ("IstanbuldaCocuk") ayni olmali (Lighthouse label-content-name-mismatch) #}
+    <a class="logo" href="/">
       <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path d="M3 22h26v3H3z" fill="#12506b"/><path d="M7 22V11l9-6 9 6v11" fill="none" stroke="#2f9fc7" stroke-width="2.4" stroke-linejoin="round"/><circle cx="16" cy="15" r="3" fill="#f2b134"/></svg>
       <span>İstanbulda<b>Çocuk</b></span>
     </a>
@@ -48,6 +49,7 @@
       <a href="/ucretsiz/">🆓 Ücretsiz</a>
       <a href="/yagmurlu-gunde/">☔ Yağmurlu gün</a>
       <a href="/harita/">🗺 Harita</a>
+      <a href="/ara/">🔍 Ara</a>
       {% if rehberler %}<a href="/rehber/">📘 Rehberler</a>{% endif %}
     </nav>
   </div>
@@ -112,6 +114,7 @@
   });
 })();
 </script>
+<script src="/static/ara.js" defer></script>
 {% block betik %}{% endblock %}
 </body>
 </html>

@@ -492,6 +492,18 @@ def yaz(yol: str, icerik: str) -> None:
     hedef.write_text(icerik, encoding="utf-8")
 
 
+
+def arama_anahtari(*parcalar: str) -> str:
+    """static/ara.js'teki sade() ile AYNI sadelestirme; ikisi birlikte degismeli.
+    Turkce harfler lower()'dan ONCE cevrilir: "I".lower() Python'da "i" verir ama
+    "İ".lower() i + U+0307 uretir; JS'te de ayni tuzak var."""
+    import unicodedata
+    tr = str.maketrans("İIıŞşĞğÇçÖöÜüÂâÎî", "iiisSgGcCoOuUaaii")
+    m = " ".join(p for p in parcalar if p).translate(tr).lower()
+    m = "".join(c for c in unicodedata.normalize("NFD", m) if not unicodedata.combining(c))
+    return " ".join("".join(c if c.isalnum() else " " for c in m).split())
+
+
 def main() -> None:
     sys.stdout.reconfigure(encoding="utf-8")
     site = yukle("site.json")
@@ -630,6 +642,29 @@ def main() -> None:
             canonical=yol, schema=[x for x in schema if x], og_gorsel=og_gorsel,
             **ortak, **kw))
         yollar.append((yol, oncelik, og_gorsel))
+
+    # ---------------------------------------------------------------- arama dizini
+    # [{a: ad, u: url, n: ikon, t: tur, i: ilce, y: yaka, k: anahtar}] — static/ara.js okur.
+    dizin = []
+    for m in mekanlar:
+        kat = KATEGORILER[m["kategori"]]
+        tur = ALT_TUR.get(m.get("tur"), kat["tekil"])
+        yaka_ad = YAKALAR[m["yaka"]]["ad"] if m.get("yaka") in YAKALAR else ""
+        dizin.append({"a": m["ad_ayirt"], "u": m["url"], "n": kat["ikon"], "t": tur, "i": m["ilce"], "y": yaka_ad,
+                      "k": arama_anahtari(m["ad_ayirt"], m["ad"], m["ilce"], tur, kat["ad"], yaka_ad)})
+    sayfali_adlar = {d["u"] for d in dizin}
+    for y in yesil:
+        if not y.get("url") or y["url"] in sayfali_adlar:
+            continue
+        yaka_ad = YAKALAR[y["yaka"]]["ad"] if y.get("yaka") in YAKALAR else ""
+        dizin.append({"a": y["ad"], "u": y["url"], "n": "🌳", "t": y["tur_ad"], "i": y["ilce"], "y": yaka_ad,
+                      "k": arama_anahtari(y["ad"], y["ilce"], y["tur_ad"], yaka_ad)})
+    (DIST / "data").mkdir(parents=True, exist_ok=True)
+    (DIST / "data" / "ara.json").write_text(json.dumps(dizin, ensure_ascii=False, separators=(",", ":")), "utf-8")
+    print(f"arama dizini: {len(dizin)} kayıt")
+    sayfa("/ara/", "ara.html", "Site içinde ara",
+          f"{len(dizin)} mekân ve yeşil alan içinde ada, ilçeye, türe veya yakaya göre arama.",
+          [], oncelik="0.3")
 
     # ---------------------------------------------------------------- ana sayfa
     sayfa("/", "home.html",

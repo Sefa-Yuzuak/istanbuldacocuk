@@ -3,6 +3,10 @@
 {% block icerik %}
 <section class="kahraman">
   <h1>İstanbul'da çocukla gidilecek yerler</h1>
+  <form class="ara" data-ara action="/ara/" method="get" role="search">
+    <input type="search" name="q" placeholder="Mekân, ilçe veya tür ara — örn. Kadıköy, müze" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="ara-oneri" aria-autocomplete="list" aria-label="Site içinde ara">
+    <ul class="ara-oneri" id="ara-oneri" role="listbox" hidden></ul>
+  </form>
   <p class="giris">Bu sitedeki her kayıt <strong>İstanbul Büyükşehir Belediyesi Açık Veri
     Portalı'ndan</strong> alınmıştır: parkın kaç metrekare olduğu, kütüphanenin hangi saatlerde
     açık olduğu, hangi sahnede çocuk oyunu oynandığı — hepsi kurumun kendi kaydından, kaynak

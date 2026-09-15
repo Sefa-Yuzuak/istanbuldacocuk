@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block robots %}<meta name="robots" content="noindex, follow">{% endblock %}
+{% block icerik %}
+<section class="kap">
+  <h1>Site içinde ara</h1>
+  <p class="giris">{{ toplam }} mekân ve yeşil alan içinde ada, ilçeye, türe veya yakaya göre arayın. Arama tarayıcınızda çalışır; sorgu hiçbir sunucuya gitmez.</p>
+  <form class="ara" data-ara action="/ara/" method="get" role="search">
+    <input type="search" name="q" placeholder="Mekân, ilçe veya tür ara — örn. Kadıköy, müze" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="ara-oneri" aria-autocomplete="list" aria-label="Site içinde ara">
+    <ul class="ara-oneri" id="ara-oneri" role="listbox" hidden></ul>
+  </form>
+  <p id="ara-sayac" class="soluk" aria-live="polite"></p>
+  <div id="ara-sonuclar" class="ara-sonuclar"></div>
+</section>
+{% endblock %}
