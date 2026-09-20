@@ -628,8 +628,22 @@ def main() -> None:
         return ekli if len(ekli) <= 60 else b
 
     def mekan_baslik(m: dict) -> str:
-        """En bilgili biçimden başlar, 62 karaktere sığana kadar kırpar."""
-        for aday in (f"{m['ad_ayirt']} — {m['ilce']}, İstanbul",
+        """En bilgili biçimden başlar, 62 karaktere sığana kadar kırpar.
+
+        Başlık 20.09.2026'ya kadar hiçbir VAAT taşımıyordu; mekân sayfaları
+        gösterimin %79'unu alıp %0,55 tıklanıyordu. Tekil mekân sorgusunda
+        adresi, saati ve telefonu Google kendi işletme kartında zaten
+        veriyor — kamu-misafirhaneleri'nde "adres/yol" niyeti 597 gösterimde
+        %0,00 tıklandı. İşletme kartının söylemediği ve velinin sorduğu şey
+        para ödeyip ödemeyeceği; ankaradacocuk'ta en iyi dönen sorgu
+        "ankara ücretsiz çocuk oyun alanları" (%40 TO). Vaat yalnızca
+        `ucretsiz` doğrulanmışsa yazılıyor (162 mekân, hepsinin dayanağı var)
+        ve "giriş ücretsiz" deniyor: ücretsiz olan girişin kendisi.
+        """
+        ek = " · giriş ücretsiz" if m.get("ucretsiz") else ""
+        for aday in (f"{m['ad_ayirt']} — {m['ilce']}, İstanbul{ek}",
+                     f"{m['ad_ayirt']} — {m['ilce']}{ek}",
+                     f"{m['ad_ayirt']} — {m['ilce']}, İstanbul",
                      f"{m['ad_ayirt']} — {m['ilce']}",
                      m["ad_ayirt"]):
             if len(aday) <= 62:
